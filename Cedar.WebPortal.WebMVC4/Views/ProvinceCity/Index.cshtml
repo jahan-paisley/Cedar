@@ -1,0 +1,31 @@
+﻿@model Cedar.WebPortal.WebMVC4.ViewModel.ProvinceCityViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.DropDownListFor(
+    x => x.Month, 
+    Enumerable.Empty<SelectListItem>(),
+    "-- select month --"
+)
+
+<script type="text/javascript">
+    $('#Year').change(function () {
+        var selectedYear = $(this).val();
+        if (selectedYear != null && selectedYear != '') {
+            $.getJSON('@Url.Action("Months")', { year: selectedYear }, function (months) {
+                var monthsSelect = $('#Month');
+                monthsSelect.empty();
+                $.each(months, function (index, month) {
+                    monthsSelect.append($('<option/>', {
+                        value: month.value,
+                        text: month.text
+                    }));
+                });
+            });
+        }
+    });
+</script>
+

@@ -1,0 +1,10 @@
+﻿@using Cedar.WebPortal.Domain
+@model IEnumerable<News>
+@foreach (News item in Model.OrderBy(o => o.PublishDate).Take(5))
+{
+    <li class="news-item" style="direction:rtl;">
+           
+        @Html.ActionLink(@item.Title, "Details", "News", new { id = item.NewsId }, new { @class = "links" ,style="direction:rtl;"})
+    </li>                                
+   
+}

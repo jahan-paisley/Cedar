@@ -1,0 +1,115 @@
+﻿@model MenuHelperModel
+<ul>
+    @foreach (var node in Model.Nodes.Where(node => node.Controller != "Home" || node.Action != "Index").Where(node => node.Children.Any()))
+    {
+        <li class="menuitem-seperated-first">&nbsp;</li>
+        <li><a href="javascript:void(0)">@node.Title</a>
+            <div class="megadropline">
+                <ul>
+                    @foreach (var child in node.Children)
+                    {  
+                       
+                        <li>
+                            @if (child.Action == "#")
+                            {
+                                if (child.TargetFrame != string.Empty)
+                                {
+                                <a  href="http://@child.TargetFrame">@child.Title</a>
+                                }
+                                else
+                                {
+                                <a href="#">@child.Title</a>
+                                        
+                                }
+                            }
+                            else
+                            {<a href="@Url.Action(child.Action, child.Controller, new { id = new Guid(@child.RouteValues["routevalues"].ToString()) })" >@child.Title</a>}
+                            @if (child.Children.Any())
+                            {
+                                <div class="megadropdown">
+                                    @if (@node.ImageUrl != string.Empty)
+                                    {
+                                        <div class="megadropimagearea">
+                                            <img src="@node.ImageUrl" alt="@node.Title" />
+                                        </div>
+                                        <div class="menudropdown-seperated">
+                                            &nbsp;
+                                        </div>
+                                    }
+                                    <ul>
+                                        @foreach (var cchild in child.Children)
+                                        {
+                                      
+                                            <li>
+                                                @if (cchild.Action == "#")
+                                                {
+                                                    if (cchild.TargetFrame != string.Empty)
+                                                    {
+                                                    <a href="http://@cchild.TargetFrame">@cchild.Title</a>
+                                                    }
+                                                    else
+                                                    {
+                                                    <a href="#">@cchild.Title</a>
+                                                    }
+                                                }
+                                                else if (cchild.RouteValues.ContainsKey("routevalues"))
+                                                { 
+                                                    <a href="@Url.Action(cchild.Action, cchild.Controller, new { id = new Guid(@cchild.RouteValues["routevalues"].ToString()) })">@cchild.Title</a>
+                                        
+                                                }
+                                                else
+                                                {
+                                                    <a href="@Url.Action(cchild.Action, cchild.Controller)">@cchild.Title</a>
+                                                }
+                                            </li>
+                                     
+                                        }
+
+                                    </ul>
+                                </div>
+                            }
+
+                        </li>
+                   
+                        
+                    }
+
+                </ul>
+                @*       @if (@node.ImageUrl != string.Empty)
+                    {
+                        <img src="@node.ImageUrl" alt="@node.Title" />
+                    }*@
+            </div>
+        </li>
+    }
+</ul>
+@*         @if (child.Children.Any())
+                            {
+                                foreach (var cchild in child.Children)
+                                {
+                                  
+                                <li>
+                                    @if (cchild.Action == "#")
+                                    {
+                                        if (cchild.TargetFrame != string.Empty)
+                                        {
+                                        <a href="http://@cchild.TargetFrame">@cchild.Title</a>
+                                        }
+                                        else
+                                        {
+                                        <a href="#">@cchild.Title</a>
+                                        }
+                                    }
+                                    else if (cchild.RouteValues.ContainsKey("routevalues"))
+                                    { 
+                                        <a href="@Url.Action(cchild.Action, cchild.Controller, new { id = new Guid(@cchild.RouteValues["routevalues"].ToString()) })">@cchild.Title</a>
+                                        
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Action(cchild.Action, cchild.Controller)">@cchild.Title</a>
+                                    }
+                                </li>
+                                }
+
+                            }*@

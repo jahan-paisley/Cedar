@@ -1,0 +1,32 @@
+﻿
+@model Cedar.WebPortal.Domain.JobPosition
+<div>
+  @*  <div>
+        <div>
+            JobCode
+        </div>
+        <div>
+            JobTitle
+        </div>
+        <div>
+            JobEducation
+        </div>
+        <div>
+            JobSkills
+        </div>
+    </div>*@
+        <div>
+            <div>
+                @Html.DisplayFor(modelItem => modelItem.JobCode)
+            </div>
+            <div>
+                @Html.DisplayFor(modelItem => modelItem.JobTitle)
+            </div>
+            <div>
+                @Html.DisplayFor(modelItem => modelItem.JobEducation)
+            </div>
+            <div>
+                @Html.DisplayFor(modelItem => modelItem.JobSkills)
+            </div>
+        </div>
+</div>

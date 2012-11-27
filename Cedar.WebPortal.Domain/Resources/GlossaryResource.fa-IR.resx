@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema 
+		
+		Version 2.0
+		
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+	 
+		Example: 
+		
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">2.0</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+				<value>[base64 mime encoded serialized .NET Framework object]</value>
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+				<value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+				<comment>This is a comment</comment>
+		</data>
+								
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+		
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+		
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+		
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+		
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+						: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+						: and then encoded with base64 encoding.
+		
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+						: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+						: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+						: using a System.ComponentModel.TypeConverter
+						: and then encoded with base64 encoding.
+		-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Register" xml:space="preserve">
+		<value>ثبت اطلاعات</value>
+	</data>
+  <data name="Edit" xml:space="preserve">
+		<value>ویرایش اطلاعات</value>
+	</data>
+  <data name="Select" xml:space="preserve">
+		<value>انتخاب</value>
+	</data>
+  <data name="Cedar" xml:space="preserve">
+		<value>کمپانی نام</value>
+	</data>
+
+  <data name="Home" xml:space="preserve">
+		<value>خانه</value>
+	</data>
+  <data name="Version" xml:space="preserve">
+		<value>نسخه آزمایشی</value>
+	</data>
+  <data name="News_Headlines" xml:space="preserve">
+		<value>سرخط اخبار</value>
+	</data>
+  <data name="Details" xml:space="preserve">
+		<value>جزییات</value>
+	</data>
+  <data name="LogOn" xml:space="preserve">
+		<value>ورود</value>
+	</data>
+  <data name="LogOff" xml:space="preserve">
+		<value>خروج</value>
+	</data>
+  <data name="CedarNews" xml:space="preserve">
+		<value>اخبار کمپانی نام</value>
+	</data>
+  <data name="Create" xml:space="preserve">
+		<value>ثبت</value>
+	</data>
+  <data name="CreateAndNextStep" xml:space="preserve">
+		<value>ثبت/مرحله بعد</value>
+	</data>
+  <data name="LogonErrorMessage" xml:space="preserve">
+		<value>ورود موفقیت آمیز نبود، لطفا دوباره تلاش کنید.</value>
+	</data>
+  <data name="EnterUsernamePasswordMessage" xml:space="preserve">
+		<value>لطفا نام کاربری و رمز ورود را وارد کنید</value>
+	</data>
+  <data name="Delete" xml:space="preserve">
+		<value>حذف</value>
+	</data>
+  <data name="List" xml:space="preserve">
+		<value>لیست</value>
+	</data>
+  <data name="MembershipArea" xml:space="preserve">
+		<value>حوزه کاربران</value>
+	</data>
+  <data name="CompanyArea" xml:space="preserve">
+		<value>در مورد شرکت</value>
+	</data>
+  <data name="ReturnToList" xml:space="preserve">
+		<value>بازگشت به لیست</value>
+	</data>
+  <data name="Submit" xml:space="preserve">
+		<value>ارسال</value>
+	</data>
+  <data name="Accessible_Persmissions" xml:space="preserve">
+		<value>دسترسی های مختلف</value>
+	</data>
+  <data name="Activities" xml:space="preserve">
+		<value>فعالیتها</value>
+	</data>
+  <data name="Reports" xml:space="preserve">
+		<value>گزارشات</value>
+	</data>
+  <data name="Wheather" xml:space="preserve">
+		<value>آب و هوا</value>
+	</data>
+  <data name="Remove" xml:space="preserve">
+		<value>حذف</value>
+	</data>
+  <data name="Add" xml:space="preserve">
+		<value>اضافه</value>
+	</data>
+  <data name="Save" xml:space="preserve">
+		<value>ذخیره</value>
+	</data>
+  <data name="Applicant_Success_Message" xml:space="preserve">
+		<value>ثبت نام شما با موفقیت انجام شد</value>
+	</data>
+  <data name="Applicant_EnglishCV" xml:space="preserve">
+		<value>فرستادن رزومه انگلیسی اجباری است</value>
+	</data>
+  <data name="Applicant_Dialog_Message" xml:space="preserve">
+		<value>توجه</value>
+	</data>
+  <data name="Company_ContactPointHeaderDesc" xml:space="preserve">
+		<value>نماینده متقاضی جهت برقراری تماس</value>
+	</data>
+  <data name="Company" xml:space="preserve">
+		<value>مشخصات شرکت</value>
+	</data>
+  <data name="Applicant_IntroMessage">
+    <value>
+      <![CDATA[
+<p style="font: 12px Tahoma;text-align: justify;">
+شركت کمپانی نام در راستاي تكميل تيم تخصصي خود 
+از متقاضيان استخدام با روحيه انجام كارگروهي،
+آشنا با مجموعه نرم افزارهاي Office،مسلط به زبان انگليسي
+و داراي ويژگي هاي عمومي ذيل دعوت به همكاري مي نمايد.
+<ul>
+<lh>ويژگي هاي عمومي</lh>
+<li>
+		امكان همكاري بصورت تمام وقت
+  <li></li>
+		داراي حداقل مدرك كارشناسي رشته هاي مهندسي برق، مخابرات،
+			فن آوري اطلاعات، صنايع، گرايش هاي مديريت
+      <li></li>
+		حداقل سه سال سابقه كار مرتبط (ترجيحاً تله كام)
+  <li></li>
+		داراي كارت پايان خدمت و يا معافيت دائم براي آقايان
+			جزئيات زمينه هاي همكاري بزودي اعلام خواهد شد.
+      </li></ul>
+</p>
+			]]>
+    </value>
+  </data>
+  <data name="News_No">
+    <value>شماره:</value>
+  </data>
+  <data name="News_Next">
+    <value>بعدی:</value>
+  </data>
+  <data name="Distributor_Success_Message" xml:space="preserve"> 
+		<value><![CDATA[
+    <p style="font: 12px Tahoma;text-align: justify;">
+    ثبت نام شما با موفقیت انجام شد.    
+    </p>
+   <p style="font: 12px Tahoma;text-align: justify;">
+    شما با استفاده از ایمیل خود به عنوان نام کاربری و کد رهگیری به عنوان کلمه عبور می توانید اطلاعات خود را ویرایش نمایید.
+    برای این کار کافی است از طریق دکمه ورود که در منو به شکل یک قفل می باشد وارد سایت شوید.
+    بعد از وارد کردن نام کاربری و کلمه عبور می توانید اطلاعات خود را ویرایش نمایید.
+    </p>
+    ]]></value>
+	</data>
+  <data name="Distributor_Dialog_Message" xml:space="preserve">
+		<value>ثبت نام شما با موفقیت انجام شد</value>
+	</data>
+  <data name="FAQ">
+    <value>سوالات متداول</value>
+  </data>
+  <data name="Company_ProposalForProduct" xml:space="preserve">
+		<value> پيشنهادات خود مبني بر ارائه محصولات توليد داخل را مطرح کنيد و اسناد آن را از همين صفحه براي ما ارسال کنيد</value>
+	</data>
+  <data name="EquipProductInfo_Customers" xml:space="preserve">
+		<value>مشتريان عمده محصولات توليدي</value>
+	</data>
+  <data name="Company_CurrentProjects" xml:space="preserve">
+		<value>قراردادهای جاری و مرتبط</value>
+	</data>
+  <data name="Intro" xml:space="preserve">
+		<value>مقدمه</value>
+	</data>
+  <data name="Company_ProductList">
+    <value>ليست تجهيزات</value>
+  </data>
+  <data name="Equipment_ReadMeFile">
+    <value>مشخصات فني</value>
+  </data>
+  <data name="Equipment_Code">
+    <value>کد محصولات</value>
+  </data>
+  <data name="Equipment_Name">
+    <value>عنوان محصولات</value>
+  </data>
+  <data name="Distributor_Create">
+    <value>ثبت نام توزیع کنندگان</value>
+  </data>
+  <data name="Distribution_FirstMessage">
+    <value>
+      <![CDATA[<p>
+			لطفا اطلاعات زیر را در کمال صحت و صداقت
+			ارائه نمایید. بدیهی است شرکت کمپانی نام کلیه اطلاعات ابراز شده را دقیقا بررسی و با
+			اعزام تیم بازرسی، از صحت و سقم آن اطمینان حاصل خواهد نمود. در صورت اثبات وجود
+			اطلاعات غیر واقعی در هر مرحله از بررسی، درخواست همکاری متقاضی ملغی خواهد شد.
+			ملاک ارزیابی، اسناد ارائه شده (بارگذاری شده) برای هریک از موارد درخواستی می باشد.
+			</p>
+			<p>
+			<strong>لطفا تمامی مبالغ به ریال درج شود.</strong>
+	 </p> ]]>
+    </value>
+  </data>
+  <data name="Distribution_AttachmentMessage">
+    <value>
+      لینک بارگذاری فایلهای مربوطه که در ذیل به صورت فهرست وار آمده است در صفحه بعد موجود میباشد. قابل توجه است بارگذاری  فایلها جهت ارزیابی اطلاعات ارائه شده الزامی است.
+    </value>
+  </data>
+  <data name="Distribution_RegisterTitle">
+    <value>
+      دریافت مشخصات متقاضیان توزیع
+    </value>
+  </data>
+  <data name="Distribution_SectionA">
+    <value>
+      الف)مشخصات کاری متقاضی
+    </value>
+  </data>
+  <data name="Distribution_SectionB">
+    <value>
+      ب)مشخصات مدیر عامل /صاحب امتیاز
+    </value>
+  </data>
+  <data name="ApplicantSalesShop_SectionB">
+    <value>
+      ب)مشخصات مسئول / مدیر
+    </value>
+  </data>
+  <data name="Distribution_SectionC">
+    <value>
+      ج)جزئیات کاری
+    </value>
+  </data>
+  <data name="Distribution_SectionD">
+    <value>
+      د)وضعیت مالی
+    </value>
+  </data>
+  <data name="Distribution_SectionE">
+    <value>
+      و) فهرست کامل شبکه توزیع (فروشگاهها، توزیع کنندگان محلی، ...)
+    </value>
+  </data>
+
+  <data name="Distribution_SectionF">
+    <value>
+      ه) نظرات
+    </value>
+  </data>
+  <data name="Distribution_SectionG">
+    <value>
+      ی)بدینوسیله متقاضی تائید و گواهی می نماید که مطالب ذیل را خوانده و به آن متعهد می باشد
+    </value>
+  </data>
+  <data name="Distribution_Confirmation">
+    <value>
+      <![CDATA[
+			<ul>
+	<li>در صورت اثبات عدم صحت مدارک ارسالی در هر مقطع زمانی، درخواست متقاضی ابطال خواهد شد.</li>
+	<li>هرگونه هزینه در تهیه و ارسال مدارک درخواستی، برعهده متقاضی می باشد.</li>
+	<li>هیچ فردی بصورت مستقل از طرف شرکت کمپانی نام در رابطه با رد یا تائید درخواست متقاضی، با وی یا سازمان متبوعه تماس نخواهد گرفت. کلیه مراتب و پیگیریهای مربوطه از طریق مکاتبات اداری خواهد بود.</li>
+	<li>تکمیل و ارسال این فرم، به معنای پذیرش متقاضی بعنوان توزیع کننده شرکت کمپانی نام نخواهد بود و هیچگونه تعهدی برای این شرکت ایجاد نخواهد کرد.</li>
+	<li>اطلاعات درخواستی در این فرم، صرفا به منظور ارزیابی توان متقاضی ثبت میگردد و به منظور دیگری مورد استفاده قرار نخواهد گرفت.</li>
+</ul>
+		]]>
+    </value>
+  </data>
+  <data name="FileAttach">
+    <value>فایل های ضمیمه</value>
+  </data>
+  <data name="Distribution_DownloadExcel">
+    <value>
+      نسخه نرم افزاری لیست کامل شبکه توزیع شما، باید بر اساس قالب ارائه شده در فایل اکسل موجود در لینک زیر باشد. لطفا فایل مربوط به شبکه توزیع خود را (شامل کلیه فروشگاهها، توزیع کنندگان محلی و ...) طبق قالب ارائه شده تکمیل نمائید. پس از اتمام اطلاعات این صفحه و زدن دکمه ثبت/صفحه بعد در پائین صفحه، فایل خود را در صفحه بعد و در قسمت "فهرست کامل شبکه توزیع" بارگذاری نمائید.
+    </value>
+  </data>
+  <data name="Company_FileUploadDescription" xml:space="preserve">
+		<value> مدارک و مستندات مربوط به بخش توليد تجهيزات  را از اين قسمت ارسال کنيد </value>
+	</data>
+  <data name="Distribution_ContentLinkDownloadExcel">
+    <value>جهت دریافت فایل اکسل نمونه، اینجا کلیک کنید</value>
+  </data>
+  <data name="Distribution_Facility">
+    <value>سایر روشهای فروش شارژ الکترونیک</value>
+  </data>
+  <data name="Distribution_BestSellerQuestuion">
+    <value>کالاهای پرفروش خود در یکسال اخیر را به ترتیب اهمیت نام ببرید</value>
+  </data>
+  <data name="Applicant_Part1" xml:space="preserve">
+		<value>بخش اول</value>
+	</data>
+  <data name="Applicant_Part2" xml:space="preserve">
+		<value>بخش دوم</value>
+	</data>
+  <data name="Applicant_Part3" xml:space="preserve">
+		<value>بخش سوم</value>
+	</data>
+  <data name="Applicant_Part4" xml:space="preserve">
+		<value>بخش چهارم</value>
+	</data>
+  <data name="Actions">
+    <value>عملیات</value>
+  </data>
+  <data name="PleaseWait">
+    <value>لطفا چند لحظه صبر کنید ...</value>
+  </data>
+  <data name="Upload">
+    <value>بارگذاری فایل</value>
+  </data>
+  <data name="UploadMessage">
+    <value>لطفا کمی صبر نمایید تا بارگذاری فایل به طور کامل اتمام یابد.</value>
+  </data>
+  <data name="Next">
+    <value>بعدی</value>
+  </data>
+  <data name="Previous">
+    <value>قبلی</value>
+  </data>
+  <data name="Search">
+    <value>جستجو</value>
+  </data>
+  <data name="News_Previous">
+    <value>قبلي:</value>
+  </data>
+  <data name="CopyRight">
+    <value>کلیه حقـوق این وب سایت متعلق به شرکت کمپانی نام میباشد.</value>
+  </data>
+
+  <data name="Home_PictureGallery" xml:space="preserve">
+		<value>گالری عکس</value>
+	</data>
+  <data name="Home_PictureGallery_Message" xml:space="preserve">
+		<value>   <![CDATA[
+			<p>
+		برای دیدن عکسها روی آن کلیک کنید 
+		</p>
+		]]>
+		</value>
+	</data>
+  <data name="Home_AboutUs" xml:space="preserve">
+		<value>درباره ما</value>
+	</data>
+  <data name="Home_Tender" xml:space="preserve">
+		<value>مناقصات</value>
+	</data>
+  <data name="Home_FAQ" xml:space="preserve">
+		<value>سوالات متداول</value>
+	</data>
+  <data name="Home_Products" xml:space="preserve">
+		<value>محصولات و تعرفه ها</value>
+	</data>
+  <data name="Home_VAS" xml:space="preserve">
+		<value>3G</value>
+	</data>
+  <data name="Home_ContactUs" xml:space="preserve">
+		<value>تماس با ما</value>
+	</data>
+  <data name="Distributor_FollowUp_Message">
+    <value>
+      لطفا کد رهگیری ثبت نام خود را یادداشت کنید
+    </value>
+  </data>
+  <data name="HowToAddListBoxMessage" xml:space="preserve">
+		<value>برای انتخاب چند مورد دکمه کنترل را نگه داشته و بر روی آنها کلیک کنید</value>
+	</data>
+  <data name="AttachmentUploadMessage" xml:space="preserve">
+		<value>  <![CDATA[
+		<p>
+		لطفا در هر بخش تنها یک فایل و ترجیحا با حجم کمتر از 20 مگابایت را بارگذاری نمایید.
+		<br/>
+		توجه : در صورت بارگذاری مجدد، فایل قبلی حذف و فایل جدید جایگزین آن می شود.
+		<br/>
+		راهنمایی: در صورت تعدد صفحات ارسالی برای هر موضوع، آنها را در قالب یک فایل PDF یا ZIP بارگذاری نمایید.
+	</p>
+	]]>
+		</value></data>
+  <data name="True">
+    <value>بلی</value>
+  </data>
+  <data name="False">
+    <value>خیر</value>
+  </data>
+  <data name="First">
+    <value>ابتدا</value>
+  </data>
+  <data name="Last">
+    <value>انتها</value>
+  </data>
+  <data name="Error_Message">
+    <value>
+      <![CDATA[
+		 <h2>با عرض پوزش</h2>
+<p>متاسفانه پاسخگویی به در خواست شما با مشکل مواجه شده است</p>
+<div>
+<ul >
+<li>.اگر آدرس را خودتان تایپ نمودید آنرا دوباره چک نمایید<br />
+توجه: آدرس ها در مواردی به حروف بزرگ و کوچک حساس می باشند.</li>
+<li>اگر بعد از زدن لینکی با مشکل مواجه شدید در قسمت پیغام که در زیر آمده است ما را در جریان بگذارید.</li>
+<li>برای بازگشت به صفحه اول  <a href="http://www.Cedar.ir/"> این لینک </a>را بزنید.</li>
+</ul>
+</div>
+</div>
+<div>
+<h2>فرستادن پیام</h2></div>
+<div >
+<p>این قسمت برای فرستادن پیامهای شما طراحی شده است.</p>
+<a href="../Message/Create">
+ارسال پیام
+</a>
+</div>
+	 ]]>
+    </value>
+  </data>
+    <data name="Tender_Message">
+      <value>
+        <![CDATA[<div>
+<ul >
+<li>
+       کمپانی نام پس از دریافت اعلام آمادگی خرید اسناد و اطلاعات از شرکت مناقصه‌گر، ایمیل حاوی کد ره‌گیری و اطلاعات اولیه خرید اسناد مناقصه را به آدرس پست الکترونیکی مندرج در فرم مشخصات شرکت، ارسال خواهد نمود.
+    </li>
+<li>  
+ در صورت عدم دریافت ایمیل فوق یک روز پس از ارسال اطلاعات، با  27654665 تماس بگیرید. 
+</li>
+<li>
+ کلیه اطلاعات ارسالی بصورت Gray Scale با فرمت JPG بوده و سایز آن نبایستی بیشتر از 250Kb باشد.
+</li>
+<li>
+در صورت کشف ارائه اطلاعات خلاف واقع از سوی متقاضی، حق حذف شرکت مذکور از ادامه مراحل،  برای کمپانی نام محفوظ می باشد.
+</li>
+</ul>
+</div>
+	 ]]>
+      </value>
+    </data>
+    <data name="Message_Success" xml:space="preserve">
+		<value>پیغام شما با موفقیت ارسال شد</value>
+	</data>
+    <data name="Number_AfterTimeHold" xml:space="preserve">
+		<value>به علت تاخیر در ثبت, این شماره از رزرو شما خارج شده</value>
+	</data>
+    <data name="Number_AfterSold" xml:space="preserve">
+		<value>این شماره با موفقیت فروخته شد</value>
+	</data>
+    <data name="Number_UniqNationalId" xml:space="preserve">
+		<value>این کد ملی قبلا ثبت شده است</value>
+	</data>
+    <data name="More">
+      <value>بیشتر...</value>
+    </data>
+    <data name="Intro_3G">
+      <value>
+        <![CDATA[
+      <strong >نسل جدید ارتباطات</strong>
+       <p>
+				در کنار خدماتی اصلی همچون پیام کوتاه و پیام صوتی،  امکان استفاده از طیفی
+				گسترده تر از خدمات ارزش افزوده (VAS) را فراهم می کند.</p>
+			 ]]>
+      </value>
+    </data>
+    <data name="Prospect_FirstMessage">
+      <value>
+        <![CDATA[<p>محل قرارگیری پیغام راهنما</p> ]]>
+      </value>
+    </data>
+    <data name="Prospect_RegisterTitle">
+      <value>
+        پیش ثبت نام کمپانی نام
+      </value>
+    </data>
+    <data name="SearchJobPosition">
+      <value>
+        انتخاب شغل
+      </value>
+    </data>
+    <data name="NoJobPosition">
+      <value>
+        شغلی انتخاب نکرده
+      </value>
+    </data>
+    <data name="Search-Option">
+      <value>انتخاب فیلد مورد نظر برای جستجو</value>
+    </data>
+    <data name="PageSize">
+      <value>تعداد نمایش فیلد در هر صفحه</value>
+    </data>
+    <data name="Ticket_Success_Message" xml:space="preserve">
+		<value>موضوع شما ثبت شد</value>
+	</data>
+    <data name="Ticket_Dialog_Message" xml:space="preserve">
+		<value>توجه</value>
+	</data>
+    <data name="RegisterMember" xml:space="preserve">
+		<value>عضویت در کمپانی نام</value>
+	</data>
+    <data name="Alborz">
+      <value xml:space="preserve">البرز</value>
+    </data>
+    <data name="Tehran">
+      <value xml:space="preserve">تهران</value>
+    </data>
+    <data name="TenderApplication" xml:space="preserve">
+		<value>مشخصات شرکت</value>
+	</data>
+    <data name="IAgree" xml:space="preserve">
+		<value>شرایط را دارا هستم</value>
+	</data>
+  <data name="TenderApplication_Body">
+    <value xml:space="preserve"> <![CDATA[
+    <html>
+<head>
+</head>
+<body dir="rtl" style="font-family: Tahoma;color:black; font-size: x-small" bgcolor="white" text="#000000">
+    <div>
+        <p dir="RTL" style="text-align: right; direction: rtl;">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus';">ثبت تقاضای
+                مناقصه شماره {0}</span> </b><b><span style="font-size: 16.0pt;"
+                    lang="AR-SA"></span></b>
+        </p>
+        <p dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus',Tahoma;"
+                lang="AR-SA">شرکت {1}</span></b><b> <span dir="LTR"
+                    style="font-size: 16.0pt;">
+                    <o:p></o:p>
+                </span></b>
+        </p>
+        <p dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus',Tahoma;"
+                lang="AR-SA">به اطلاع می رساند ثبت نام شما در سایت کمپانی نام انجام شده است. کد رهگیری
+                شما {2} می باشد.</span></b><b><span dir="LTR" style="font-size: 16.0pt;
+                   "><o:p></o:p></span></b></p>
+        <p dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus',Tahoma;"
+                lang="AR-SA">لطفا در کلیه مکاتبات آتی کد رهگیری درج شود.<o:p></o:p></span></b></p>
+        <p dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus',Tahoma;"
+                lang="AR-SA">اداره کل تدارکات کمپانی نام<o:p></o:p></span></b></p>
+    </div>
+</body>
+</html>
+    ]]>
+    </value>
+  </data>
+</root>

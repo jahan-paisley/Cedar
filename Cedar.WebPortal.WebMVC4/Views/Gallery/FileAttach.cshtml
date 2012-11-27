@@ -1,0 +1,171 @@
+﻿@using Microsoft.Web.Mvc
+@using Cedar.WebPortal.WebMVC4.Controllers
+@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.Common
+@using Cedar.WebPortal.Domain
+@using Cedar.WebPortal.WebMVC4.Resources
+@model Gallery
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Css("~/Content/CSS/fileuploader.css")
+@Html.Script("~/Scripts/fileuploader.js")
+<script type="text/javascript">
+    function deleteFile(id, ctrl) {
+        var aurl = "/Gallery/DeleteUpload?galleryId=" + $("#GalleryId").val() + "&attachmentId=";
+        var result = $.ajax({
+            type: "GET",
+            url: aurl + id,
+            async: false
+        }).responseText;
+        if (result) {
+            alert('فایل حذف شد');
+            $("div#" + id).remove();
+
+        }
+    }
+
+    $(document).ready(function () {
+        var files = $('div[type=file]');
+
+        var foo = "/Gallery/AsyncUpload";
+
+        $("#dialog").dialog({
+            autoOpen: false,
+            modal: true,
+            draggable: false,
+            closeOnEscape: false,
+            closeText: 'hide',
+            open: function (event, ui) { jQuery('.ui-dialog-titlebar-close').hide(); }
+        });
+
+        files.each(function () {
+            var uploader = new qq.FileUploader({
+                element: this,
+                action: foo,
+                params: {
+                    galleryId: $("#GalleryId").val(),
+                    name: "PictureGallery"
+                },
+                template: '<div class="qq-uploader">' +
+                    '<div class="qq-upload-drop-area"><span>Drop files here to upload</span></div>' +
+                    '<div class="qq-upload-button">بارگذاری فایل</div>' +
+                    '<ul class="qq-upload-list"></ul>' +
+                    '</div>',
+                fileTemplate: '<li>' +
+                    '<span class="qq-upload-file"></span>' +
+                    '<span class="qq-upload-spinner"></span>' +
+                    '<span class="qq-upload-size"></span>' +
+                    '<a class="qq-upload-cancel" href="#">انصراف</a>' +
+                    '<span class="qq-upload-failed-text">احتمال خطا در بارگزاری این فایل می باشد.(ابتدا لیست را چک کنید و اگر فایل موجود نبود مجددا فایل را بارگذاری کنید.)</span>' +
+                    '</li>',
+                multiple: true,
+                debug: true,
+                onSubmit: function (id, fileName) {
+                    this.params['name'] = $("#Title").val();
+                },
+                onComplete: function (id, fileName, response) {
+                    var guidResponse = response.data;
+                    var hrefDelete = "<a class=linkDelete href='javascript:void(0)' onClick=deleteFile('" + guidResponse + "');>حذف</a> &nbsp;&nbsp;";
+                    var href = "<div id='" + guidResponse + "' class='inline'><img width='160px' src='/Attachment/Index/" + guidResponse + "' heigth='180px'>" +
+                        hrefDelete + "<input id='AttachmentId' type='hidden' value='" + guidResponse + "' name='AttachmentId'></div>";
+                    $("div #allAttachments").append(href);
+
+                }
+            });
+
+        });
+
+    });              
+</script>
+<h2>
+    @Html.ResourceFor((GalleryController o) => o.AsyncUpload(new Guid(), null, null))</h2>
+<h4>@Html.Raw(Html.ResourceFor("AttachmentUploadMessage"))</h4>
+@using (Html.BeginForm("Success", "Gallery", FormMethod.Post, new { id = "form1", name = "form1", enctype = "multipart/form-data" }))
+{
+    @this.Html.HiddenFor(o => o.GalleryId)
+    @Html.ValidationSummary(true)
+    <div class="attachment">
+        <div style="float: right; width: 50%;">
+            @Html.LabelFor(model => model)
+		
+        </div>
+			<br />
+			@Html.ActionLink(Html.ResourceFor(typeof(CommandResource),"Gallery_List"), "ListPagination")
+			<br />
+			<br />
+        <div type="file" name="Attachment" id="Attachment">
+        </div>
+        @if (Model.IsNotNull() && Model.Attachments != null)
+        {
+            <div>
+                @Html.LabelFor(model => model.Attachments)
+            </div>
+            <br />
+            <hr />
+            <div id="allAttachments">
+                @foreach (Attachment attachment in Model.Attachments)
+                {
+                   <div class="inline" id="@attachment.AttachmentId">
+                        @if (attachment != null)
+                        {
+                            if (attachment.ContentType.Contains("image") || attachment.FileName.ToLower().EndsWith(".png") || attachment.FileName.ToLower().EndsWith(".jpg") || attachment.FileName.ToLower().EndsWith(".bmp") || attachment.FileName.ToLower().EndsWith(".gif"))
+                            {
+                            @Html.Image(Url.Action("Index", "Attachment", new { Id = attachment.AttachmentId }), new { heigth = "80px", width = "60px" })
+                            }
+                            else
+                            {
+                            @Html.ActionLink((AttachmentController o) => o.Index(attachment.AttachmentId))  
+                            <div>نام فایل:   @attachment.FileName</div>
+                            }
+                        }
+                        <a href="javascript:void(0)" class="linkDelete" onClick='deleteFile("@attachment.AttachmentId");' >
+                            حذف</a>
+                        @Html.Raw("&nbsp;&nbsp;")
+                        <input type="hidden" name="AttachmentId" id="AttachmentId" value="@attachment.AttachmentId"/>
+                    </div>
+                    <hr />                
+                }
+            </div>
+        }
+    </div>
+    @Html.ActionLink(Html.ResourceFor(typeof(CommandResource),"Gallery_List"), "ListPagination")}
+<style>
+    div.inline
+    {
+        display: inline;
+    }
+    .attachment
+    {
+        /*height: 100px;*/
+        display: inline-block;
+        margin: 0 0 20px;
+        position: relative;
+        width: 100%;
+    }
+    
+    .attachment input
+    {
+        position: relative;
+    }
+    
+    .attachment .link
+    {
+        display: inline-block;
+        top: auto;
+        vertical-align: middle; /*  width: 200px;*/
+    }
+    
+    .attachment b
+    {
+        position: relative;
+        width: 38%;
+    }
+    
+    .span
+    {
+        display: inline-block;
+        padding: 5px; /* width: 100px;*/
+    }
+</style>

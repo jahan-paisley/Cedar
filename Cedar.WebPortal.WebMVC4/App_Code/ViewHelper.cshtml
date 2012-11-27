@@ -1,0 +1,255 @@
+﻿@using Cedar.WebPortal.Common
+@helper CalendarHelper()
+    {
+        if (Request.Cookies["lang"].IsNull() || Request.Cookies["lang"].Value == Cultures.Persian)
+        {
+    <script type="text/javascript">
+        $().ready(function () {
+            $(".datepicker").calendarsPicker({ calendar: $.calendars.instance('persian') });
+        });
+    </script>
+        }
+        else
+        {
+    <script type="text/javascript">
+        $().ready(function () {
+            $(".datepicker").calendarsPicker();
+        });
+    </script>
+        }
+}
+@helper IsNationlNoValidation()
+    {
+    <script type="text/javascript">
+        (function ($) {
+            $.validator.addMethod('isnationalno1', function (value, element, params) {
+                return IsNationalCode(value);
+            }, '');
+        } (jQuery));
+        (function ($) {
+            $.validator.unobtrusive.adapters.add('isnationalno', function (options) {
+                options.rules['isnationalno1'] = true;
+                options.messages['isnationalno1'] = options.message;
+            });
+        } (jQuery));
+    </script>
+}
+@helper CheckBoxValidation()
+    {
+    <script type="text/javascript">
+        (function ($) {
+            $.validator.unobtrusive.adapters.addBool("checkboxrequired", "required");
+        } (jQuery));
+    </script>
+}
+@helper DynamicLoadedCollectionHelper(string routeValue)
+    {
+    <script type="text/javascript">
+        $().ready(function() {
+            var routval = @routeValue;
+            var form = document.forms[0];
+            $("div[id*=Section]").each(function() {
+                var currentDiv = $(this);
+                currentDiv.find(':input,select').each(function() {
+
+                    var id = $(this).attr('id');
+                    var name = $(this).attr('name');
+
+                    $(this).attr('name', id);
+
+                    if ($(this).data() != null /*TODO:why this check is done in somewhere else*//* && !$(this).is(":hidden")*/) {
+                        var valSpan = currentDiv.find("span[data-valmsg-for='" + name + "']");
+                        var valLable = currentDiv.find("label[for='" + name + "']");
+                        $(valLable).attr("for", id);
+                        $(valSpan).attr("data-valmsg-for", id);
+                    }
+
+                    currentDiv.each(function() {
+                        $.validator.unobtrusive.parseDynamicContent("#" + $(currentDiv).attr("id"));
+                    });
+                    afterSuccess(currentDiv);
+                });
+            });
+                            
+
+            $(form).submit(function() {  if(routval=="/Applicant/") {
+                                             if ($("#JobPosition_JobTitle").exists()) {
+                                                 if ($("#JobPosition_JobTitle").val() == "") {
+                                                     $("#result").html('');
+                                                     $("#result").append('لطفا یک شغل انتخاب نمایید');
+                                                     $("#result").dialog("open");
+                                                     return false;
+                                                 };
+
+                                             };
+                                         }                  
+                var flag = true;
+                $(form).validate();
+                
+               $("div[id*=Section]").each(function () {
+                $("span[id=" + $(this).attr('id') + "]").remove();
+                $("span").find("[for='" + $(this).attr('id')+ "']").remove();
+                $(this).removeClass("input-validation-error");
+                             var min = $(this).attr('data-min-list');
+                             var max = $(this).attr('data-max-list');
+                                if (min != null) {
+                                     var count = $(this).find('div[id*=Add]').length;
+                                if (min > count || count > max) {
+                                    var message ="لیست "+$("a").find("[for='" + $(this).attr("id").replace("Section", "s") + "']").text()+" باید حداقل 1 مورد را دارا باشد";                                    
+                                    $(this).attr("data-val", "true");
+                                    $(this).attr("data-val-required", message);
+                                    $(this).attr("name", $(this).attr("id").replace("Section", "s"));
+                                    $(this).addClass("input-validation-error");
+                                    $(this).append("<span class='field-validation-error' data-valmsg-replace='true' id='" + $(this).attr('id') + "'><span  for='"+$(this).attr('id')+"' generated='true'>"+message+"</span></span>");
+                                     flag = false;
+                                    $("a").find("[for='" + $(this).attr("id").replace("Section", "s") + "']").parent().focus();
+                                } 
+                                }       
+                                            });
+                
+                //if (routval == '/ApplicantSalesShop/') {
+                    var errorForDisplay = findErrorForDisplay();
+                    if (errorForDisplay) {
+                        $("#result").html('');
+                        $("#result").append(errorForDisplay);
+                        $("#result").dialog("open");
+                        //alert(errorForDisplay);
+                        return false;
+                    }
+                //}
+              
+                if ($(form).valid()) {
+                    $("div[id*=Section]").find(':input,select').each(function() {
+                        var id = $(this).attr('id');
+                        var patt2 = new RegExp("(?:[a-zA-Z])(_)(?:[a-zA-Z])", "g");
+                        $(this).attr('name', id.replace(patt2,
+                            function($0) {
+                                return $0.replace('_', '.');
+                            }
+                        ));
+                        
+                        $(this).attr('name', $(this).attr('name').replace('__', '].').replace('_', '['));
+                    });
+                
+
+                    
+    if (!flag) {
+         return false;
+    }
+               
+                   return true;
+                }
+              
+                   
+               
+                return false;
+            });
+            
+            
+            
+            $("a.remove").live('click', function() {
+                var parentDiv = $(this).closest('div[id*=Section]');
+                $(this).closest('div[id*=Add]').remove();
+                //loading New Value of the textbox which is holding the number of Items
+                var sectionListCounterField = parentDiv.attr('id').replace('Section', 'sValue');
+                var countOfRemoveLinks = parentDiv.find(".remove").length;
+                $("#" + sectionListCounterField).val(countOfRemoveLinks);
+                
+
+            });
+
+            $("a[id*=Add]").live("click",function() {
+            
+                var clickedLink = $(this);
+                var linkId = clickedLink.attr('id');
+                var collectionId = linkId.replace('Add', '') + 's';
+                var divId = linkId.replace('Add', '') + 'Section';
+                var divIndexer = 0;
+
+                var linkHtml = $(clickedLink).html();
+                $(clickedLink).empty().html("<image src='../../Content/images/jquery-ui/load-indicator.gif'/>");
+
+                //extracting last occurance of the digit .The last index of Div.
+                var lastDiv = $("div[id*=" + linkId + "]").last().attr("id");
+                divIndexer = lastDiv == undefined ? 0 : parseInt(lastDiv.match( /\d+\d*$/ )[0]) + 1;
+                //add attribute data_isList for find it 
+                $("#" + divId).append("<div id='" + linkId + divIndexer + "'> </div>");
+
+                var latestDivId = linkId + divIndexer;
+
+                var currentDiv = $("#" + latestDivId);
+                currentDiv.fadeOut(function() {
+                    currentDiv.load(
+                        @routeValue + linkId + "/",
+                        { linkId: linkId, divIndexer: divIndexer, CollectionId: collectionId },
+                        function() {
+                            currentDiv.fadeIn(500, function() {
+                                $(clickedLink).html(linkHtml).fadeIn("slow");
+                            });
+
+                            currentDiv.find(':input').each(function() {
+
+                                var wrongId = $(this).attr('id');
+                                var wrongName = $(this).attr("name");
+                                var newId = collectionId + '_' + divIndexer + '__' + wrongName.replace('.', '_');
+                                var newName = collectionId + '_' + divIndexer + '__' + wrongName.replace('.', '_');
+
+                                $(this).attr('name', newName);
+                                $(this).attr("id", newId);
+                                if ($(this).data() != null && !$(this).is(":hidden")) {
+                                    var valSpan = currentDiv.find("span[data-valmsg-for='" + wrongName + "']");
+                                    var valLable = currentDiv.find("label[for='" + wrongId + "']");
+                                    $(valLable).attr("for", newId);
+                                    $(valSpan).attr("data-valmsg-for", newName);
+                                }
+                            });
+
+                            var html = currentDiv.find('form').html();
+                            if (html==null) {
+                                  html = currentDiv.html();
+                            }
+                            currentDiv.html(html);
+                            currentDiv.each(function() {
+                                $.validator.unobtrusive.parseDynamicContent("#" + latestDivId);
+                            });
+                            afterSuccess(currentDiv);
+                        });
+                });
+            });
+        }); 
+    </script>
+}
+@helper ShowErrorServerSide(List<string> inputError, string dialogMessage)
+    {
+        var errors = inputError;
+
+        if (errors != null && errors.Count() > 0)
+        {
+    <div id="dialog" title="@dialogMessage" style="display: none;">
+        @foreach (var error in errors)
+        {
+            <p>@error</p>
+        }
+    </div>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal: true,
+                draggable: false,
+                closeOnEscape: true,
+                closeText: 'hide',
+                buttons: { "Ok": function () { $(this).dialog("close"); } }
+            });
+            $("#dialog").dialog("open");
+        });        
+    </script>
+        }
+}
+@helper ConverDateToPeisianDate(DateTime dateTime)
+    {
+        var faDate = PersianCalendarUtility.ConvertToPersian(dateTime.Date);
+    @faDate
+    
+}

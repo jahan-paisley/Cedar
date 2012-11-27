@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Gallery>
+@using Microsoft.Web.Mvc
+@using Cedar.WebPortal.Domain;
+@using Cedar.WebPortal.WebMVC4.Controllers
+@using Cedar.WebPortal.WebMVC4.Helpers
+@Html.Css("~/Content/CSS/grid.css")
+@{
+    ViewBag.Title = "List";
+}
+<div style="margin: 10px">
+    @foreach (var item in Model)
+    {
+        <div width="200px" id="divNewsList">
+            @foreach (var items in item.Attachments)
+            { 
+                @Html.DisplayAttachment(items, o => o)
+            }
+            <div style="vertical-align: text-top; min-height: 100px; padding-@Html.RightIfPersian(): 60px">
+                <strong>
+                    @item.Title
+                </strong>
+                @String.Format("{0:g}", item.PublishDate)
+                <br />
+                <br />
+                <div style="width: 100%">
+                    @Html.Raw(item.Contents)
+                    &nbsp;... &nbsp;
+                </div>
+                @Html.ActionLink(Html.ResourceFor("Details"), "Details", "News", new { id = @item.GalleryId }, new { })
+                @if (@User.IsInRole("Administrator"))
+                {
+                    @Html.ActionLink((NewsController o) => o.Edit(@item.GalleryId))
+                    @Html.Raw(" ")
+                    @Ajax.ActionLink(@Html.ResourceFor("Delete"), "Delete", "News", new { id = @item.GalleryId },
+                                           new AjaxOptions
+                                               {
+                                                   Confirm = "Delete News?",
+                                                   HttpMethod = "Post",
+                                                   UpdateTargetId = "divNewsList"
+                                               })
+                }
+            </div>
+            <hr />
+        </div>
+    }
+</div>

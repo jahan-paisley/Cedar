@@ -1,0 +1,80 @@
+﻿@using Microsoft.Web.Mvc
+@using Cedar.WebPortal.Common
+@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.WebMVC4.Controllers
+@model Cedar.WebPortal.WebMVC4.ViewModel.NewsViewModel
+@{
+    ViewBag.Title = @Html.ResourceFor("Create");
+}
+<h2>
+    @Html.ResourceFor("Create")</h2>
+<style>
+    .editor-label, .editor-field
+    {
+        float: none;
+    }
+</style>
+@ViewHelper.CalendarHelper()
+@this.Html.Script("~/Scripts/jquery.validate.min.js")
+@this.Html.Script("~/Scripts/jquery.validate.unobtrusive.min.js")
+@this.Html.Script("~/Scripts/ckeditor/ckeditor_basic.js")
+@this.Html.Css("~/Content/CSS/jquery.calendars.picker.css")
+<script type="text/javascript">
+    $().ready(function () {
+        CKEDITOR.replace('Contents');
+    });
+</script>
+@using (Html.BeginForm("Create", "News", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true)
+        <fieldset>
+            <legend>@Html.ResourceFor(o => o)</legend>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Title)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Title)
+                @Html.ValidationMessageFor(model => model.Title)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.PublishDate)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.PublishDate, new { @class = "datepicker" })
+                @Html.ValidationMessageFor(model => model.PublishDate)
+            </div>
+             <div class="editor-label">
+                @Html.LabelFor(model => model.ExpirationDate)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.ExpirationDate, new { @class = "datepicker" })
+                @Html.ValidationMessageFor(model => model.ExpirationDate)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Code)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Code)
+                @Html.ValidationMessageFor(model => model.Code)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Contents)
+            </div>
+            <div class="editor-field">
+                @Html.TextAreaFor(model => model.Contents, new { cols = 80, rows = 10 })
+                @Html.ValidationMessageFor(model => model.Contents)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Attachment)
+            </div>
+            <div class="editor-field">
+                <input type="file" name="Attachment" id="Attachment" />
+            </div>
+            <p>
+                <input type="submit" value="@Html.ResourceFor("Create")" />
+            </p>
+        </fieldset>
+}
+<div>
+    @Html.ActionLink((NewsController o) => o.List())
+</div>

@@ -1,0 +1,7 @@
+﻿@using System.Web.Mvc.Html
+@model Cedar.WebPortal.Domain.Location
+<div>
+    @Html.LabelFor(model => model.Province)
+    @Html.DropDownListFor(model => model.LocationId, (IEnumerable<SelectListItem>)this.ViewBag.ValueProvinces)
+    @Html.ValidationMessageFor(model => model.LocationId)
+</div>

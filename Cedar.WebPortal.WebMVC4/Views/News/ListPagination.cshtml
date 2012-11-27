@@ -1,0 +1,16 @@
+﻿@model IEnumerable<News>
+@using Microsoft.Web.Mvc
+@using MvcContrib.Pagination
+@using Cedar.WebPortal.Domain;
+@using Cedar.WebPortal.WebMVC4.Helpers
+@using MvcContrib.UI.Grid
+@using MvcContrib.UI.Pager
+@Html.Css("~/Content/CSS/grid.css")
+@{
+    ViewBag.Title = "List";
+}
+@Html.Pager((IPagination)Model).First(Html.ResourceFor("First")).Next(Html.ResourceFor("Next")).Last(Html.ResourceFor("Last")).Previous(Html.ResourceFor("Previous"))
+@{
+    Html.Grid(Model).Columns(column => column.For(x => Html.Partial("NewsList",x as News))).Render(); 
+                                              
+} 

@@ -1,0 +1,51 @@
+﻿@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.WebMVC4.Controllers
+@using Cedar.WebPortal.WebMVC4.ViewModel
+@using Microsoft.Web.Mvc
+@using Cedar.WebPortal.Common
+@model NewsViewModel
+@{
+    ViewBag.Title = Model.Title;
+}
+<div>
+    <div>
+        @if (Model.Attachment.IsNotNull())
+        { 
+            @Html.Image(Url.Action("Index", "Attachment", new { Id = Model.Attachment.AttachmentId.ToString() }))
+        }
+        else
+        {
+            @Html.DisplayAttachment(item => item.Attachment)
+        }
+        <div>
+            @Html.Raw(Model.Contents)
+        </div>
+    </div>
+</div>
+@*<div style="color: #666666; direction: rtl; font-family: Tahoma,Geneva,sans-serif;
+    font-size: 12px; line-height: 18px; text-align: justify;">
+    <div>
+        @if (Model.Attachment.IsNotNull())
+        { 
+            @Html.Image(Url.Action("Index", "Attachment", new { Id = Model.Attachment.AttachmentId.ToString() }))
+        }
+        else
+        {
+            @Html.DisplayAttachment(item => item.Attachment)
+        }
+        <div style="vertical-align: text-top; min-height: 100px; padding-right: 60px">
+            <strong>
+                @Model.Title
+            </strong>
+            <div style="text-align: right;direction: ltr;">
+                @String.Format("{0:g}", Model.PublishDate)
+            </div>
+            <br />
+            <br />
+            <div style="width: 100%">
+                @Html.Raw(Model.Contents)
+            </div>
+        </div>
+    </div>
+</div>
+*@

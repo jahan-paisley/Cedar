@@ -1,0 +1,75 @@
+﻿@using Microsoft.Web.Mvc
+@using Cedar.WebPortal.Domain
+@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.WebMVC4.Resources
+@model Gallery
+@{
+
+    this.ViewBag.Title = this.Html.ResourceFor("Home_PictureGallery");
+}
+@this.Html.Css("~/Content/CSS/jquery.lightbox-0.5.css")
+@this.Html.Script("~/Scripts/jquery.lightbox-0.5.js")
+<script type="text/javascript">
+    $(function () {
+        $('#gallery a').lightBox({
+            imageLoading: '../../Content/images/lightbox-ico-loading.gif',
+            imageBtnPrev: '../../Content/images/lightbox-btn-prev.gif',
+            imageBtnNext: '../../Content/images/lightbox-btn-next.gif',
+            imageBtnClose: '../../Content/images/lightbox-btn-close.gif',
+            imageBlank: '../../Content/images/lightbox-blank.gif',
+            txtImage: 'عکس',
+            txtOf: 'از'
+        });
+    });
+</script>
+<style type="text/css">
+    /* jQuery lightBox plugin - Gallery style */
+    #gallery
+    {
+        background-color: #444;
+        padding: 10px;
+        width: 520px;
+    }
+    #gallery ul
+    {
+        list-style: none;
+    }
+    #gallery ul li
+    {
+        display: inline;
+    }
+    #gallery ul img
+    {
+        border: 5px solid #3e3e3e;
+        border-width: 5px 5px 20px;
+    }
+    #gallery ul a:hover img
+    {
+        border: 5px solid #fff;
+        border-width: 5px 5px 20px;
+        color: #fff;
+    }
+    #gallery ul a:hover
+    {
+        color: #fff;
+    }
+</style>
+<div style="float: right;direction: rtl;">
+    <h2>
+        @Html.ResourceFor("Home_PictureGallery")
+    </h2>
+    @Html.Raw(@Html.ResourceFor("Home_PictureGallery_Message"))
+    <div id="gallery">
+        <ul>
+            @foreach (Attachment attachment in Model.Attachments)
+            {
+                string title = String.Format("{0}{1:d}", Model.Title, @ViewHelper.ConverDateToPeisianDate(Model.PublishDate));
+                string href = Url.Action("Index", "Attachment", new { Id = attachment.AttachmentId });
+                <li><a href="@href" title="@title" >
+                    @Html.Attachment(attachment)
+                </a></li>
+            }
+        </ul>
+    </div>
+    @Html.ActionLink(Html.ResourceFor(typeof(CommandResource), "Gallery_List"), "ListPaginationGallery")
+</div>

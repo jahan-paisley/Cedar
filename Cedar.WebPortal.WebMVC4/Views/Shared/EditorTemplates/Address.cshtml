@@ -1,0 +1,143 @@
+﻿@using Cedar.WebPortal.WebMVC4.Helpers
+@model Cedar.WebPortal.Domain.Component.DistributorAddress
+<table border="0" cellpadding="0" cellspacing="12px">
+    <tr>
+        <td>
+            <table class="fieldGroup">
+                <tr>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.Province)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fieldInput">
+                        @*@Html.EditorFor(model => model.Province)*@
+                        @Html.DropDownListFor("Province", (IEnumerable<SelectListItem>)this.ViewBag.ValueProvinces)
+                        @Html.ValidationMessageFor(model => model.Province)
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class="fieldGroup">
+                <tr>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.City)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fieldInput">
+                        @Html.EditorFor(model => model.City)
+                        @Html.ValidationMessageFor(model => model.City)
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class="fieldGroup">
+                <tr>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.Ave)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fieldInput">
+                        @Html.EditorFor(model => model.Ave)
+                        @Html.ValidationMessageFor(model => model.Ave)
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class="fieldGroup">
+                <tr>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.Description)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fieldInput">
+                        @Html.TextBoxFor(model => model.Description, new { style = "width:290px;", maxlength = 1000 })
+                        @Html.ValidationMessageFor(model => model.Description)
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="fieldGroup">
+                <tr>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.Unit)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fieldInput">
+                        @Html.TextBoxFor(model => model.Unit)
+                        @Html.ValidationMessageFor(model => model.Unit)
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class="fieldGroup">
+                <tr>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.BuildingNo, new { style = "width: 30px;" })
+                    </td>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.PostalCode, new { style = "width: 30px;" })
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fieldInput">
+                        @Html.TextBoxFor(model => model.BuildingNo, new { style = "width:30px;", MaxLength = "4" })
+                        @Html.ValidationMessageFor(model => model.BuildingNo)
+                    </td>
+                    <td class="fieldInput">
+                        @Html.TextBoxFor(model => model.PostalCode, new { style = "width:80px;", MaxLength = "10" })
+                        @Html.ValidationMessageFor(model => model.PostalCode)
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class="fieldGroup">
+                <tr>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.Fax)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fieldInput">
+                        @Html.TextBoxFor(model => model.Fax, new { MaxLength = "8" })
+                        @Html.ValidationMessageFor(model => model.Fax)
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class="fieldGroup">
+                <tr>
+                    <td class="fieldTitle">
+                        @Html.LabelFor(model => model.Tel, new { style = "width: 80px;" })
+                    </td>
+                    <td class="fieldTitle" style="width: 50px;">
+                        @Html.LabelFor(model => model.TelCode, new { style = "width: 50px;" })
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fieldInput" style="width: 80px;">
+                        @Html.TextBoxFor(model => model.Tel, new { style = "width:80px;", MaxLength = "8" })
+                        @Html.ValidationMessageFor(model => model.Tel)
+                    </td>
+                    <td colspan="2" class="fieldInput" style="width: 40px;">
+                        @Html.TextBoxFor(model => model.TelCode, new { style = "width:40px;", MaxLength = "4" })
+                        @Html.ValidationMessageFor(model => model.TelCode)
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

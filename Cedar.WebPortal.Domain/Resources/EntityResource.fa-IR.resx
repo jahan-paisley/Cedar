@@ -1,0 +1,1742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Applicant_FirstName" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="Applicant_LastName" xml:space="preserve">
+    <value>نام خانوادگي</value>
+  </data>
+  <data name="Applicant_FatherName" xml:space="preserve">
+    <value>نام پدر</value>
+  </data>
+  <data name="Applicant_IdentityNo" xml:space="preserve">
+    <value>شماره شناسنامه</value>
+  </data>
+  <data name="Applicant_Gender" xml:space="preserve">
+    <value>جنسیت</value>
+  </data>
+  <data name="Applicant_NationalNo" xml:space="preserve">
+    <value>کد ملی</value>
+  </data>
+  <data name="Applicant_Address" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="Applicant_TelNo" xml:space="preserve">
+    <value>شماره  محل کار</value>
+  </data>
+  <data name="Applicant_MobileNo" xml:space="preserve">
+    <value>شماره موبایل</value>
+  </data>
+  <data name="Applicant_EMail" xml:space="preserve">
+    <value>ایمیل</value>
+  </data>
+  <data name="Applicant" xml:space="preserve">
+    <value>داوطلب همکاری</value>
+  </data>
+  <data name="Applicant_Picture" xml:space="preserve">
+    <value>عکس</value>
+  </data>
+  <data name="ApplicantViewModel" xml:space="preserve">
+    <value>داوطلب همکاری</value>
+  </data>
+  <data name="ChangePasswordModel" xml:space="preserve">
+    <value>تغییر رمز</value>
+  </data>
+  <data name="ChangePasswordModel_OldPassword" xml:space="preserve">
+    <value>رمز قبلی</value>
+  </data>
+  <data name="ChangePasswordModel_NewPassword" xml:space="preserve">
+    <value>رمز جدید</value>
+  </data>
+  <data name="ChangePasswordModel_ConfirmPassword" xml:space="preserve">
+    <value>تکرار رمز</value>
+  </data>
+  <data name="LogOnModel_UserName" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="LogOnModel_Password" xml:space="preserve">
+    <value>رمز ورود</value>
+  </data>
+  <data name="LogOnModel_RememberMe" xml:space="preserve">
+    <value>مرا به خاطر بسپار</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>اخبار</value>
+  </data>
+  <data name="News_CaptureDate" xml:space="preserve">
+    <value>تاریخ ثبت</value>
+  </data>
+  <data name="News_Image" xml:space="preserve">
+    <value>عکس</value>
+  </data>
+  <data name="News_Attachment" xml:space="preserve">
+    <value>عکس</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="News_PublishDate" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+  <data name="News_ExpirationDate" xml:space="preserve">
+    <value>تاریخ انقضا</value>
+  </data>
+  <data name="News_Language" xml:space="preserve">
+    <value>زبان خبر</value>
+  </data>
+  <data name="News_Code" xml:space="preserve">
+    <value>کد</value>
+  </data>
+  <data name="News_Contents" xml:space="preserve">
+    <value>متن</value>
+  </data>
+  <data name="News_Published" xml:space="preserve">
+    <value>نمایش عمومی</value>
+  </data>
+  <data name="NewsViewModel" xml:space="preserve">
+    <value>خبر</value>
+  </data>
+  <data name="NewsViewModel_Image" xml:space="preserve">
+    <value>تصویر</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>پیغام</value>
+  </data>
+  <data name="Message_CaptureDate" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+  <data name="Message_Contents" xml:space="preserve">
+    <value>متن</value>
+  </data>
+  <data name="Message_EMail" xml:space="preserve">
+    <value>ایمیل</value>
+  </data>
+  <data name="Message_LastName" xml:space="preserve">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="Message_Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="Message_AnswerContents" xml:space="preserve">
+    <value>پاسخ</value>
+  </data>
+  <data name="Message_AnswerDate" xml:space="preserve">
+    <value>تاریخ پاسخ</value>
+  </data>
+  <data name="Applicant_AcquaintanceWay" xml:space="preserve">
+    <value>نحوه آشنایی با شرکت </value>
+  </data>
+  <data name="Applicant_Activities" xml:space="preserve">
+    <value>فعالیت مذهبی ، هنری ، ورزشی </value>
+  </data>
+  <data name="Applicant_ApplicationDate" xml:space="preserve">
+    <value>تاریخ ارسال رزومه</value>
+  </data>
+  <data name="Applicant_BirthDate" xml:space="preserve">
+    <value>تاریخ تولد</value>
+  </data>
+  <data name="Applicant_Blood" xml:space="preserve">
+    <value>گروه خونی</value>
+  </data>
+  <data name="Applicant_ChildCount" xml:space="preserve">
+    <value>تعداد فرزندان</value>
+  </data>
+  <data name="Applicant_ContractType" xml:space="preserve">
+    <value>نسبت به کدام نوع قرارداد تمايل داريد؟</value>
+  </data>
+  <data name="Applicant_Conviction" xml:space="preserve">
+    <value>سابقه محکومیت</value>
+  </data>
+  <data name="Applicant_CriminalRecord" xml:space="preserve">
+    <value>نوع محکومیت</value>
+  </data>
+  <data name="Applicant_Disability" xml:space="preserve">
+    <value>معلولیت</value>
+  </data>
+  <data name="Applicant_EmeregencyTelNo" xml:space="preserve">
+    <value> اضطراری</value>
+  </data>
+  <data name="Applicant_ErrandTendency" xml:space="preserve">
+    <value>تمایل به ماموریت</value>
+  </data>
+  <data name="Applicant_ExFamilyName" xml:space="preserve">
+    <value>فامیلی قبلی</value>
+  </data>
+  <data name="Applicant_ExpectedSalary" xml:space="preserve">
+    <value>حقوق درخواستی به ريال</value>
+  </data>
+  <data name="Applicant_EyeColor" xml:space="preserve">
+    <value>رنگ چشم</value>
+  </data>
+  <data name="Applicant_FaceColor" xml:space="preserve">
+    <value>رنگ چهره</value>
+  </data>
+  <data name="Applicant_Height" xml:space="preserve">
+    <value>قد</value>
+  </data>
+  <data name="Applicant_HolidayNotWorkingReason" xml:space="preserve">
+    <value>دلیل عدم انجام کار در روزهای تعطیل</value>
+  </data>
+  <data name="Applicant_HolidayWork" xml:space="preserve">
+    <value>تمایل به کار در روزهای تعطیل</value>
+  </data>
+  <data name="Applicant_HomeTelNo" xml:space="preserve">
+    <value> منزل</value>
+  </data>
+  <data name="Applicant_Hometown" xml:space="preserve">
+    <value>محل تولد</value>
+  </data>
+  <data name="Applicant_IdealWorkplace" xml:space="preserve">
+    <value>محيط کار ایده آل خود را توصيف نماييد</value>
+  </data>
+  <data name="Applicant_IdentityIsReplica" xml:space="preserve">
+    <value>شناسنامه المثنی</value>
+  </data>
+  <data name="Applicant_IdentityReplicaReason" xml:space="preserve">
+    <value>دلیل المثنی</value>
+  </data>
+  <data name="Applicant_JobTitle" xml:space="preserve">
+    <value>عنوان شغل</value>
+  </data>
+  <data name="Applicant_MaritalStatus" xml:space="preserve">
+    <value>وضعیت تاهل</value>
+  </data>
+  <data name="Applicant_MedicalSurgery" xml:space="preserve">
+    <value>سابقه جراحی</value>
+  </data>
+  <data name="Applicant_Nationality" xml:space="preserve">
+    <value>ملیت</value>
+  </data>
+  <data name="Applicant_Notes" xml:space="preserve">
+    <value>توضیحات</value>
+  </data>
+  <data name="Applicant_OtherSkills" xml:space="preserve">
+    <value>ساير تخصص ها و مهارتهاي خود را ذکر نماييد</value>
+  </data>
+  <data name="Applicant_OvertimeWork" xml:space="preserve">
+    <value>تمایل به اضافه کار</value>
+  </data>
+  <data name="Applicant_PassportNo" xml:space="preserve">
+    <value>شماره گذرنامه</value>
+  </data>
+  <data name="Applicant_PassportType" xml:space="preserve">
+    <value>نوع گذرنامه</value>
+  </data>
+  <data name="Applicant_PermanentDrugUsage" xml:space="preserve">
+    <value>استفاده دایم از دارو</value>
+  </data>
+  <data name="Applicant_PreviousInterviews" xml:space="preserve">
+    <value>مصاحبه قبلی</value>
+  </data>
+  <data name="Applicant_RelativeInCompany" xml:space="preserve">
+    <value>اقوام در شرکت</value>
+  </data>
+  <data name="Applicant_Religion" xml:space="preserve">
+    <value>دین</value>
+  </data>
+  <data name="Applicant_ReligionSect" xml:space="preserve">
+    <value>مذهب</value>
+  </data>
+  <data name="Applicant_SecondNationality" xml:space="preserve">
+    <value>ملیت دوم</value>
+  </data>
+  <data name="Applicant_SpecialOrChronicDisease" xml:space="preserve">
+    <value>بیماری مزمن یا خاص</value>
+  </data>
+  <data name="Applicant_Weight" xml:space="preserve">
+    <value>وزن</value>
+  </data>
+  <data name="Applicant_WhenAvailable" xml:space="preserve">
+    <value>حداقل زمان مورد نياز براي شروع همکاري (به روز)</value>
+  </data>
+  <data name="Applicant_MilitaryServiceInfo" xml:space="preserve">
+    <value>خدمت نظام وظیفه</value>
+  </data>
+  <data name="Applicant_SocialSecurityInfo" xml:space="preserve">
+    <value>بیمه</value>
+  </data>
+  <data name="Applicant_Errands" xml:space="preserve">
+    <value>ماموریت خارج از کشور</value>
+  </data>
+  <data name="Applicant_EducationInfos" xml:space="preserve">
+    <value>تحصیلات</value>
+  </data>
+  <data name="Applicant_Certificates" xml:space="preserve">
+    <value>سوابق آموزشي و گواهينامه ها</value>
+  </data>
+  <data name="Applicant_HabitationInfos" xml:space="preserve">
+    <value>آدرس های محل سکونت</value>
+  </data>
+  <data name="Applicant_LanguageSkills" xml:space="preserve">
+    <value>مهارت های زبانهای خارجی</value>
+  </data>
+  <data name="Applicant_Publications" xml:space="preserve">
+    <value>مقالات و آثار منتشره</value>
+  </data>
+  <data name="Applicant_References" xml:space="preserve">
+    <value>معرفین</value>
+  </data>
+  <data name="Applicant_Relatives" xml:space="preserve">
+    <value>بستگان</value>
+  </data>
+  <data name="Applicant_Skills" xml:space="preserve">
+    <value>مهارت هاي نرم افزاري</value>
+  </data>
+  <data name="Applicant_WorkExperienceInfos" xml:space="preserve">
+    <value>سوابق کاری</value>
+  </data>
+  <data name="Applicant_FollowupCode" xml:space="preserve">
+    <value>کد رهگیری</value>
+  </data>
+  <data name="Publication_Date" xml:space="preserve">
+    <value>تاریخ چاپ</value>
+  </data>
+  <data name="Publication_Publisher" xml:space="preserve">
+    <value>ناشر</value>
+  </data>
+  <data name="Publication_Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Certificate_Institute" xml:space="preserve">
+    <value>موسسه </value>
+  </data>
+  <data name="Certificate_Date" xml:space="preserve">
+    <value>تاریخ اتمام</value>
+  </data>
+  <data name="Certificate_Duration" xml:space="preserve">
+    <value>طول دوره</value>
+  </data>
+  <data name="Certificate_Grade" xml:space="preserve">
+    <value>نمره</value>
+  </data>
+  <data name="Certificate_HasDocument" xml:space="preserve">
+    <value>امکان ارائه گواهي؟</value>
+  </data>
+  <data name="Certificate_Location" xml:space="preserve">
+    <value>کشور</value>
+  </data>
+  <data name="Certificate_Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="SkillLevel_Perfect" xml:space="preserve">
+    <value>عالي</value>
+  </data>
+  <data name="LanguageSkill_Language" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+  <data name="SkillLevel_Good" xml:space="preserve">
+    <value>خوب</value>
+  </data>
+  <data name="SkillLevel_Average" xml:space="preserve">
+    <value>معمولي</value>
+  </data>
+  <data name="SkillLevel_Poor" xml:space="preserve">
+    <value>ضعيف</value>
+  </data>
+  <data name="Skill_Level" xml:space="preserve">
+    <value>سطح</value>
+  </data>
+  <data name="Skill_SampleUsage" xml:space="preserve">
+    <value>مورد کاربرد</value>
+  </data>
+  <data name="Skill_Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Errand_City" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="Errand_Country" xml:space="preserve">
+    <value>کشور</value>
+  </data>
+  <data name="Errand_Finish" xml:space="preserve">
+    <value>پایان</value>
+  </data>
+  <data name="Errand_Mission" xml:space="preserve">
+    <value>ماموریت</value>
+  </data>
+  <data name="Errand_Outcome" xml:space="preserve">
+    <value>نتیجه کار</value>
+  </data>
+  <data name="Errand_Role" xml:space="preserve">
+    <value>نقش</value>
+  </data>
+  <data name="Errand_Start" xml:space="preserve">
+    <value>آغاز</value>
+  </data>
+  <data name="SocialSecurityInfo_Has" xml:space="preserve">
+    <value>بیمه؟</value>
+  </data>
+  <data name="SocialSecurityInfo_OthersDuration" xml:space="preserve">
+    <value>مدت دوره دیگر بیمه ها</value>
+  </data>
+  <data name="SocialSecurityInfo_Duration" xml:space="preserve">
+    <value>مدت بیمه</value>
+  </data>
+  <data name="SocialSecurityInfo_Type" xml:space="preserve">
+    <value>نوع</value>
+  </data>
+  <data name="WorkExperienceInfo_Address" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="WorkExperienceInfo_Company" xml:space="preserve">
+    <value>شرکت</value>
+  </data>
+  <data name="WorkExperienceInfo_ContractType" xml:space="preserve">
+    <value>نوع قرارداد</value>
+  </data>
+  <data name="WorkExperienceInfo_Finish" xml:space="preserve">
+    <value>پایان</value>
+  </data>
+  <data name="WorkExperienceInfo_Industry" xml:space="preserve">
+    <value>صنعت</value>
+  </data>
+  <data name="WorkExperienceInfo_QuitReason" xml:space="preserve">
+    <value>دلیل ترک</value>
+  </data>
+  <data name="WorkExperienceInfo_Position" xml:space="preserve">
+    <value>سمت</value>
+  </data>
+  <data name="WorkExperienceInfo_Salary" xml:space="preserve">
+    <value>حقوق دريافتي در ماه</value>
+  </data>
+  <data name="WorkExperienceInfo_Start" xml:space="preserve">
+    <value>آغاز</value>
+  </data>
+  <data name="WorkExperienceInfo_Suboridnates" xml:space="preserve">
+    <value>تعداد افراد تحت مدیریت</value>
+  </data>
+  <data name="WorkExperienceInfo_TelNo" xml:space="preserve">
+    <value>شماره </value>
+  </data>
+  <data name="WorkExperienceInfo_JobDescription" xml:space="preserve">
+    <value>شرح مختصری از وظایف</value>
+  </data>
+  <data name="EducationInfo_College" xml:space="preserve">
+    <value>دانشگاه</value>
+  </data>
+  <data name="EducationInfo_Finish" xml:space="preserve">
+    <value>پایان</value>
+  </data>
+  <data name="EducationInfo_GPA" xml:space="preserve">
+    <value>معدل</value>
+  </data>
+  <data name="EducationInfo_Level" xml:space="preserve">
+    <value>سطح</value>
+  </data>
+  <data name="EducationInfo_Country" xml:space="preserve">
+    <value>کشور</value>
+  </data>
+  <data name="EducationInfo_Province" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="EducationInfo_Major" xml:space="preserve">
+    <value>رشته</value>
+  </data>
+  <data name="EducationInfo_Start" xml:space="preserve">
+    <value>آغاز</value>
+  </data>
+  <data name="Relative_BirthDate" xml:space="preserve">
+    <value>تاریخ تولد</value>
+  </data>
+  <data name="Relative_FirstName" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="Relative_HabitationCity" xml:space="preserve">
+    <value>شهر سکونت</value>
+  </data>
+  <data name="Relative_Hometown" xml:space="preserve">
+    <value>محل تولد</value>
+  </data>
+  <data name="Relative_LastName" xml:space="preserve">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="Relative_Relation" xml:space="preserve">
+    <value>رابطه</value>
+  </data>
+  <data name="Relative_WorkPosition" xml:space="preserve">
+    <value>سمت</value>
+  </data>
+  <data name="Relative_Workplace" xml:space="preserve">
+    <value>محل کار</value>
+  </data>
+  <data name="HabitationInfo_Address" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="HabitationInfo_Finish" xml:space="preserve">
+    <value>پایان</value>
+  </data>
+  <data name="HabitationInfo_HabitaionType" xml:space="preserve">
+    <value>نوع سکونت</value>
+  </data>
+  <data name="HabitationInfo_Start" xml:space="preserve">
+    <value>آغاز</value>
+  </data>
+  <data name="HabitationInfo_Zip" xml:space="preserve">
+    <value>کد پستی</value>
+  </data>
+  <data name="MilitaryServiceInfo_CardNo" xml:space="preserve">
+    <value>شماره کارت پایان خدمت</value>
+  </data>
+  <data name="MilitaryServiceInfo_Exempt" xml:space="preserve">
+    <value>معاف؟</value>
+  </data>
+  <data name="MilitaryServiceInfo_ExemptReason" xml:space="preserve">
+    <value>دلیل معافیت</value>
+  </data>
+  <data name="MilitaryServiceInfo_Finish" xml:space="preserve">
+    <value>پایان</value>
+  </data>
+  <data name="MilitaryServiceInfo_Location" xml:space="preserve">
+    <value>محل</value>
+  </data>
+  <data name="MilitaryServiceInfo_Start" xml:space="preserve">
+    <value>آغاز</value>
+  </data>
+  <data name="MilitaryServiceInfo_Status" xml:space="preserve">
+    <value>وضعیت</value>
+  </data>
+  <data name="Applicant_Attachment" xml:space="preserve">
+    <value>فایلهای پیوست</value>
+  </data>
+  <data name="Applicant_CV" xml:space="preserve">
+    <value>فایل رزومه</value>
+  </data>
+  <data name="Applicant_EnglishCV" xml:space="preserve">
+    <value>فایل رزومه انگلیسی</value>
+  </data>
+  <data name="Company_BoardOfDirectors" xml:space="preserve">
+    <value>اسامی اعضاء هیئت مدیره</value>
+  </data>
+  <data name="Company_CompanyActivity" xml:space="preserve">
+    <value>موضوع فعالیت</value>
+  </data>
+  <data name="Company_ContractStaffNo" xml:space="preserve">
+    <value>تعداد پرسنل قراردادی</value>
+  </data>
+  <data name="Company_EconomicCode" xml:space="preserve">
+    <value>کد اقتصادي</value>
+  </data>
+  <data name="Company_EstablishYear" xml:space="preserve">
+    <value>سال تاسيس</value>
+  </data>
+  <data name="Company_FormalStaffNo" xml:space="preserve">
+    <value>تعدا پرسنل رسمي</value>
+  </data>
+  <data name="Company_ManagingDirector" xml:space="preserve">
+    <value>نام و نام خانوادگی مدير عامل</value>
+  </data>
+  <data name="Company_Name" xml:space="preserve">
+    <value>نام شرکت</value>
+  </data>
+  <data name="Company_Favorites" xml:space="preserve">
+    <value>زمینه مورد علاقه جهت همکاری</value>
+  </data>
+  <data name="EquipProductInfo_Field" xml:space="preserve">
+    <value>زمینه فعالیت</value>
+  </data>
+  <data name="EquipProductInfo_FinancialVolume" xml:space="preserve">
+    <value>حجم مالی</value>
+  </data>
+  <data name="EquipProductInfo_ProductionVolume" xml:space="preserve">
+    <value>ميزان توليد محصول تا کنون</value>
+  </data>
+  <data name="EquipProductInfo_ProductStandard" xml:space="preserve">
+    <value>استاندارد محصول</value>
+  </data>
+  <data name="Company_ProductTools" xml:space="preserve">
+    <value>تجهیزات خط توليد</value>
+  </data>
+  <data name="EquipProductInfo_StaffNo" xml:space="preserve">
+    <value>تعداد پرسنل</value>
+  </data>
+  <data name="Company_TechnicalDetails" xml:space="preserve">
+    <value>رزومه و سوابق کاری شرکت</value>
+  </data>
+  <data name="EquipProductInfo_Topic" xml:space="preserve">
+    <value>کد محصول تولیدی</value>
+  </data>
+  <data name="Company_ValidApprovals" xml:space="preserve">
+    <value>تاييديه هاي معتبر</value>
+  </data>
+  <data name="Company_Location1" xml:space="preserve">
+    <value>استان (اولویت1)</value>
+  </data>
+  <data name="Company_Location2" xml:space="preserve">
+    <value>استان (اولویت2)</value>
+  </data>
+  <data name="Company_CW" xml:space="preserve">
+    <value>CW</value>
+  </data>
+  <data name="Company_TI" xml:space="preserve">
+    <value>TI</value>
+  </data>
+  <data name="Company_SA" xml:space="preserve">
+    <value>SA</value>
+  </data>
+  <data name="SpecializedServiceInfo_ContractsVolume" xml:space="preserve">
+    <value>حجم قراردادهای منعقده</value>
+  </data>
+  <data name="SpecializedServiceInfo_Customers" xml:space="preserve">
+    <value>مشتریان</value>
+  </data>
+  <data name="SpecializedServiceInfo_FinancialVolume" xml:space="preserve">
+    <value>حجم مالی</value>
+  </data>
+  <data name="SpecializedServiceInfo_Passedprojects" xml:space="preserve">
+    <value>پروژه های اجرا شده</value>
+  </data>
+  <data name="SpecializedServiceInfo_SpecEquipment" xml:space="preserve">
+    <value>تجهیزات تخصصی</value>
+  </data>
+  <data name="SpecializedServiceInfo_StaffNo" xml:space="preserve">
+    <value>تعداد پرسنل</value>
+  </data>
+  <data name="SpecializedServiceInfo_ValidApprovals" xml:space="preserve">
+    <value>تاييديه هاي معتبر</value>
+  </data>
+  <data name="Company_EquipProductInfos" xml:space="preserve">
+    <value>سوابق توليد تجهيرات</value>
+  </data>
+  <data name="Company_SpecializedServiceInfos" xml:space="preserve">
+    <value>سوابق خدمات تخصصي</value>
+  </data>
+  <data name="SpecializedServiceInfo_Field" xml:space="preserve">
+    <value>زمينه فعاليت</value>
+  </data>
+  <data name="SpecializedServiceInfo_Topic" xml:space="preserve">
+    <value>عنوان خدمات تخصصي</value>
+  </data>
+  <data name="Company_ContactPointNameAndFamily" xml:space="preserve">
+    <value>نام و نام خانوادگي</value>
+  </data>
+  <data name="Company_ContactPointPost" xml:space="preserve">
+    <value>پست سازماني</value>
+  </data>
+  <data name="Company_ContactPointTelNo" xml:space="preserve">
+    <value>شماره  ثابت</value>
+  </data>
+  <data name="Company_ContactPointCellNo" xml:space="preserve">
+    <value>شماره  </value>
+  </data>
+  <data name="Company_ContactPointMail" xml:space="preserve">
+    <value>آدرس پست الکترونيکی</value>
+  </data>
+  <data name="JobPosition_Xmlfile" xml:space="preserve">
+    <value>JobPosition_Xmlfile</value>
+  </data>
+  <data name="Company_FollowupCode" xml:space="preserve">
+    <value>شماره رهگيري شرکت</value>
+  </data>
+  <data name="Gender_Male" xml:space="preserve">
+    <value>مرد</value>
+  </data>
+  <data name="Gender_Female" xml:space="preserve">
+    <value>زن</value>
+  </data>
+  <data name="Gender_None" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="MaritalStatus_None" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="MaritalStatus_Other" xml:space="preserve">
+    <value>سایر</value>
+  </data>
+  <data name="MaritalStatus_Married" xml:space="preserve">
+    <value>متاهل</value>
+  </data>
+  <data name="MaritalStatus_Single" xml:space="preserve">
+    <value>مجرد</value>
+  </data>
+  <data name="HabitaionType_None" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="HabitaionType_Rented" xml:space="preserve">
+    <value>استیجاری</value>
+  </data>
+  <data name="HabitaionType_Owned" xml:space="preserve">
+    <value>ملکی</value>
+  </data>
+  <data name="MilitaryServiceStatus_None" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="MilitaryServiceStatus_Done" xml:space="preserve">
+    <value>اتمام خدمت</value>
+  </data>
+  <data name="MilitaryServiceStatus_NotDone" xml:space="preserve">
+    <value>مشمول خدمت</value>
+  </data>
+  <data name="MilitaryServiceStatus_Exempted" xml:space="preserve">
+    <value>معاف</value>
+  </data>
+  <data name="MilitaryServiceStatus_Ongoing" xml:space="preserve">
+    <value>در حال خدمت</value>
+  </data>
+  <data name="EducationLevel_None" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="EducationLevel_Diploma" xml:space="preserve">
+    <value>دیپلم</value>
+  </data>
+  <data name="EducationLevel_College" xml:space="preserve">
+    <value>فوق دیپلم</value>
+  </data>
+  <data name="EducationLevel_Bachelor" xml:space="preserve">
+    <value>کارشناسی</value>
+  </data>
+  <data name="EducationLevel_Master" xml:space="preserve">
+    <value>کارشناسی ارشد</value>
+  </data>
+  <data name="EducationLevel_PhD" xml:space="preserve">
+    <value>دکترا</value>
+  </data>
+  <data name="Applicant_IAgree" xml:space="preserve">
+    <value>اینجانب صحت کلیه اظهارات مندرج در این پرسشنامه را گواهی نموده و مسئولیت هرگونه اظهارات خلاف واقع و یا کتمان حقایق به عهده اینجانب بوده و به شرکت ارتباطات شمس نوین اختیار میدهم در صورت استخدام، در هر برهه از دوران همکاری که خلاف اظهاراتم اثبات گردد بدون هیچ عذری قرار داد کار اینجانب را فسخ نماید و مسئول جبران خسارات تابعه باشم.</value>
+  </data>
+  <data name="Company_Attachment" xml:space="preserve">
+    <value>فايل ضميمه</value>
+  </data>
+  <data name="Distributor_Name" xml:space="preserve">
+    <value>نام شرکت</value>
+  </data>
+  <data name="Distributor_Address" xml:space="preserve">
+    <value>آدرس شرکت</value>
+  </data>
+  <data name="Distributor_Email" xml:space="preserve">
+    <value>ایمیل</value>
+  </data>
+  <data name="Distributor_FieldOfActivity" xml:space="preserve">
+    <value>زمینه فعالیت</value>
+  </data>
+  <data name="Distributor_Form" xml:space="preserve">
+    <value>نوع شرکت</value>
+  </data>
+  <data name="Distributor_RegistrationsDoc" xml:space="preserve">
+    <value>تصویر مدارک ثبت شرکت و روزنامه رسمی</value>
+  </data>
+  <data name="Distributor_LiablesIdentity" xml:space="preserve">
+    <value>تصویر کارت ملی و شناسنامه دارندگان حق امضا</value>
+  </data>
+  <data name="Distributor_ExperienceInMonth" xml:space="preserve">
+    <value>سابقه فعالیت توزیع به ماه</value>
+  </data>
+  <data name="Distributor_Contract" xml:space="preserve">
+    <value>مدارک شامل اسناد و قراردادهای دال بر سابقه فعالیت توزیع</value>
+  </data>
+  <data name="Distributor_OrganizationChart" xml:space="preserve">
+    <value>نمودار سازمانی با ذکر مشخصات افراد</value>
+  </data>
+  <data name="Distributor_StaffInfos" xml:space="preserve">
+    <value>مشخصات مدیران اجرایی سازمان/شرکت</value>
+  </data>
+  <data name="Distributor_BestSellingProducts" xml:space="preserve">
+    <value>کالاهای پرفروش،در یکسال اخیر</value>
+  </data>
+  <data name="Distributor_OfficeInfos" xml:space="preserve">
+    <value>مشخصات اجرایی و دفتری</value>
+  </data>
+  <data name="Distributor_FinancialInfos" xml:space="preserve">
+    <value>مشخصات مالی</value>
+  </data>
+  <data name="Distributor_StoreHouseInfos" xml:space="preserve">
+    <value>مشخصات انبار</value>
+  </data>
+  <data name="Distributor_DistributionNetworkInfos" xml:space="preserve">
+    <value>مشخصات شبکه توزیع</value>
+  </data>
+  <data name="Distributor_VehicleInfos" xml:space="preserve">
+    <value>وسیله نقلیه اختصاصی جهت انتقال اجناس به فروشگاه</value>
+  </data>
+  <data name="Distributor_EmployeesInsured" xml:space="preserve">
+    <value>فهرست کارکنان بیمه شده و سایر کارکنان</value>
+  </data>
+  <data name="Distributor_FirstDate" xml:space="preserve">
+    <value>تاریخ ثبت</value>
+  </data>
+  <data name="Distributor_LastUpdate" xml:space="preserve">
+    <value>تاریخ آخرین ویرایش</value>
+  </data>
+  <data name="Distributor_ShopsLocalDistributorsNetwork" xml:space="preserve">
+    <value>فهرست کامل شبکه توزیع اعم از فروشگاهها و توزیع کنندگان محلی "طبق بند (و)"</value>
+  </data>
+  <data name="Distributor_AuditedInvoices" xml:space="preserve">
+    <value>آیا قادر به ارائه صورتهای مالی حسابرسی شده می باشید؟</value>
+  </data>
+  <data name="Distributor_CashFlowInvoices" xml:space="preserve">
+    <value>صورت گردش وجوه نقدی</value>
+  </data>
+  <data name="Distributor_AnnualInvoices" xml:space="preserve">
+    <value>صورت نهایی سال مالی قبل  با گزارش حسابرسی و بازرس قانونی</value>
+  </data>
+  <data name="Distributor_TaxInvoices" xml:space="preserve">
+    <value>تصویر رسید مالیات بر در آمد و سایر مالیاتها</value>
+  </data>
+  <data name="Distributor_AvgMonthlySales" xml:space="preserve">
+    <value>متوسط حجم فروش ماهانه(ریال)</value>
+  </data>
+  <data name="Distributor_AvgAnnualSales" xml:space="preserve">
+    <value>متوسط حجم فروش سالیانه(ریال)</value>
+  </data>
+  <data name="Distributor_LastSemesterTrunover" xml:space="preserve">
+    <value>گردش حساب بانکی شرکت در شش ماه اخیر(ریال)</value>
+  </data>
+  <data name="Distributor_BankInvoices" xml:space="preserve">
+    <value>صورتحساب بانکی شش ماه اخیر(تصویر صفحه آخر)</value>
+  </data>
+  <data name="Distributor_BankGuarantees" xml:space="preserve">
+    <value>توان شما در ارائه ضمانت نامه بانکی(ریال)</value>
+  </data>
+  <data name="Distributor_PropertiesAmount" xml:space="preserve">
+    <value>ارزش تقریبی مستغلات در تملک شرکت(ریال)</value>
+  </data>
+  <data name="Distributor_PropertiesDocs" xml:space="preserve">
+    <value>تصویر اسناد مالکیت مستغلات در تملک شرکت</value>
+  </data>
+  <data name="Distributor_OtherOpratorProducts" xml:space="preserve">
+    <value>آیا در زمینه فروش محصولات دیگر اپراتورهای خدمات ارتباطی فعالیت دارید؟</value>
+  </data>
+  <data name="Distributor_OtherOperatorsSellInfos" xml:space="preserve">
+    <value>دیگر اپراتورهای خدمات ارتباطی</value>
+  </data>
+  <data name="Distributor_ContributionsCommentTo" xml:space="preserve">
+    <value>شما چگونه می توانید در زمینه توزیع شرکت تامین تله کام را یاری نمایید؟</value>
+  </data>
+  <data name="Distributor_ContributionsCommentFrom" xml:space="preserve">
+    <value>شرکت تامین تله کام چگونه می تواند در زمینه توزیع شما را یاری نماید؟</value>
+  </data>
+  <data name="Distributor_IAgree" xml:space="preserve">
+    <value>صحت کلیه اطلاعات و مدارک ارائه شده،  مورد تائید اینجانب می باشد</value>
+  </data>
+  <data name="Address_Province" xml:space="preserve">
+    <value>استان</value>
+  </data>
+  <data name="Address_City" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="Address_Ave" xml:space="preserve">
+    <value>خیابان</value>
+  </data>
+  <data name="Address_Description" xml:space="preserve">
+    <value>کوچه(اصلی /فرعی و..)</value>
+  </data>
+  <data name="Address_BuildingNo" xml:space="preserve">
+    <value>پلاک</value>
+  </data>
+  <data name="Address_Tel" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Address_TelCode" xml:space="preserve">
+    <value>کد </value>
+  </data>
+  <data name="Address_Fax" xml:space="preserve">
+    <value>نمابر</value>
+  </data>
+  <data name="Address_PostalCode" xml:space="preserve">
+    <value>کدپستی</value>
+  </data>
+  <data name="BestSellingProduct_Type" xml:space="preserve">
+    <value>نوع محصول</value>
+  </data>
+  <data name="BestSellingProduct_Manufacturer" xml:space="preserve">
+    <value>شرکت</value>
+  </data>
+  <data name="BestSellingProduct_SalesVolumeInLastYear" xml:space="preserve">
+    <value>حجم فروش در یکسال(ریال)</value>
+  </data>
+  <data name="DistributionNetworkInfo_Shop" xml:space="preserve">
+    <value>تعداد فروشگاهها</value>
+  </data>
+  <data name="DistributionNetworkInfo_WholesaleReseller" xml:space="preserve">
+    <value>تعداد عمده فروشان</value>
+  </data>
+  <data name="DistributionNetworkInfo_BankPos" xml:space="preserve">
+    <value>تعداد پایانه های فروش (POS)</value>
+  </data>
+  <data name="DistributionNetworkInfo_Facility" xml:space="preserve">
+    <value>امکانات(eVoucher/eTopUp)</value>
+  </data>
+  <data name="FinancialInfo_LastQuarterTurnover" xml:space="preserve">
+    <value>گردش مالی سه ماه گذشته(ریال)</value>
+  </data>
+  <data name="FinancialInfo_MonthlySales" xml:space="preserve">
+    <value>حجم فروش ماهیانه(ریال)</value>
+  </data>
+  <data name="DistributorOffice_Location" xml:space="preserve">
+    <value>استان</value>
+  </data>
+  <data name="OfficeInfo_OfficeCount" xml:space="preserve">
+    <value>تعداد دفاتر اداری</value>
+  </data>
+  <data name="OfficeInfo_AreaM2" xml:space="preserve">
+    <value>مجموع مساحت به متر مربع</value>
+  </data>
+  <data name="OfficeInfo_InsuredEmployees" xml:space="preserve">
+    <value>تعداد کارمندان بیمه شده</value>
+  </data>
+  <data name="OfficeInfo_UninsuredEmployees" xml:space="preserve">
+    <value>تعداد کارمندان بیمه نشده</value>
+  </data>
+  <data name="OtherOperatorsSellInfo_OpratorName" xml:space="preserve">
+    <value>نام اپراتور</value>
+  </data>
+  <data name="OtherOperatorsSellInfo_Start" xml:space="preserve">
+    <value>تاریخ آغاز همکاری</value>
+  </data>
+  <data name="OtherOperatorsSellInfo_ProductType" xml:space="preserve">
+    <value>نوع محصول</value>
+  </data>
+  <data name="OtherOperatorsSellInfo_Rank" xml:space="preserve">
+    <value>رتبه فروش(در بین دیگر توزیع کنندگان)</value>
+  </data>
+  <data name="OtherOperatorsSellInfo_Location" xml:space="preserve">
+    <value>استانهای تحت پوشش</value>
+  </data>
+  <data name="OtherOperatorsSellInfo_Doc" xml:space="preserve">
+    <value>تصویر مدارک قابل استناد</value>
+  </data>
+  <data name="StaffInfo_FirstName" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="StaffInfo_LastName" xml:space="preserve">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="StaffInfo_Level" xml:space="preserve">
+    <value>تحصیلات</value>
+  </data>
+  <data name="StaffInfo_Email" xml:space="preserve">
+    <value>ایمیل</value>
+  </data>
+  <data name="StaffInfo_MobileNo" xml:space="preserve">
+    <value>شماره موبایل</value>
+  </data>
+  <data name="StaffInfo_Post" xml:space="preserve">
+    <value>سمت</value>
+  </data>
+  <data name="StaffInfo_DecisionMaker" xml:space="preserve">
+    <value>آیا در تعامل با شرکت تامین تله کام، تصمیم گیرنده هستند؟</value>
+  </data>
+  <data name="StaffInfo_TelAreaCode" xml:space="preserve">
+    <value>کد </value>
+  </data>
+  <data name="StaffInfo_TelNo" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="StoreHouseInfo_TotalSize" xml:space="preserve">
+    <value>مساحت کل انبار</value>
+  </data>
+  <data name="StoreHouseInfo_TotalStaff" xml:space="preserve">
+    <value>تعداد کارمندان انبار</value>
+  </data>
+  <data name="StoreHouseInfo_ActiveVehicle" xml:space="preserve">
+    <value>تعداد وسیله نقلیه فعال</value>
+  </data>
+  <data name="VehicleInfo_Type" xml:space="preserve">
+    <value>نوع وسیله</value>
+  </data>
+  <data name="VehicleInfo_Count" xml:space="preserve">
+    <value>تعداد</value>
+  </data>
+  <data name="CompanyForm_PublicJointStock" xml:space="preserve">
+    <value>سهامی عام</value>
+  </data>
+  <data name="CompanyForm_LLP" xml:space="preserve">
+    <value>مسولیت محدود</value>
+  </data>
+  <data name="CompanyForm_Cooperative" xml:space="preserve">
+    <value>تعاونی</value>
+  </data>
+  <data name="CompanyForm_PrivateJointStock" xml:space="preserve">
+    <value>سهامی خاص</value>
+  </data>
+  <data name="Distributor_DistributorOffices" xml:space="preserve">
+    <value>اطلاعات توزیع</value>
+  </data>
+  <data name="ProductType_Physical" xml:space="preserve">
+    <value>فیزیکی</value>
+  </data>
+  <data name="ProductType_ECharge" xml:space="preserve">
+    <value>الکترونیکی</value>
+  </data>
+  <data name="ProductType_All" xml:space="preserve">
+    <value>هر دو مورد</value>
+  </data>
+  <data name="Location_Province" xml:space="preserve">
+    <value>استان</value>
+  </data>
+  <data name="Distributor_FollowupCode" xml:space="preserve">
+    <value>کد رهگیری</value>
+  </data>
+  <data name="Company_Priority1" xml:space="preserve">
+    <value>اولويت اول</value>
+  </data>
+  <data name="Company_Priority2" xml:space="preserve">
+    <value>اولويت دوم</value>
+  </data>
+  <data name="Company_Priority3" xml:space="preserve">
+    <value>اولويت سوم</value>
+  </data>
+  <data name="Company_IndividualShareHolders" xml:space="preserve">
+    <value>سهامداران عمده حقيقي</value>
+  </data>
+  <data name="Company_LegalShareHolders" xml:space="preserve">
+    <value>سهامداران عمده حقوقي</value>
+  </data>
+  <data name="Equipment_ReadMeFile" xml:space="preserve">
+    <value>فايل مشخصات فني</value>
+  </data>
+  <data name="Equipment_Code" xml:space="preserve">
+    <value>کد محصولات</value>
+  </data>
+  <data name="Equipment_Name" xml:space="preserve">
+    <value>عنوان محصولات</value>
+  </data>
+  <data name="Company_YourProposalDocument" xml:space="preserve">
+    <value>طرح پيشنهادي شما</value>
+  </data>
+  <data name="Company_ProposedProduct1" xml:space="preserve">
+    <value>عنوان پيشنهاد اول</value>
+  </data>
+  <data name="Company_ProposedProduct2" xml:space="preserve">
+    <value>عنوان پيشنهاد دوم</value>
+  </data>
+  <data name="Company_ProposedProduct3" xml:space="preserve">
+    <value>عنوان پيشنهاد سوم</value>
+  </data>
+  <data name="OpratorName_Mci" xml:space="preserve">
+    <value>
+       اول
+    </value>
+  </data>
+  <data name="OpratorName_Irancell" xml:space="preserve">
+    <value>
+      ایرانسل
+    </value>
+  </data>
+  <data name="OpratorName_Taliya" xml:space="preserve">
+    <value>
+      تالیا
+    </value>
+  </data>
+  <data name="OtherOperatorsSellInfo_CountLocation" xml:space="preserve">
+    <value>تعداد استانهای تحت پوشش</value>
+  </data>
+  <data name="DistributionType_Retail" xml:space="preserve">
+    <value>
+      محصولات فیزیکی(سیم کارت،کارت شارژو...)
+    </value>
+  </data>
+  <data name="DistributionType_Wholesale" xml:space="preserve">
+    <value>
+   شارژ الکترونیکی
+    </value>
+  </data>
+  <!--<data name="DistributionType_Retail" xml:space="preserve">
+    <value>
+      مویرگی
+    </value>
+  </data>
+  <data name="DistributionType_Wholesale" xml:space="preserve">
+    <value>
+      بنکداری
+    </value>
+  </data>-->
+  <data name="DistributionType_Both" xml:space="preserve">
+    <value>
+      هر دو مورد
+    </value>
+  </data>
+  <data name="Distributor_DistributionType" xml:space="preserve">
+    <value>متقاضی توزیع</value>
+  </data>
+  <data name="Distributor_Website" xml:space="preserve">
+    <value>
+      وب سایت
+    </value>
+  </data>
+  <data name="Distributor_VendingMachine" xml:space="preserve">
+    <value>E-Topup
+    </value>
+  </data>
+  <data name="Distributor_MobileSales" xml:space="preserve">
+    <value>
+      فروش از طریق موبایل
+    </value>
+  </data>
+  <data name="Distributor_OtherFacility" xml:space="preserve">
+    <value>سایر</value>
+  </data>
+  <data name="Distributor_Locations" xml:space="preserve">
+    <value>
+      استانهای مورد نظر خود جهت توزیع محصولات شرکت تامین تله کام
+    </value>
+  </data>
+  <data name="CompanyForm_Other">
+    <value>سایر</value>
+  </data>
+  <data name="CompanyForm_None">
+    <value>...</value>
+  </data>
+  <data name="Applicant_FirstNameInEnglish" xml:space="preserve">
+    <value>نام لاتين</value>
+  </data>
+  <data name="Applicant_LastNameInEnglish" xml:space="preserve">
+    <value>نام خانوادگي لاتين</value>
+  </data>
+  <data name="Applicant_MilitaryServiceStatus" xml:space="preserve">
+    <value>وضعيت نظام وظيفه</value>
+  </data>
+  <data name="ContractType_PartTime">
+    <value>
+      پاره وقت
+    </value>
+  </data>
+  <data name="ContractType_FullTime">
+    <value>
+      تمام وقت
+    </value>
+  </data>
+  <data name="ContractType_Project">
+    <value>
+      پروژه اي
+    </value>
+  </data>
+  <data name="ContractType_Cunsultance">
+    <value>
+      مشاوره
+    </value>
+  </data>
+  <data name="ContractType_Other">
+    <value>
+      ساير
+    </value>
+  </data>
+  <data name="TrainingUnitType_Other">
+    <value>
+      ساير
+    </value>
+  </data>
+  <data name="TrainingUnitType_State">
+    <value>
+      سراسري
+    </value>
+  </data>
+  <data name="TrainingUnitType_Free">
+    <value>
+      آزاد
+    </value>
+  </data>
+  <data name="TrainingUnitType_PayamNoor">
+    <value>
+      پيام نور
+    </value>
+  </data>
+  <data name="TrainingUnitType_NonProfit">
+    <value>
+      غير انتفاعي
+    </value>
+  </data>
+  <data name="EducationInfo_TrainingUnitType" xml:space="preserve">
+    <value>نوع واحد آموزشي</value>
+  </data>
+  <data name="LanguageSkill_Comprehension" xml:space="preserve">
+    <value>درک</value>
+  </data>
+  <data name="LanguageSkill_Speaking" xml:space="preserve">
+    <value>مکالمه</value>
+  </data>
+  <data name="LanguageSkill_Writing" xml:space="preserve">
+    <value>نوشتن</value>
+  </data>
+  <data name="LanguageSkill_Reading" xml:space="preserve">
+    <value>خواندن</value>
+  </data>
+  <data name="AcquaintanceWay_PaperAdvertisement" xml:space="preserve">
+    <value>آگهي روزنامه</value>
+  </data>
+  <data name="AcquaintanceWay_InternetAdvertisement" xml:space="preserve">
+    <value>آگهي اينترنتي</value>
+  </data>
+  <data name="AcquaintanceWay_RecruitmentAgency" xml:space="preserve">
+    <value>موسسات کاريابي</value>
+  </data>
+  <data name="AcquaintanceWay_People" xml:space="preserve">
+    <value>اشخاص</value>
+  </data>
+  <data name="AcquaintanceWay_Other" xml:space="preserve">
+    <value>ساير</value>
+  </data>
+  <data name="FamilyRelation_Father">
+    <value>پدر</value>
+  </data>
+  <data name="FamilyRelation_Mother">
+    <value>مادر</value>
+  </data>
+  <data name="FamilyRelation_Brother">
+    <value>برادر</value>
+  </data>
+  <data name="FamilyRelation_Sister">
+    <value>خواهر</value>
+  </data>
+  <data name="FamilyRelation_Child">
+    <value>فرزند</value>
+  </data>
+  <data name="FamilyRelation_Couple">
+    <value>همسر</value>
+  </data>
+  <data name="Relative_EducationLevel">
+    <value>تحصیلات</value>
+  </data>
+  <data name="EducationLevel_UnderDiploma">
+    <value>زیر دیپلم</value>
+  </data>
+  <data name="Applicant_CronicDisease">
+    <value>بیماری مزمن</value>
+  </data>
+  <data name="Applicant_CronicDiseaseType">
+    <value>نوع بیماری مزمن</value>
+  </data>
+  <data name="Applicant_OvertimeWorkHours" xml:space="preserve">
+    <value>ساعات اضافه کار</value>
+  </data>
+  <data name="Applicant_ErrandDays" xml:space="preserve">
+    <value>تعداد روزهای ماموریت</value>
+  </data>
+  <data name="Address_Unit" xml:space="preserve">
+    <value>واحد</value>
+  </data>
+  <data name="News_AppearInHomePage" xml:space="preserve">
+    <value>نمايش در صفحه اول</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>گالری</value>
+  </data>
+  <data name="Gallery_CaptureDate" xml:space="preserve">
+    <value>تاریخ ثبت</value>
+  </data>
+  <data name="Gallery_Image" xml:space="preserve">
+    <value> عکس ها</value>
+  </data>
+  <data name="Gallery_Attachment" xml:space="preserve">
+    <value>عکس ها</value>
+  </data>
+  <data name="Gallery_Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Gallery_PublishDate" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+  <data name="Gallery_Code" xml:space="preserve">
+    <value>کد</value>
+  </data>
+  <data name="Gallery_Contents" xml:space="preserve">
+    <value>متن</value>
+  </data>
+  <data name="Gallery_Published" xml:space="preserve">
+    <value>نمایش عمومی</value>
+  </data>
+  <data name="GalleryViewModel" xml:space="preserve">
+    <value>گالری</value>
+  </data>
+  <data name="GalleryViewModel_Image" xml:space="preserve">
+    <value>تصویر</value>
+  </data>
+  <data name="Gallery_AppearInHomePage" xml:space="preserve">
+    <value>نمايش در صفحه اول</value>
+  </data>
+  <data name="Prospect_MSISDN">
+    <value>شماره موبايل درخواستی</value>
+  </data>
+  <data name="Prospect_FirstName">
+    <value>نام</value>
+  </data>
+  <data name="Prospect_LastName">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="Prospect_FirstNameInEnglish">
+    <value>نام لاتین</value>
+  </data>
+  <data name="Prospect_LastNameInEnglish">
+    <value>نام خانوادگی لاتین</value>
+  </data>
+  <data name="Prospect_IdentityNo">
+    <value>شماره شناسنامه</value>
+  </data>
+  <data name="Prospect_NationalNo">
+    <value>کد ملی</value>
+  </data>
+  <data name="Prospect_Gender">
+    <value>جنسیت</value>
+  </data>
+  <data name="Prospect_TelNo">
+    <value>شماره </value>
+  </data>
+  <data name="Prospect_MobileNo">
+    <value> </value>
+  </data>
+  <data name="Prospect_EMail">
+    <value>ایمیل</value>
+  </data>
+  <data name="Prospect_Address">
+    <value>آدرس</value>
+  </data>
+  <data name="Prospect_RegistrationDate">
+    <value>RegistrationDate</value>
+  </data>
+  <data name="Prospect_PreferredModeOfCommunication">
+    <value>نحوه ارتباط با شما</value>
+  </data>
+  <data name="Prospect_PreferredPickPointSimCard">
+    <value>محل تحویل سیم کارت</value>
+  </data>
+  <data name="Prospect_FollowupCode">
+    <value>کد رهگیری</value>
+  </data>
+  <data name="PreferredModeOfCommunication_Email">
+    <value>ایمیل</value>
+  </data>
+  <data name="PreferredModeOfCommunication_Post">
+    <value>پست</value>
+  </data>
+  <data name="PreferredPickPointSimCard_Tehran">
+    <value>تهران</value>
+  </data>
+  <data name="PreferredPickPointSimCard_Karaj">
+    <value>کرج</value>
+  </data>
+  <data name="State_Hold">
+    <value>این شماره رزرو شده است</value>
+  </data>
+  <data name="State_Exist">
+    <value>این شماره موجود می باشد</value>
+  </data>
+  <data name="State_Sold">
+    <value>این شماره فروخته شده است</value>
+  </data>
+  <data name="State_NotExist">
+    <value>این شماره موجود نمی باشد</value>
+  </data>
+  <data name="Prospect_Job">
+    <value>شغل</value>
+  </data>
+  <data name="Prospect_Education">
+    <value>تحصیلات</value>
+  </data>
+  <data name="PaymentType_Postpaid">
+    <value>دائمی</value>
+  </data>
+  <data name="PaymentType_Prepaid">
+    <value>اعتباری</value>
+  </data>
+  <data name="ServiceType_Data">
+    <value>Data</value>
+  </data>
+  <data name="ServiceType_Smartphone">
+    <value>Smartphone</value>
+  </data>
+  <data name="Prospect_ServiceType">
+    <value>نوع سرویس</value>
+  </data>
+  <data name="Prospect_PaymentType">
+    <value>پرداخت</value>
+  </data>
+  <data name="JobCategory_Government">
+    <value>دولتی</value>
+  </data>
+  <data name="JobCategory_Industry">
+    <value>صنعت و معدن</value>
+  </data>
+  <data name="JobCategory_Training">
+    <value>آموزش</value>
+  </data>
+  <data name="JobCategory_Commercial">
+    <value>بازرگانی</value>
+  </data>
+  <data name="JobCategory_Agriculture">
+    <value>کشاورزی</value>
+  </data>
+  <data name="JobCategory_Service">
+    <value>خدمات</value>
+  </data>
+  <data name="JobCategory_Health">
+    <value>بهداشت و درمان</value>
+  </data>
+  <data name="JobCategory_Other">
+    <value>سایر</value>
+  </data>
+  <data name="Prospect_Attachment">
+    <value>تصویر کارت ملی</value>
+  </data>
+  <data name="JobPosition_JobCode">
+    <value>کد شغل</value>
+  </data>
+  <data name="JobPosition_JobTitle">
+    <value>عنوان شغل</value>
+  </data>
+  <data name="JobPosition_JobEducation">
+    <value>تحصیلات</value>
+  </data>
+  <data name="JobPosition_JobSkills">
+    <value>توانایی لازم</value>
+  </data>
+  <data name="JobPosition_Department">
+    <value>دپارتمان</value>
+  </data>
+  <data name="Ticket_FirstName">
+    <value>نام</value>
+  </data>
+  <data name="Ticket_LastName">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="Ticket_MSISDN">
+    <value>شماره موبایل(کمپانی نام)</value>
+  </data>
+  <data name="Ticket_MobileNo">
+    <value>شماره موبایل(غیر کمپانی نام)</value>
+  </data>
+  <data name="Ticket_EMail">
+    <value>ایمیل</value>
+  </data>
+  <data name="Ticket_NationalNo">
+    <value>کد ملی</value>
+  </data>
+  <data name="Ticket_Address">
+    <value>آدرس</value>
+  </data>
+  <data name="Ticket_TelNo">
+    <value></value>
+  </data>
+  <data name="Ticket_FollowupCode">
+    <value>کد پیگیری</value>
+  </data>
+  <data name="Ticket_ApplicationDate">
+    <value>تاریخ ثبت</value>
+  </data>
+  <data name="Ticket_Location">
+    <value>استان</value>
+  </data>
+  <data name="Ticket_City">
+    <value>شهرستان</value>
+  </data>
+  <data name="Ticket_IssueType">
+    <value>نوع مشکل</value>
+  </data>
+  <data name="Ticket_SimType">
+    <value>نوع سیم کارت</value>
+  </data>
+  <data name="Ticket_IssueDesc">
+    <value>شرح مشکل</value>
+  </data>
+  <data name="Ticket_Desc">
+    <value>توضیحات</value>
+  </data>
+  <data name="Ticket_IssueStatus">
+    <value>وضعیت مشکل</value>
+  </data>
+  <data name="Ticket" xml:space="preserve">
+    <value>طرح شکایات مشتریان</value>
+  </data>
+  <data name="IssueType_None">
+    <value>---</value>
+  </data>
+  <data name="IssueType_SMS">
+    <value>پیامک</value>
+  </data>
+  <data name="IssueType_MMS">
+    <value>پیامک تصویری</value>
+  </data>
+  <data name="IssueType_Internet">
+    <value>اینترنت</value>
+  </data>
+  <data name="IssueType_VoiceCall">
+    <value>تماس صوتی</value>
+  </data>
+  <data name="IssueType_VideoCall">
+    <value>تماس تصویری</value>
+  </data>
+  <data name="IssueType_VAS">
+    <value>خدمات ارزش افزوده</value>
+  </data>
+  <data name="SimType_None">
+    <value>---</value>
+  </data>
+  <data name="SimType_Postpaid">
+    <value>دایمی</value>
+  </data>
+  <data name="SimType_Prepaid">
+    <value>اعتباری</value>
+  </data>
+  <data name="SimType_Data">
+    <value>دیتا</value>
+  </data>
+  <data name="IssueStatus_Followup">
+    <value>در دست اقدام</value>
+  </data>
+  <data name="IssueStatus_Invalid">
+    <value>نامعتبر</value>
+  </data>
+  <data name="IssueStatus_Finish">
+    <value>پایان یافته</value>
+  </data>
+  <data name="RegisterMember_Answer" xml:space="preserve">
+    <value>پرسش امنیتی</value>
+  </data>
+  <data name="RegisterMember_Question" xml:space="preserve">
+    <value>پاسخ امنیتی</value>
+  </data>
+  <data name="RegisterMember_UserName" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="RegisterMember_Email" xml:space="preserve">
+    <value>ایمیل</value>
+  </data>
+  <data name="RegisterMember_ConfirmPassword" xml:space="preserve">
+    <value>تکرار کلمه عبور</value>
+  </data>
+  <data name="RegisterMember_Password" xml:space="preserve">
+    <value>رمز عبور</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>اطلاعات شخصی</value>
+  </data>
+  <data name="TenderApplication_Name">
+    <value>نام شرکت</value>
+  </data>
+  <data name="TenderApplication_RegistrationNo">
+    <value>شماره ثبت</value>
+  </data>
+  <data name="TenderApplication_EconomicCode">
+    <value>کد اقتصادی</value>
+  </data>
+  <data name="TenderApplication_Address">
+    <value>آدرس</value>
+  </data>
+  <data name="TenderApplication_ActivityDomain">
+    <value>زمینه فعالیت</value>
+  </data>
+  <data name="TenderApplication_RasmiDoc">
+    <value>تصویر روزنامه رسمی تاسیس و روزنامه رسمی آخرین تغییرات</value>
+  </data>
+  <data name="TenderApplication_TaxPayersRegistrationDoc">
+    <value>تصویر گواهی ثبت‌ نام مؤدیان مالیاتی</value>
+  </data>
+  <data name="TenderApplication_SHCIRatingDoc">
+    <value>تصویر رتبه‌بندی شورای عالی انفورماتیک کشور </value>
+  </data>
+  <data name="TenderApplication_ISO9001Doc">
+    <value>تصویر گواهینامه‌ی ایزو 9001</value>
+  </data>
+  <data name="TenderApplication_FollowupCode" xml:space="preserve">
+    <value>کد رهگیری</value>
+  </data>
+  <data name="Tender_TenderType">
+    <value>نوع</value>
+  </data>
+  <data name="Tender_TenderNo">
+    <value>شماره ارجاع</value>
+  </data>
+  <data name="Tender_TenderStep">
+    <value>مراحل برگزاری</value>
+  </data>
+  <data name="Tender_TenderText">
+    <value>متن مناقصه</value>
+  </data>
+  <data name="Tender_TenderApplications">
+    <value>متقاضیان شرکت در مناقصه</value>
+  </data>
+  <data name="TenderType_Tender">
+    <value>مناقصه</value>
+  </data>
+  <data name="TenderType_Bid">
+    <value>مزایده</value>
+  </data>
+  <data name="TenderType_Call">
+    <value>فراخوان</value>
+  </data>
+  <data name="TenderStep_OneStep">
+    <value>یک مرحله ای</value>
+  </data>
+  <data name="TenderStep_TwoStep">
+    <value>دو مرحله ای</value>
+  </data>
+  <data name="Tender_ExpirationDate">
+    <value>مهلت تسلیم پیشنهاد</value>
+  </data>
+  <data name="Tender_Active">
+    <value>فعال</value>
+  </data>
+  <data name="Tender_Title">
+    <value>موضوع</value>
+  </data>
+  <data name="Address_Email">
+    <value>ایمیل</value>
+  </data>
+  <data name="CompanyRegistrationNo">
+    <value>شماره ثبت شرکت</value>
+  </data>
+  <data name="ApplicantSalesShopType_Sales">
+    <value>
+      متقاضیان اخذ عاملیت مجاز فروش
+    </value>
+  </data>
+  <data name="ApplicantSalesShopType_Shop">
+    <value>
+      متقاضیان تاسیس فروشگاه مشارکتی
+    </value>
+  </data>
+  <data name="ApplicantSalesShop_ApplicantSalesShopType" >
+    <value>نوع اعلام تقاضا</value>
+  </data>
+  <data name="ApplicantSalesShop_Name" >
+    <value>نام فروشگاه/شرکت</value>
+  </data>
+  <data name="ApplicantSalesShop_Ownership" >
+    <value>مالکیت</value>
+  </data>
+  <data name="Ownership_Leased" >
+    <value>استیجاری</value>
+  </data>
+  <data name="Ownership_Owner" >
+    <value>مالک</value>
+  </data>
+  <data name="ApplicantSalesShop_InstallationPanel" >
+    <value>نصب تابلو کمپانی نام</value>
+  </data>
+  <data name="InstallationPanel_Permitted" >
+    <value>بلامانع است</value>
+  </data>
+  <data name="InstallationPanel_NotFeasible" >
+    <value>مقدور نیست</value>
+  </data>
+  <data name="ApplicantSalesShop_ShopArea" >
+    <value>متراژ فروشگاه</value>
+  </data>
+  <data name="ApplicantSalesShop_PanelArea" >
+    <value>متراژ تابلو</value>
+  </data>
+  <data name="ApplicantSalesShop_LicenseDate" >
+    <value>تاریخ جواز کسب</value>
+  </data>
+  <data name="ApplicantSalesShop_LicenseType" >
+    <value>نوع جواز کسب</value>
+  </data>
+  <data name="ApplicantSalesShop_OfficeNo" >
+    <value>در صورت داشتن جواز پیشخوان کد دفتر خود را ذکر نمایید</value>
+  </data>
+</root>

@@ -1,0 +1,112 @@
+﻿@using Cedar.WebPortal.Domain
+@using Cedar.WebPortal.Domain.Resources
+@using Cedar.WebPortal.WebMVC4.Controllers
+@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.WebMVC4.Resources
+@using Cedar.WebPortal.WebMVC4.ViewModel
+@model GalleryViewModel
+@{
+    ViewBag.Title = Html.ResourceFor("Edit");
+}
+<h2>
+    @Html.ResourceFor("Edit")</h2>
+<style>
+    .editor-label, .editor-field
+    {
+        float: none;
+    }
+
+    div.inline { display: inline; }
+</style>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"> </script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"> </script>
+<script src="@Url.Content("~/Scripts/ckeditor/ckeditor_basic.js")" type="text/javascript"> </script>
+<script type="text/javascript">
+    $().ready(function() {
+        CKEDITOR.replace('Contents');
+    });
+    function deleteFile(id, ctrl) {
+        var aurl = "/Gallery/DeleteUpload?galleryId=" + $("#GalleryId").val() + "&attachmentId=";
+        var result = $.ajax({
+            type: "GET",
+            url: aurl + id,
+            async: false
+        }).responseText;
+        if (result) {
+            alert('فایل حذف شد');
+            $("div#" + id).remove();
+            
+        }
+    }
+</script>
+@using (Html.BeginForm("Edit", "Gallery", FormMethod.Post, new {enctype = "multipart/form-data"}))
+{
+    @Html.HiddenFor(o => o.GalleryId)
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>@Html.ResourceFor(o => o)</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Title)
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PublishDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PublishDate)
+            @Html.ValidationMessageFor(model => model.PublishDate)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Code)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Code)
+            @Html.ValidationMessageFor(model => model.Code)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Contents)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Contents, new {cols = 80, rows = 10})
+            @Html.ValidationMessageFor(model => model.Contents)
+        </div>
+        <div class="editor-label">
+            @Html.Display(Model.Attachments.Count.ToString())
+        </div>
+        @*<div>
+            @foreach (Attachment attachment in Model.Attachments)
+            {
+                <div class="inline" id="@attachment.AttachmentId">
+                    @Html.Attachment(attachment)
+                        <a href="javascript:void(0)" class="linkDelete" onClick='   deleteFile("@attachment.AttachmentId");' >
+                    حذف</a>
+                    @Html.Raw("&nbsp;&nbsp;")
+                <input type="hidden" name="AttachmentId" id="AttachmentId" value="@attachment.AttachmentId"/>
+                </div>
+            }
+        </div>*@
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Published)
+        </div>
+        <div class="editor-field">
+            @Html.CheckBoxFor(model => model.Published)
+            @Html.ValidationMessageFor(model => model.Contents)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AppearInHomePage)
+        </div>
+        <div class="editor-field">
+            @Html.CheckBoxFor(model => model.AppearInHomePage)
+            @Html.ValidationMessageFor(model => model.AppearInHomePage)
+        </div>
+        <p>
+            <input type="submit" value="@Html.ResourceFor("Edit")" />
+        </p>
+    </fieldset>
+}
+<div>
+    @Html.ActionLink(Html.ResourceFor(typeof(CommandResource),"Gallery_List"), "ListPagination")
+</div>

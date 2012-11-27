@@ -1,0 +1,38 @@
+﻿@using Cedar.WebPortal.WebMVC4.Controllers
+@using Cedar.WebPortal.WebMVC4.Helpers
+@model Cedar.WebPortal.Domain.Message
+@{
+    ViewBag.Title = "Edit";
+}
+<h2>
+    Edit</h2>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Message</legend>
+        @Html.Partial("_CreateOrEdit", Model)
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CaptureDate)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.CaptureDate, new { @class = "datepicker" })
+            @Html.ValidationMessageFor(model => model.CaptureDate)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AnswerContents)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.AnswerContents)
+            @Html.ValidationMessageFor(model => model.AnswerContents)
+        </div>
+        @Html.HiddenFor(model => model.MessageId)
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+<div>
+    @Html.ActionLink((MessageController o)=> o.List())
+</div>

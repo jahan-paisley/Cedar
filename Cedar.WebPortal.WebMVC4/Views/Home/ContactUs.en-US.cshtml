@@ -1,0 +1,120 @@
+﻿@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.WebMVC4.Controllers
+@inherits System.Web.Mvc.WebViewPage
+@{
+    
+    ViewBag.Title = Html.ResourceFor((MessageController o) => o.Create());
+}
+<div>
+    <h2>
+        Contact Information</h2>
+    <p>
+        Click if you want to send us a message
+        @Html.ActionLink((MessageController o)=> o.Create()) 
+        
+    </p>
+    <dl>
+        <dt><strong>Compnay Tel No:</strong> </dt>
+        <dd>
+            <br />
+        </dd>
+        <dd>
+            22026749</dd>
+        <dd>
+            22047085
+        </dd>
+        <dd>
+            22047058
+        </dd>
+    </dl>
+    <dl>
+        <dt><strong>Fax:</strong> </dt>
+        <dd>
+            26219975
+        </dd>
+    </dl>
+    <dl>
+        <dt><strong>Address:</strong></dt>
+        <dd>
+            No. 5, West Armaghan st., Vali-Asr Ave., Tehran, Iran.
+            <br />
+            <br />
+            
+            <iframe width="425" height="400" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Tamin+Telecom&amp;aq=&amp;sll=35.774089,51.418494&amp;sspn=0.001347,0.00284&amp;g=Tehran&amp;ie=UTF8&amp;ll=35.777053,51.418376&amp;spn=0.013927,0.018239&amp;z=15&amp;output=embed">
+            </iframe>
+            <br />
+            <small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Tamin+Telecom&amp;aq=&amp;sll=35.774089,51.418494&amp;sspn=0.001347,0.00284&amp;g=Tehran&amp;ie=UTF8&amp;ll=35.777053,51.418376&amp;spn=0.013927,0.018239&amp;z=15"
+                style="color: #0000FF; text-align: left">View Larger Map</a></small></dd>
+    </dl>
+    <dl>
+        <dt><strong>eMail:</strong> </dt>
+        <dd>
+            info@Cedar.ir
+        </dd>
+    </dl>
+    <strong>Call for cooperation</strong>
+    <br />
+    <p>
+       Corresponding Department's Contact Points
+    </p>
+    <table border="0" cellpadding="0" cellspacing="12px" align="center">
+        <tr>
+            <td>
+                <strong>Department</strong>
+            </td>
+            <td>
+                <strong>eMail</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+             Technical Services and Equipments
+            </td>
+            <td>
+                Technical@Cedar.ir
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Marketing and Sales
+            </td>
+            <td>
+                Marketing@Cedar.ir
+            </td>
+        </tr>
+        <tr>
+            <td>
+                VAS, Research and Innovations
+            </td>
+            <td>
+                VAS@Cedar.ir
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Brand and Communications
+            </td>
+            <td>
+                brandcom@Cedar.ir
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Consulting, HR, Processes
+            </td>
+            <td>
+                consultancy@Cedar.ir
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Other
+            </td>
+            <td>
+                info@Cedar.ir
+            </td>
+        </tr>
+    </table>
+    <br />
+</div>

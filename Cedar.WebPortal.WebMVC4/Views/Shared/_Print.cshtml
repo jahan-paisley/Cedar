@@ -1,0 +1,35 @@
+﻿@using Microsoft.Web.Mvc
+@using Cedar.WebPortal.Common
+@using Cedar.WebPortal.WebMVC4.Resources
+@using Cedar.WebPortal.WebMVC4.Controllers
+@using Cedar.WebPortal.WebMVC4.Helpers
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<head profile="http://www.rightel.ir">
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow,all" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="distribution" content="Global" />
+    <meta name="google-site-verification" content="XADrB9znQx73SHEur6S49jeZzrVWXVuLEJck4t6zAQM" />
+    <title>
+        @if (ViewBag.Title == @Html.ResourceFor("Home"))
+        {
+            @Html.ResourceFor("Cedar")
+        }
+        else
+        {
+            @Html.Raw(Html.ResourceFor("Cedar") + " | " + ViewBag.Title);
+        }
+    </title>
+    @Html.Css("~/Content/CSS/public/rightel-base.css")
+    @Html.Css("~/Content/CSS/public/rightel-form.css")
+    @Html.Css("~/Content/CSS/public/rightel-print.css")
+    <body>
+        <table>
+            @RenderBody()
+        </table>
+    </body>
+</html>

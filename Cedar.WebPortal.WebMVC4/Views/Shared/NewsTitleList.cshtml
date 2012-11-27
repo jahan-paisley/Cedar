@@ -1,0 +1,14 @@
+﻿
+@using Cedar.WebPortal.Domain
+@using Cedar.WebPortal.WebMVC4.Helpers
+@model IEnumerable<News>
+@foreach (News item in Model.OrderByDescending(o=>o.PublishDate))
+{
+    <li>
+        <span style="text-align: right;direction: ltr;">
+           
+            @ViewHelper.ConverDateToPeisianDate(@item.PublishDate)
+        </span>
+        @Html.ActionLink(@item.Title, "Details", "News", new { id = item.NewsId }, new {@class="links", target = "_blank" })
+        </li>
+}

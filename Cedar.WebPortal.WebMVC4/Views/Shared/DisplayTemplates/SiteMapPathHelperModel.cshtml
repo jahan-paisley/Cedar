@@ -1,0 +1,44 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapPathHelperModel
+@using System.Web.Mvc.Html
+@using System.Linq
+@using MvcSiteMapProvider.Web.Html.Models
+@using Cedar.WebPortal.WebMVC4.Helpers
+<ul>
+    <li>
+        <a href="@Url.Action("Index", "Home")" >@Html.ResourceFor("Home")</a>
+    </li>
+    <li>&laquo;</li>
+    @foreach (var node in Model.Nodes.Where(node => node.Controller != "Home" || node.Action != "Index"))
+    {
+        <li>
+
+            @if (node.Action == "#")
+            {
+                if (node.TargetFrame != string.Empty)
+                {
+                <a  href="http://@node.TargetFrame">@node.Title</a>
+                }
+                else
+                {
+                <a href="#">@node.Title</a>
+                                        
+                }
+            }
+            else if (node.RouteValues.ContainsKey("routevalues"))
+            { 
+                <a href="@Url.Action(node.Action, node.Controller, new { id = new Guid(@node.RouteValues["routevalues"].ToString()) })">@node.Title</a>
+                                        
+            }
+            else
+            {
+                <a href="@Url.Action(node.Action, node.Controller)">@node.Title</a>
+            }
+
+        </li>
+            if (node != Model.Last())
+            {
+        <li>&laquo;</li>
+            }
+
+    }
+</ul>

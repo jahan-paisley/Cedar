@@ -1,0 +1,20 @@
+﻿<#@ template debug="true" hostspecific="false" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+
+
+<# var lines = File.ReadAllLines("D:\\Workspace\\CedarMain\\Cedar.WebPortal.Main\\Cedar.WebPortal.Domain\\Entities\\TenderApplication\\Tender.cs");
+	foreach(var line in lines)
+	{
+		if(Regex.IsMatch(line , @"{ get; set; }")){
+			var match = Regex.Match(line, @"get;");#>
+			[Display(ResourceType = typeof(EntityResource), Name = "Tender_")]
+			<#= line+"\n" + match.Groups[1].Value #> 
+	<#}#>
+<#}#>
+
+ 
+		 

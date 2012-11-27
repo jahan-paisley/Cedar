@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema 
+		
+		Version 2.0
+		
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+		
+		Example:
+		
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">2.0</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+				<value>[base64 mime encoded serialized .NET Framework object]</value>
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+				<value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+				<comment>This is a comment</comment>
+		</data>
+								
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+		
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+		
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+		
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+		
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+						: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+						: and then encoded with base64 encoding.
+		
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+						: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+						: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+						: using a System.ComponentModel.TypeConverter
+						: and then encoded with base64 encoding.
+		-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Register" xml:space="preserve">
+		<value>Register</value>
+	</data>
+  <data name="Edit" xml:space="preserve">
+		<value>Edit</value>
+	</data>
+  <data name="Intro" xml:space="preserve">
+		<value>Introduction</value>
+	</data>
+  <data name="Cedar" xml:space="preserve">
+		<value>Cedar</value>
+	</data>
+  <data name="Home" xml:space="preserve">
+		<value>Home</value>
+	</data>
+  <data name="Home_AboutUs" xml:space="preserve">
+		<value>About Us</value>
+	</data>
+  <data name="News_Headlines" xml:space="preserve">
+		<value>News Headlines</value>
+	</data>
+  <data name="Details" xml:space="preserve">
+		<value>Details</value>
+	</data>
+  <data name="LogOn" xml:space="preserve">
+		<value>Log On</value>
+	</data>
+  <data name="LogOff" xml:space="preserve">
+		<value>Log Off</value>
+	</data>
+  <data name="CedarNews" xml:space="preserve">
+		<value>Tamin Telecom News</value>
+	</data>
+  <data name="Create" xml:space="preserve">
+		<value>Create</value>
+	</data>
+  <data name="LogonErrorMessage" xml:space="preserve">
+		<value>Login was unsuccessful. Please correct the errors and try again.</value>
+	</data>
+  <data name="EnterUsernamePasswordMessage" xml:space="preserve">
+		<value>Please enter your username and password.</value>
+	</data>
+  <data name="MembershipArea" xml:space="preserve">
+		<value>Membership Area</value>
+	</data>
+  <data name="Delete" xml:space="preserve">
+		<value>Delete</value>
+	</data>
+  <data name="List" xml:space="preserve">
+		<value>List</value>
+	</data>
+  <data name="ReturnToList" xml:space="preserve">
+		<value>Return To List</value>
+	</data>
+
+  <data name="Submit" xml:space="preserve">
+		<value>Submit</value>
+	</data>
+  <data name="Accessible_Persmissions" xml:space="preserve">
+		<value>Accessible Persmissions</value>
+	</data>
+  <data name="Wheather" xml:space="preserve">
+		<value>Whether</value>
+	</data>
+  <data name="Reports" xml:space="preserve">
+		<value>Reports</value>
+	</data>
+  <data name="Activities" xml:space="preserve">
+		<value>Activities</value>
+	</data>
+  <data name="Remove" xml:space="preserve">
+		<value>Remove</value>
+	</data>
+  <data name="Add" xml:space="preserve">
+		<value>Add</value>
+	</data>
+  <data name="Save" xml:space="preserve">
+		<value>Save</value>
+	</data>
+  <data name="Applicant_Success_Message" xml:space="preserve">
+		<value>Your registeration is done</value>
+	</data>
+  <data name="Applicant_Dialog_Message" xml:space="preserve">
+		<value>Notice</value>
+	</data>
+  <data name="Distributor_Dialog_Message" xml:space="preserve">
+		<value>Notice</value>
+	</data>
+  <data name="Company_ContactPointHeaderDesc" xml:space="preserve">
+		<value>Company Contact Point Details</value>
+	</data>
+  <data name="Company_FileUploadDescription" xml:space="preserve">
+		<value>You may upload the Documents Related to Equipment Production Section From Here</value>
+	</data>
+  <data name="Company" xml:space="preserve">
+		<value>Company Details</value>
+	</data>
+  <data name="Company_ProposalForProduct" xml:space="preserve">
+		<value>ProPosal For Producting New Products</value>
+	</data>
+  <data name="EquipProductInfo_Customers" xml:space="preserve">
+		<value>Major Customers</value>
+	</data>
+  <data name="Company_CurrentProjects" xml:space="preserve">
+		<value>Current and Relevant Projects</value>
+	</data>
+  <data name="SelectOne" xml:space="preserve">
+		<value>...</value>
+	</data>
+  <data name="Company_ProductList">
+    <value>Products List</value>
+  </data>
+  <data name="Equipment_ReadMeFile">
+    <value>Technical Documents</value>
+  </data>
+  <data name="Equipment_Code">
+    <value>Equipment Code</value>
+  </data>
+  <data name="Equipment_Name">
+    <value>Equipment Name</value>
+  </data>
+  <data name="Applicant_IntroMessage">
+    <value>
+      <![CDATA[
+			<p>
+			In order to run the 3rd Telecom Operator, 
+			We need eligble persons based on this priorities:
+			<ul>
+			Qualification :
+			<li>
+			1. Men with military obligation service pass 
+				 or Exempt Card(not medical )
+			</li><li>
+			2. Mental and Phydical Health
+			</li><li>
+			3- No Criminal Record
+			</li>
+			</p>
+			]]>
+    </value>
+  </data>
+  <data name="News_No">
+    <value>No:</value>
+  </data>
+  <data name="News_Next">
+    <value>Next:</value>
+  </data>
+  <data name="News_Previous">
+    <value>Previous:</value>
+  </data>
+  <data name="Distributor_Success_Message" xml:space="preserve">
+		<value>Your registeration is done</value>
+	</data>
+  <data name="FAQ">
+    <value>FAQ</value>
+  </data>
+  <data name="Distribution_FirstMessage">
+    <value>Please complete the following information on the accuracy and integrity.</value>
+  </data>
+  <data name="Distribution_AttachmentMessage">
+    <value>
+      Upload file link related with this section there is exist on the next page.
+    </value>
+  </data>
+  <data name="Distribution_RegisterTitle">
+    <value>
+      Distributors registration
+    </value>
+  </data>
+  <data name="Distribution_SectionA">
+    <value>
+      A. Job Applicant Profile
+    </value>
+  </data>
+  <data name="Distribution_SectionB">
+    <value>
+      B. Corporate Profile
+    </value>
+  </data>
+  <data name="Distribution_SectionC">
+    <value>
+      C. Job Details
+    </value>
+  </data>
+  <data name="Distribution_SectionD">
+    <value>
+      D. Financial
+    </value>
+  </data>
+  <data name="Distribution_SectionE">
+    <value>
+      E. Complete list of local distributors and retail distribution network
+    </value>
+  </data>
+  <data name="Distribution_SectionF">
+    <value>
+      F. Contributions Comment
+    </value>
+  </data>
+  <data name="Distribution_SectionG">
+    <value>
+      G. Applicant confirmation of this form
+    </value>
+  </data>
+  <data name="Distribution_DownloadExcel">
+    <value>
+      Please download the file , fill it  and attached it on next page
+    </value>
+  </data>
+  <data name="Distribution_ContentLinkDownloadExcel">
+    <value>Download Me...</value>
+  </data>
+  <data name="Distribution_Confirmation">
+    <value>
+      <![CDATA[
+			<p>Terms of Use</p>
+			<ul>
+				<li>Item 1</li>
+			</ul>
+			]]>
+    </value>
+  </data>
+  <data name="Distribution_Facility">
+    <value>Distribution Facility</value>
+  </data>
+  <data name="FileAttach">
+    <value>File Attachments</value>
+  </data>
+  <data name="CreateAndNextStep" xml:space="preserve">
+		<value>Next Step</value>
+	</data>
+  <data name="Distribution_BestSellerQuestuion">
+    <value>Best Sales Volume In Last Year</value>
+  </data>
+  <data name="Applicant_Part1" xml:space="preserve">
+		<value>Part 1</value>
+	</data>
+  <data name="Applicant_Part2" xml:space="preserve">
+		<value>Part 2</value>
+	</data>
+  <data name="Applicant_Part3" xml:space="preserve">
+		<value>Part 3</value>
+	</data>
+  <data name="Applicant_Part4" xml:space="preserve">
+		<value>Part 4</value>
+	</data>
+  <data name="Actions">
+    <value>Actions</value>
+  </data>
+  <data name="Upload">
+    <value>Upload</value>
+  </data>
+  <data name="UploadMessage">
+    <value>Please wait while your file is being uploaded</value>
+  </data>
+  <data name="Next">
+    <value>Next</value>
+  </data>
+  <data name="Previous">
+    <value>Previous</value>
+  </data>
+  <data name="CopyRight">
+    <value>Copyright © 2011 Tamin Telecom. All rights reserved</value>
+  </data>
+  <data name="Home_Tender" xml:space="preserve">
+		<value>Tender</value>
+	</data>
+  <data name="Home_FAQ" xml:space="preserve">
+		<value>FAQ</value>
+	</data>
+  <data name="Home_VAS" xml:space="preserve">
+		<value>3G</value>
+	</data>
+  <data name="Home_ContactUs" xml:space="preserve">
+		<value>Contact Us</value>
+	</data>
+  <data name="Distributor_FollowUp_Message">
+    <value>Please Note Your Followup Code </value>
+  </data>
+  <data name="HowToAddListBoxMessage" xml:space="preserve">
+		<value>Please hold ctrl an click on the text</value>
+	</data>
+  <data name="AttachmentUploadMessage" xml:space="preserve">
+		<value>  <![CDATA[
+		<p>
+		Please send files less than 20 MB.
+		The old file will be replaced by new one.
+		</p>
+	]]>
+		</value></data>
+  <data name="True">
+    <value>Yes</value>
+  </data>
+  <data name="False">
+    <value>No</value>
+  </data>
+  <data name="First">
+    <value>First</value>
+  </data>
+  <data name="Last">
+    <value>Last</value>
+  </data>
+  <data name="Home_PictureGallery" xml:space="preserve">
+		<value>Picture Gallery</value>
+	</data>
+  <data name="Home_PictureGallery_Message" xml:space="preserve">
+		<value>   <![CDATA[
+			<p>
+		Click in the image and see that 
+		</p>
+		]]>
+		</value>
+	</data>
+  <data name="Version" xml:space="preserve">
+    <value>Test version</value>
+  </data>
+  <data name="Error_Message">
+    <value>
+      <![CDATA[
+     <h2>  Our apologies…</h2>
+<p>The page you requested cannot be displayed</p>
+<div>
+<ul >
+<li>If you typed the address, make sure the spelling is correct.<br />
+Note: Most addresses are also case sensitive.</li>
+<li>If you clicked on a link, there may be a problem with that link. You can use "Get assistance" below.</li>
+<li>For information on Cedar offerings, start from the <a href="http://www.Cedar.ir/">Cedar homepage</a>.</li>
+</ul>
+</div>
+</div>
+<div>
+<h2>Get assistance</h2></div>
+<div >
+<p>This option lets you send an information request and tell us about a broken link. You will receive an e-mail from us to help you find what you need.</p>
+<a href="../Message/Create">
+Continue
+</a>
+</div>
+   ]]>
+    </value>
+  </data>
+  <data name="Applicant_EnglishCV" xml:space="preserve">
+    <value>Sending a EnglishCV is required</value>
+  </data>
+  <data name="Message_Success" xml:space="preserve">
+    <value>The operation was successful</value>
+  </data>
+  <data name="CompanyArea" xml:space="preserve">
+    <value>Company Area</value>
+  </data>
+  <data name="More">
+    <value>More...</value>
+  </data>
+  <data name="Intro_3G">
+    <value>
+      <![CDATA[
+      <strong >3G Mobile</strong><p>
+        <br />
+       3G or 3rd generation mobile telecommunications is a generation of standards for mobile phones and mobile telecommunication services fulfilling the International Mobile Telecommunications-2000 (IMT-2000) specifications by the International Telecommunication Union.
+      </p> ]]>
+    </value>
+  </data>
+  <data name="Prospect_FirstMessage">
+    <value>
+      <![CDATA[<p>Location of system message</p> ]]>
+    </value>
+  </data>
+  <data name="Prospect_RegisterTitle">
+    <value>
+      Prospect preregistration
+    </value>
+  </data>
+  <data name="Search">
+    <value>Search</value>
+  </data>
+  <data name="Search-Option">
+    <value>Search Option</value>
+  </data>
+  <data name="SearchJobPosition">
+    <value>
+      Search for job position
+    </value>
+  </data>
+  <data name="Select" xml:space="preserve">
+		<value>Select</value>
+	</data>
+  <data name="NoJobPosition">
+    <value>He does not select any job position</value>
+  </data>
+  <data name="PageSize">
+    <value>Page Size</value>
+  </data>
+  <data name="Home_Products" xml:space="preserve">
+		<value>Product</value>
+	</data>
+  <data name="Ticket_Success_Message" xml:space="preserve">
+		<value>Done</value>
+	</data>
+  <data name="Ticket_Dialog_Message" xml:space="preserve">
+		<value>Attention</value>
+	</data>
+  <data name="RegisterMember" xml:space="preserve">
+		<value>Registration at rightel </value>
+	</data>
+  <data name="Alborz">
+    <value xml:space="preserve">Alborz</value>
+  </data>
+  <data name="Tehran">
+    <value xml:space="preserve">Tehran</value>
+  </data>
+  <data name="TenderApplication" xml:space="preserve">
+		<value>Tender Application</value>
+	</data>
+  <data name="TenderApplication_Subject">
+    <value xml:space="preserve">ثبت تقاضای مناقصه</value>
+  </data>
+  <data name="TenderApplication_Body">
+    <value xml:space="preserve"> <![CDATA[
+    <html>
+<head>
+</head>
+<body dir="rtl" style="font-family: Tahoma;color:black; font-size: x-small" bgcolor="white" text="#000000">
+    <div>
+        <p dir="RTL" style="text-align: right; direction: rtl;">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus';">ثبت تقاضای
+                مناقصه شماره {0}</span> </b><b><span style="font-size: 16.0pt;"
+                    lang="AR-SA"></span></b>
+        </p>
+        <p dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus',Tahoma;"
+                lang="AR-SA">شرکت {1}</span></b><b> <span dir="LTR"
+                    style="font-size: 16.0pt;">
+                    <o:p></o:p>
+                </span></b>
+        </p>
+        <p dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus',Tahoma;"
+                lang="AR-SA">به اطلاع می رساند ثبت نام شما در سایت کمپانی نام انجام شده است. کد رهگیری
+                شما {2} می باشد.</span></b><b><span dir="LTR" style="font-size: 16.0pt;
+                   "><o:p></o:p></span></b></p>
+        <p dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus',Tahoma;"
+                lang="AR-SA">لطفا در کلیه مکاتبات آتی کد رهگیری درج شود.<o:p></o:p></span></b></p>
+        <p dir="RTL" style="text-align: right; direction: rtl; unicode-bidi: embed">
+            <b><span style="font-size: 16.0pt; font-family: 'B Lotus',Tahoma;"
+                lang="AR-SA">اداره کل تدارکات کمپانی نام<o:p></o:p></span></b></p>
+    </div>
+</body>
+</html>
+    ]]>
+    </value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+		<value>IAgree</value>
+	</data>
+  <data name="Tender_Message">
+    <value>
+      <![CDATA[<div>
+<ul >
+<li>
+   Tender Message
+</li>
+</ul>
+</div>
+	 ]]>
+    </value>
+  </data>
+  <data name="ApplicantSalesShop_SectionB">
+    <value>
+    SectionB
+    </value>
+  </data>
+</root>

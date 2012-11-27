@@ -1,0 +1,31 @@
+﻿@using System.Linq.Expressions
+@using Cedar.WebPortal.Domain
+@using Cedar.WebPortal.WebMVC4.Controllers
+@using Cedar.WebPortal.WebMVC4.Helpers
+@model Gallery
+<div id="@Model.GalleryId" style="color: #666666;direction: rtl;font-family: Tahoma,Geneva,sans-serif;font-size: 12px;line-height: 18px;text-align: justify;">
+    <a href="@Url.Action("PictureGallery", "Home", new { id = Model.GalleryId })">
+        @Html.Attachment(Model.Attachments.FirstOrDefault())
+    </a>
+    <br />
+    <div style="vertical-align: text-top;">
+        <strong>
+            @Model.Title
+        </strong>
+        <br />
+        @String.Format("{0:d}", @ViewHelper.ConverDateToPeisianDate(Model.PublishDate))
+        <br />
+        @if (@User.IsInRole("Administrator"))
+        {
+            @Html.ActionLink((GalleryController o) => o.Edit(@Model.GalleryId))
+            @Html.Raw(" ")
+            @Ajax.ActionLink(@Html.ResourceFor("Delete"), "Delete", "Gallery", new { id = @Model.GalleryId },
+                                           new AjaxOptions
+                                           {
+                                               Confirm = "Delete Gallery?",
+                                               HttpMethod = "Post",
+                                               UpdateTargetId = @Model.GalleryId.ToString()
+                                           })
+        }
+    </div>
+</div>

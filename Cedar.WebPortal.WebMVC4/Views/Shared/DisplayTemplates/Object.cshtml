@@ -1,0 +1,83 @@
+﻿@using Cedar.WebPortal.Domain
+@using Cedar.WebPortal.WebMVC4.ViewModel
+@using NHibernate.Event.Default
+@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.Domain.Resources
+@using Cedar.WebPortal.Common
+@functions {
+
+    public string ResourceFor(Enum @enum)
+    {
+        return HtmlHelperExtensionForResources.ResourceFor(typeof(EntityResource), @enum.GetType().Name + "_" + @enum);
+    }
+    public bool ShouldShow(ModelMetadata metadata)
+    {
+        return metadata.ShowForDisplay && /*metadata.ModelType != typeof(EntityState) && !metadata.IsComplexType &&*/   !ViewData.TemplateInfo.Visited(metadata)
+            && !metadata.PropertyName.Contains("Id");
+    }
+    public MvcHtmlString WriteElements()
+    {
+        string htmlString = "";
+        foreach (var prop in this.ViewData.ModelMetadata.Properties.Where(this.ShouldShow))
+        {
+            Guid result;
+            if (prop.Model != null && !Guid.TryParse(prop.Model.ToString(), out result))
+            {
+
+                if (prop.HideSurroundingHtml)
+                {
+                    htmlString += this.Html.Display(prop.PropertyName).ToHtmlString();
+                }
+                else
+                {
+                    if (!String.IsNullOrEmpty(prop.GetDisplayName()))
+                    {
+                        if (!prop.IsComplexType) htmlString += string.Format("<div class='mas'><div class='display-label'>{0}</div>", prop.GetDisplayName());
+                    }
+                    if (prop.Model is Boolean)
+                    {
+                        htmlString += string.Format("<div class='display-field'>{0}</div></div>", this.Html.ResourceFor(prop.Model.ToString()));
+                    }
+                    else if (prop.Model is Enum)
+                         {
+                             string resourceFor = ResourceFor((Enum)(prop.Model));
+                             htmlString += string.Format("<div class='display-field'>{0}</div></div>", resourceFor);
+                    }
+                    else if (prop.Model is DateTime)
+                    {
+
+                        htmlString += string.Format("<div class='display-field'>{0}</div></div>", PersianCalendarUtility.ConvertToPersian(prop.Model));
+                    }
+                    else
+                    {
+                        htmlString += string.Format("<div class='display-field'>{0}</div></div>", this.Html.Display(prop.PropertyName));
+                    }
+                }
+            }
+        }
+        return MvcHtmlString.Create(htmlString);
+    }
+}
+@if (Model == null)
+{ 
+    @Html.Raw(ViewData.ModelMetadata.NullDisplayText)
+}
+else if (ViewData.TemplateInfo.TemplateDepth > 1)
+{
+    if (ViewData.ModelMetadata.Model is Cedar.WebPortal.Domain.Location)
+    {
+        
+    @Html.Raw(((Cedar.WebPortal.Domain.Location)(ViewData.ModelMetadata.Model)).Province)
+        
+    }
+@*  else
+    {
+    <h4>@Html.ResourceFor(typeof(EntityResource), "Distributor_" + this.ViewData.TemplateInfo.HtmlFieldPrefix.Split('.').GetValue(1) + "s")</h4>
+   @Html.Raw(ViewData.ModelMetadata.SimpleDisplayText)
+        
+    }*@
+}
+else
+{
+    @this.WriteElements()
+}

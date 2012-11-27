@@ -1,0 +1,339 @@
+<?xml version="1.0" ?>
+<root>
+  <JobPosition>
+    <JobCode>111051</JobCode>
+    <Title>کارشناس مدیریت پروژه های مخابراتی</Title>
+    <Field>مخابرات، الکترونیک، برق</Field>
+    <Specialty>آشنایی با PMI</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>111052</JobCode>
+    <Title>کارشناس مدیریت پروژه های فناوری اطلاعات</Title>
+    <Field>IT، مهندسی صنایع</Field>
+    <Specialty>آشنایی با PMI</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>111053</JobCode>
+    <Title>کارشناس مدیریت پروژه های بازاریابی و فروش</Title>
+    <Field>مدیریت بازرگانی، MBA</Field>
+    <Specialty>آشنایی با PMI</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>112022</JobCode>
+    <Title>کارشناس ارشد کنترل هزینه پروژه و تخصیص منابع</Title>
+    <Field>حسابداری صنعتی، صنایع</Field>
+    <Specialty>آشنایی با PMI</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>112051</JobCode>
+    <Title>کارشناس تدوین و طراحی متدولوژی مدیریت پروژه</Title>
+    <Field>صنایع،بازرگانی،MBA،IT</Field>
+    <Specialty>آشنایی با PMI، EPM، Sharepoint</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>112053</JobCode>
+    <Title>کارشناس توسعه آموزش</Title>
+    <Field>صنایع،IT،MBA</Field>
+    <Specialty>آشنایی با PMI</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>112054</JobCode>
+    <Title>کارشناس مدیریت اسناد پروژه</Title>
+    <Field>فناوری اطلاعات</Field>
+    <Specialty>آشنایی با PMI</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>151131</JobCode>
+    <Title>رویس امور حقوقی</Title>
+    <Field>حقوق</Field>
+    <Specialty>قراردادها</Specialty>
+    <ExperiencePerYear>7</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>151232</JobCode>
+    <Title>رئیس امور قراردادها</Title>
+    <Field>بازرگانی</Field>
+    <Specialty>قراردادهای بین المللی</Specialty>
+    <ExperiencePerYear>7</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>211052</JobCode>
+    <Title>کارشناس طراحی شبکه مرکزی</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>طراحی سیستم های سوئیچینگ</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>212022</JobCode>
+    <Title>مدیر بهره برداری شبکه</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>کنترل و نگهداری شبکه</Specialty>
+    <ExperiencePerYear>10</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>225025</JobCode>
+    <Title>مدیر تضمین کیفیت</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>کنترل و نظارت شبکه مخابرات</Specialty>
+    <ExperiencePerYear>10</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>251041</JobCode>
+    <Title>کارشناس بهینه سازی</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>طراحی و بهنیه سازی رادیوئی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>262022</JobCode>
+    <Title>مدیر طرح و مهندسی</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>طراحی شبکه مخابرات</Specialty>
+    <ExperiencePerYear>10</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>262152</JobCode>
+    <Title>کارشناس طراحی رادیوئی</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>طراحی سیستم های بی سیم موبایل</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>262153</JobCode>
+    <Title>کارشناس طراحی انتقال</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>طراحی سیستم های بی سیم نقطه به نقطه</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>264052</JobCode>
+    <Title>کارشناس یکپارچه سازی شبکه</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>طراحی و اجرای شبکه های مخابراتی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>270017</JobCode>
+    <Title>مدیر هماهنگی اجرا</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>اجرای شبکه مخابرات</Specialty>
+    <ExperiencePerYear>10</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>273023</JobCode>
+    <Title>رئیس عملیات اجرایی</Title>
+    <Field>مخابرات/الکترونیک</Field>
+    <Specialty>طراحی شبکه مخابرات</Specialty>
+    <ExperiencePerYear>7</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>301151</JobCode>
+    <Title>کارشناس معماری اطلاعات</Title>
+    <Field>نرم افزار</Field>
+    <Specialty>معماری اطلاعات</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>301251</JobCode>
+    <Title>کارشناس سیستم های اطلاعاتی</Title>
+    <Field>نرم افزار</Field>
+    <Specialty>سیستم های اطلاعاتی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>311052</JobCode>
+    <Title>کارشناس سرویس های پشتیبانی عملیات</Title>
+    <Field>نرم افزار/سخت افزار</Field>
+    <Specialty>اپراتوری - پشتیبانی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>313052</JobCode>
+    <Title>کارشناس رومینگ</Title>
+    <Field>نرم افزار</Field>
+    <Specialty>رومینگ - اپراتوری</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>321052</JobCode>
+    <Title>کارشناس سیستم های کسب و کار هوشمند</Title>
+    <Field>BP و سیستمهای هوشمند</Field>
+    <Specialty>BPR</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>322052</JobCode>
+    <Title>کارشناس سیستم های بیلینگ</Title>
+    <Field>نرم افزار مالی</Field>
+    <Specialty>ERP, CRM</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>323251</JobCode>
+    <Title>کارشناس فرایندهای پیمانی</Title>
+    <Field>فرایندها و MIS</Field>
+    <Specialty>یکپارچه سازی فرایندها</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>331151</JobCode>
+    <Title>کارشناس شبکه</Title>
+    <Field>سخت افزار/الکترونیک/شبکه</Field>
+    <Specialty>Cisco, MCSE, Unix, DC</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>331251</JobCode>
+    <Title>کارشناس مرکز داده</Title>
+    <Field>سخت افزار/نرم افزار/شبکه</Field>
+    <Specialty>Cisco, MCSE, Unix, Network</Specialty>
+    <ExperiencePerYear>6</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>332052</JobCode>
+    <Title>کارشناس پشتیبانی Call Center</Title>
+    <Field>نرم افزار/سخت افزار</Field>
+    <Specialty>نرم افزار، پشتیبانی اطلاعات مشتریان</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>341052</JobCode>
+    <Title>کارشناس سیستمهای تحت وب</Title>
+    <Field>نرم افزار</Field>
+    <Specialty>DB, VAS</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>342052</JobCode>
+    <Title>کارشناس داده کاوی</Title>
+    <Field>نرم افزار/سخت افزار</Field>
+    <Specialty>داده کاوی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>343052</JobCode>
+    <Title>کارشناس توسعه نرم افزار</Title>
+    <Field>نرم افزار</Field>
+    <Specialty>طراحی و توسعه نرم افزار</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>510011</JobCode>
+    <Title>مدیر مالی</Title>
+    <Field>مدیریت مالی</Field>
+    <Specialty>امور مالی و حسابداری</Specialty>
+    <ExperiencePerYear>8</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>511052</JobCode>
+    <Title>کارشناس حسابداری</Title>
+    <Field>مدیریت مالی</Field>
+    <Specialty>سیستمهای مالی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>511081</JobCode>
+    <Title>رئیس حسابداری مالی</Title>
+    <Field>حسابداری</Field>
+    <Specialty>مالی</Specialty>
+    <ExperiencePerYear>7</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>512022</JobCode>
+    <Title>رئیس حسابداری صنعتی</Title>
+    <Field>حسابداری</Field>
+    <Specialty>بهای تمام شده</Specialty>
+    <ExperiencePerYear>7</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>513023</JobCode>
+    <Title>رئیس حسابداری عمومی</Title>
+    <Field>حسابداری</Field>
+    <Specialty>مالی</Specialty>
+    <ExperiencePerYear>7</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>520012</JobCode>
+    <Title>مدیر بودجه و کنترل هزینه</Title>
+    <Field>حسابداری</Field>
+    <Specialty>بودجه بندی</Specialty>
+    <ExperiencePerYear>8</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>530013</JobCode>
+    <Title>مدیر تدارکات</Title>
+    <Field>بازرگانی یا MBA</Field>
+    <Specialty>تدارکات</Specialty>
+    <ExperiencePerYear>8</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>531022</JobCode>
+    <Title>رئیس تدارکات خارجی</Title>
+    <Field>بازرگانی</Field>
+    <Specialty>خرید خارجی و آشنا به صنعت</Specialty>
+    <ExperiencePerYear>7</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>610011</JobCode>
+    <Title>مدیر منابع انسانی</Title>
+    <Field>مدیریت/صنایع/MBA</Field>
+    <Specialty>مدیریت منابع انسانی</Specialty>
+    <ExperiencePerYear>8</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>611021</JobCode>
+    <Title>رئیس کارگزینی</Title>
+    <Field>مدیریت/صنایع/MBA</Field>
+    <Specialty>امور اجرایی کارگزینی، حضور و غیاب و ...</Specialty>
+    <ExperiencePerYear>8</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>611053</JobCode>
+    <Title>کارشناس امور اداری</Title>
+    <Field>مدیریت/صنایع/MBA</Field>
+    <Specialty>امور اجرایی، اداری و رفاهی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>612052</JobCode>
+    <Title>کارشناس جذب و استخدام</Title>
+    <Field>مدیریت/صنایع/MBA</Field>
+    <Specialty>جذب و استخدام</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>620012</JobCode>
+    <Title>مدیر توسعه منابع انسانی</Title>
+    <Field>مدیریت/صنایع/MBA</Field>
+    <Specialty>برنامه ریزی و توسعه منابع انسانی</Specialty>
+    <ExperiencePerYear>8</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>620131</JobCode>
+    <Title>کارشناس برنامه ریزی منابع انسانی</Title>
+    <Field>مدیریت/صنایع/MBA</Field>
+    <Specialty>تحلیل و طراحی سیستم های منابع انسانی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>621023</JobCode>
+    <Title>کارشناس بهره وری منابع انسانی</Title>
+    <Field>مدیریت/صنایع/MBA</Field>
+    <Specialty>عارضه یابی و طراحی سیستمهای بهره وری</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+  <JobPosition>
+    <JobCode>622024</JobCode>
+    <Title>کارشناس آموزش</Title>
+    <Field>مدیریت/صنایع/MBA</Field>
+    <Specialty>برنامه ریزی و اجرای دوره های آموزشی</Specialty>
+    <ExperiencePerYear>5</ExperiencePerYear>
+  </JobPosition>
+</root>

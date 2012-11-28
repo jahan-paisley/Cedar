@@ -4,7 +4,7 @@ This is a project that I've crafted through wiring best open source frameworks t
  
 TODOS:
   Few design flaws in Data Access Layer regarding the transation handling through Ninject Interceptors.
-  NHibernate Loquctious Automapping Conventions is not complete
+  NHibernate Loquacious Automapping Conventions is not complete
 WISHLIST:
   Domain Model Objects get ugly due to lots of validation attributes.
   Integrating WCF Services in service layer so that POCO services can be proxified to WCF services

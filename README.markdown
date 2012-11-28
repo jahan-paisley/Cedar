@@ -3,7 +3,7 @@ This is a project that I've crafted through wiring best open source frameworks t
  I will try to keep it up to date and improve it incerementally.
  
 TODOS:
-  *   Few design flaws in Data Access Layer regarding the transation handling through Ninject Interceptors.
+  *   Few design flaws in Data Access Layer regarding the transaction handling through Ninject Interceptors.
   *   NHibernate Loquacious Automapping Conventions is not complete
 
 WISHLIST:

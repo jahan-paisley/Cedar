@@ -1,21 +1,19 @@
-﻿namespace Cedar.WebPortal.Data.Infrastructure
+﻿using System;
+using Cedar.WebPortal.Common;
+using Cedar.WebPortal.Data.Common;
+using Cedar.WebPortal.Domain;
+using NHibernate;
+using Xunit;
+using log4net.Config;
+
+namespace Cedar.WebPortal.Data.Infrastructure
 {
-    using System;
-
-    using NHibernate;
-
-    using Cedar.WebPortal.Common;
-    using Cedar.WebPortal.Data.Common;
-    using Cedar.WebPortal.Domain;
-
-    using Xunit;
-
     public class NHDatabaseFactory : Disposable, IDatabaseFactory
     {
         #region Constants and Fields
 
         private static readonly ISessionFactory sessionFactory = MyAutoMapper.BuildSessionFactory();
-       
+
         private readonly ICedarContext dataContext;
 
         private readonly ISession session;
@@ -26,11 +24,11 @@
 
         public NHDatabaseFactory()
         {
-            this.session = sessionFactory.OpenSession();
-            this.session.BeginTransaction();
+            session = sessionFactory.OpenSession();
+            session.BeginTransaction();
 
-            this.session.FlushMode = FlushMode.Commit;
-            this.dataContext = new NHibernateContext(this.session);
+            session.FlushMode = FlushMode.Commit;
+            dataContext = new NHibernateContext(session);
         }
 
         #endregion
@@ -39,10 +37,7 @@
 
         public ICedarContext CedarContext
         {
-            get
-            {
-                return this.dataContext;
-            }
+            get { return dataContext; }
         }
 
         #endregion
@@ -52,7 +47,7 @@
         [Fact]
         public void Test()
         {
-            log4net.Config.XmlConfigurator.Configure();
+            XmlConfigurator.Configure();
             ISession openSession = sessionFactory.OpenSession();
             //            Applicant applicant = openSession.Query<Applicant>().First();
             var load = openSession.Load<Applicant>(new Guid("97EA408C-EF0B-47BD-8AAC-9F140005ED44"));
@@ -65,9 +60,9 @@
 
         protected override void DisposeCore()
         {
-            if (this.dataContext != null)
+            if (dataContext != null)
             {
-                this.dataContext.Dispose();
+                dataContext.Dispose();
             }
         }
 

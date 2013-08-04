@@ -60,13 +60,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sqlite", "Sqlite", "{70E3F4
 		sqlitedb\UsersInRolesCreateTable.sql = sqlitedb\UsersInRolesCreateTable.sql
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{038787ED-702C-4294-A6DB-F68A8EA1C66E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.WebMVC4", "Cedar.WebPortal.WebMVC4\Cedar.WebPortal.WebMVC4.csproj", "{BF5F18ED-A454-47AF-B3F5-CCCF44BA57A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6C155920-B88E-4BEC-8E39-0B16D10DFE2D}"
 	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.WebMVC4", "Cedar.WebPortal.WebMVC4\Cedar.WebPortal.WebMVC4.csproj", "{BF5F18ED-A454-47AF-B3F5-CCCF44BA57A0}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -219,7 +220,7 @@ Global
 		{C4AF94D2-E5F5-4BE6-9D63-E2B017AAB94F} = {1E78FE05-BEA4-491A-AD24-A3A7E3839049}
 		{70E3F456-7581-427B-9801-B2B313DC21C6} = {1E78FE05-BEA4-491A-AD24-A3A7E3839049}
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal

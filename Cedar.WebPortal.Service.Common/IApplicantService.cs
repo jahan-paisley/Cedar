@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using NPOI.HSSF.Record.Formula.Functions;
-
 namespace Cedar.WebPortal.Service.Common
 {
     using Cedar.WebPortal.Domain;

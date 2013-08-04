@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web.Mvc;
-using MvcContrib.Pagination;
-using MvcContrib.UI.Grid;
-using MvcContrib.Sorting;
 using Cedar.WebPortal.Common;
-using Cedar.WebPortal.Domain;
 using Cedar.WebPortal.Service.Common;
+using MvcContrib.Pagination;
+using MvcContrib.Sorting;
+using MvcContrib.UI.Grid;
 
 namespace Cedar.WebPortal.WebMVC4.ViewModel
 {
@@ -20,8 +18,8 @@ namespace Cedar.WebPortal.WebMVC4.ViewModel
         public string DefaultSortColumn { get; set; }
         public IPagination<T> PagedList { get; private set; }
         public int? Page { get; set; }
-        public int? PageSize { get; set; }  
-        public IServiceBase<T> Service{ get; set; }
+        public int? PageSize { get; set; }
+        public IServiceBase<T> Service { get; set; }
 
         public PagedViewModel<T> AddFilter(Expression<Func<T, bool>> predicate)
         {
@@ -37,10 +35,10 @@ namespace Cedar.WebPortal.WebMVC4.ViewModel
         }
 
         public PagedViewModel<T> AddFilter<TValue>(string keyField, object value, Expression<Func<T, bool>> predicate,
-            IQueryable<TValue> query, string textField)
+                                                   IQueryable<TValue> query, string textField)
         {
             ProcessQuery(value, predicate);
-            var selectList = query.ToSelectList(keyField, textField, value);
+            SelectList selectList = query.ToSelectList(keyField, textField, value);
             ViewData[keyField] = selectList;
             return this;
         }
@@ -53,14 +51,14 @@ namespace Cedar.WebPortal.WebMVC4.ViewModel
             }
 
             PagedList = Query.OrderBy(GridSortOptions.Column, GridSortOptions.Direction)
-                .AsPagination(Page ?? 1, PageSize ?? 10);
+                             .AsPagination(Page ?? 1, PageSize ?? 10);
             return this;
         }
 
         private void ProcessQuery<TValue>(TValue value, Expression<Func<T, bool>> predicate)
         {
             if (value == null) return;
-            if (typeof(TValue) == typeof(string))
+            if (typeof (TValue) == typeof (string))
             {
                 if (string.IsNullOrWhiteSpace(value as string)) return;
             }

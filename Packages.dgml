@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Cedar.WebPortal.WebMVC4" Label="Cedar.WebPortal.WebMVC4" Category="Project" />
+    <Node Id="Antlr 3.4.1.9004" Label="Antlr 3.4.1.9004" Category="Package" />
+    <Node Id="AutoMapper 2.2.1" Label="AutoMapper 2.2.1" Category="Package" />
+    <Node Id="Castle.Core 3.2.0" Label="Castle.Core 3.2.0" Category="Package" />
+    <Node Id="elmah 1.2.2" Label="elmah 1.2.2" Category="Package" />
+    <Node Id="elmah.corelibrary 1.2.2" Label="elmah.corelibrary 1.2.2" Category="Package" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="Glimpse 1.5.0" Label="Glimpse 1.5.0" Category="Package" />
+    <Node Id="jQuery 2.0.3" Label="jQuery 2.0.3" Category="Package" />
+    <Node Id="jQuery.UI.Combined 1.10.3" Label="jQuery.UI.Combined 1.10.3" Category="Package" />
+    <Node Id="jQuery.Validation 1.11.1" Label="jQuery.Validation 1.11.1" Category="Package" />
+    <Node Id="knockoutjs 2.3.0" Label="knockoutjs 2.3.0" Category="Package" />
+    <Node Id="LinFu.DynamicProxy.OfficialRelease 1.0.5" Label="LinFu.DynamicProxy.OfficialRelease 1.0.5" Category="Package" />
+    <Node Id="log4net 2.0.0" Label="log4net 2.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc 4.0.30506.0" Label="Microsoft.AspNet.Mvc 4.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Providers.Core 1.2" Label="Microsoft.AspNet.Providers.Core 1.2" Category="Package" />
+    <Node Id="Microsoft.AspNet.Providers.LocalDB 1.1" Label="Microsoft.AspNet.Providers.LocalDB 1.1" Category="Package" />
+    <Node Id="Microsoft.AspNet.Razor 2.0.30506.0" Label="Microsoft.AspNet.Razor 2.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Web.Optimization 1.1.0" Label="Microsoft.AspNet.Web.Optimization 1.1.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi 4.0.30506.0" Label="Microsoft.AspNet.WebApi 4.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 4.0.30506.0" Label="Microsoft.AspNet.WebApi.Client 4.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Core 4.0.30506.0" Label="Microsoft.AspNet.WebApi.Core 4.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost 4.0.30506.0" Label="Microsoft.AspNet.WebApi.WebHost 4.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages 2.0.30506.0" Label="Microsoft.AspNet.WebPages 2.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Label="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Label="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.Bcl 1.1.3" Label="Microsoft.Bcl 1.1.3" Category="Package" />
+    <Node Id="Microsoft.Bcl.Build 1.0.8" Label="Microsoft.Bcl.Build 1.0.8" Category="Package" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Ajax 2.0.30506.0" Label="Microsoft.jQuery.Unobtrusive.Ajax 2.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Validation 2.0.30506.0" Label="Microsoft.jQuery.Unobtrusive.Validation 2.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.Net.Http 2.2.13" Label="Microsoft.Net.Http 2.2.13" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="MicrosoftWebMvc 2.0" Label="MicrosoftWebMvc 2.0" Category="Package" />
+    <Node Id="Modernizr 2.6.2" Label="Modernizr 2.6.2" Category="Package" />
+    <Node Id="Mvc2Futures 2.0.50217.0" Label="Mvc2Futures 2.0.50217.0" Category="Package" />
+    <Node Id="MvcContrib 2.0.95.0" Label="MvcContrib 2.0.95.0" Category="Package" />
+    <Node Id="MvcSiteMapProvider.MVC4.Core 4.0.5" Label="MvcSiteMapProvider.MVC4.Core 4.0.5" Category="Package" />
+    <Node Id="Newtonsoft.Json 5.0.6" Label="Newtonsoft.Json 5.0.6" Category="Package" />
+    <Node Id="Ninject.Extensions.Interception 3.0.0.8" Label="Ninject.Extensions.Interception 3.0.0.8" Category="Package" />
+    <Node Id="Ninject.Extensions.Interception.DynamicProxy 3.0.0.8" Label="Ninject.Extensions.Interception.DynamicProxy 3.0.0.8" Category="Package" />
+    <Node Id="Ninject.Extensions.Logging 3.0.1.0" Label="Ninject.Extensions.Logging 3.0.1.0" Category="Package" />
+    <Node Id="Ninject.Extensions.Logging.nlog 3.0.1.0" Label="Ninject.Extensions.Logging.nlog 3.0.1.0" Category="Package" />
+    <Node Id="NLog 2.0.1.2" Label="NLog 2.0.1.2" Category="Package" />
+    <Node Id="System.Json 4.0.20126.16343" Label="System.Json 4.0.20126.16343" Category="Package" />
+    <Node Id="WebActivator 1.5.1" Label="WebActivator 1.5.1" Category="Package" />
+    <Node Id="WebActivatorEx 2.0.2" Label="WebActivatorEx 2.0.2" Category="Package" />
+    <Node Id="WebGrease 1.5.2" Label="WebGrease 1.5.2" Category="Package" />
+    <Node Id="WebMatrix.WebData 2.0.20710.0" Label="WebMatrix.WebData 2.0.20710.0" Category="Package" />
+    <Node Id="Cedar.WebPortal.Service.Test" Label="Cedar.WebPortal.Service.Test" Category="Project" />
+    <Node Id="Moq 4.0.10827" Label="Moq 4.0.10827" Category="Package" />
+    <Node Id="Portable.Ninject 3.0.7" Label="Portable.Ninject 3.0.7" Category="Package" />
+    <Node Id="Ninject.Extensions.Interception 3.0.0.8" Label="Ninject.Extensions.Interception 3.0.0.8" Category="Package" />
+    <Node Id="NPOI 1.2.5" Label="NPOI 1.2.5" Category="Package" />
+    <Node Id="xunit 1.9.1" Label="xunit 1.9.1" Category="Package" />
+    <Node Id="Cedar.WebPortal.Integration.Test" Label="Cedar.WebPortal.Integration.Test" Category="Project" />
+    <Node Id="AutoMapper 2.2.1" Label="AutoMapper 2.2.1" Category="Package" />
+    <Node Id="Portable.Ninject 3.0.7" Label="Portable.Ninject 3.0.7" Category="Package" />
+    <Node Id="xunit 1.9.1" Label="xunit 1.9.1" Category="Package" />
+    <Node Id="Cedar.WebPortal.Data" Label="Cedar.WebPortal.Data" Category="Project" />
+    <Node Id="Castle.Core 3.2.0" Label="Castle.Core 3.2.0" Category="Package" />
+    <Node Id="Iesi.Collections 3.2.0.4000" Label="Iesi.Collections 3.2.0.4000" Category="Package" />
+    <Node Id="LinFu.DynamicProxy.OfficialRelease 1.0.5" Label="LinFu.DynamicProxy.OfficialRelease 1.0.5" Category="Package" />
+    <Node Id="log4net 2.0.0" Label="log4net 2.0.0" Category="Package" />
+    <Node Id="NHibernate 3.3.3.4000" Label="NHibernate 3.3.3.4000" Category="Package" />
+    <Node Id="Portable.Ninject 3.0.7" Label="Portable.Ninject 3.0.7" Category="Package" />
+    <Node Id="SQLitex64 1.0.66" Label="SQLitex64 1.0.66" Category="Package" />
+    <Node Id="xunit 1.9.1" Label="xunit 1.9.1" Category="Package" />
+    <Node Id="Cedar.WebPortal.Data.Test" Label="Cedar.WebPortal.Data.Test" Category="Project" />
+    <Node Id="Iesi.Collections 3.2.0.4000" Label="Iesi.Collections 3.2.0.4000" Category="Package" />
+    <Node Id="NHibernate 3.3.3.4000" Label="NHibernate 3.3.3.4000" Category="Package" />
+    <Node Id="NUnit 2.6.2" Label="NUnit 2.6.2" Category="Package" />
+    <Node Id="SQLitex64 1.0.66" Label="SQLitex64 1.0.66" Category="Package" />
+    <Node Id="xunit 1.9.1" Label="xunit 1.9.1" Category="Package" />
+    <Node Id="Cedar.WebPortal.Configuration" Label="Cedar.WebPortal.Configuration" Category="Project" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Label="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Label="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="Newtonsoft.Json 5.0.6" Label="Newtonsoft.Json 5.0.6" Category="Package" />
+    <Node Id="Ninject 3.0.1.10" Label="Ninject 3.0.1.10" Category="Package" />
+    <Node Id="Ninject.Extensions.Interception 3.0.0.8" Label="Ninject.Extensions.Interception 3.0.0.8" Category="Package" />
+    <Node Id="Ninject.MVC3 3.0.0.6" Label="Ninject.MVC3 3.0.0.6" Category="Package" />
+    <Node Id="Ninject.Web.Common 3.0.0.7" Label="Ninject.Web.Common 3.0.0.7" Category="Package" />
+    <Node Id="Portable.Ninject 3.0.7" Label="Portable.Ninject 3.0.7" Category="Package" />
+    <Node Id="WebActivator 1.5.1" Label="WebActivator 1.5.1" Category="Package" />
+    <Node Id="WebMatrix.Security 2.0.0.0" Label="WebMatrix.Security 2.0.0.0" Category="Package" />
+    <Node Id="WebMatrix.WebData 2.0.20710.0" Label="WebMatrix.WebData 2.0.20710.0" Category="Package" />
+    <Node Id="xunit 1.9.1" Label="xunit 1.9.1" Category="Package" />
+    <Node Id="Cedar.WebPortal.Logging" Label="Cedar.WebPortal.Logging" Category="Project" />
+    <Node Id="Ninject 3.0.1.10" Label="Ninject 3.0.1.10" Category="Package" />
+    <Node Id="Ninject.Extensions.Interception 3.0.0.8" Label="Ninject.Extensions.Interception 3.0.0.8" Category="Package" />
+    <Node Id="Ninject.Extensions.Logging 3.0.1.0" Label="Ninject.Extensions.Logging 3.0.1.0" Category="Package" />
+    <Node Id="Ninject.Extensions.Logging.nlog 3.0.1.0" Label="Ninject.Extensions.Logging.nlog 3.0.1.0" Category="Package" />
+    <Node Id="NLog 2.0.1.2" Label="NLog 2.0.1.2" Category="Package" />
+    <Node Id="Cedar.WebPortal.Service.Common" Label="Cedar.WebPortal.Service.Common" Category="Project" />
+    <Node Id="NPOI 1.2.5" Label="NPOI 1.2.5" Category="Package" />
+    <Node Id="Cedar.WebPortal.Service" Label="Cedar.WebPortal.Service" Category="Project" />
+    <Node Id="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Label="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Label="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Category="Package" />
+    <Node Id="Ninject 3.0.1.10" Label="Ninject 3.0.1.10" Category="Package" />
+    <Node Id="Ninject.Extensions.Interception 3.0.0.8" Label="Ninject.Extensions.Interception 3.0.0.8" Category="Package" />
+    <Node Id="NPOI 1.2.5" Label="NPOI 1.2.5" Category="Package" />
+    <Node Id="SQLitex64 1.0.66" Label="SQLitex64 1.0.66" Category="Package" />
+    <Node Id="WebMatrix.WebData 2.0.20710.0" Label="WebMatrix.WebData 2.0.20710.0" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="elmah 1.2.2" Target="elmah.corelibrary 1.2.2" Category="Package Dependency" />
+    <Link Source="jQuery.UI.Combined 1.10.3" Target="jQuery 2.0.3" Category="Package Dependency" />
+    <Link Source="jQuery.Validation 1.11.1" Target="jQuery 2.0.3" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.30506.0" Target="Microsoft.AspNet.WebPages 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.30506.0" Target="Microsoft.AspNet.Razor 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Providers.Core 1.2" Target="EntityFramework 5.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Providers.LocalDB 1.1" Target="Microsoft.AspNet.Providers.Core 1.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Web.Optimization 1.1.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Web.Optimization 1.1.0" Target="WebGrease 1.5.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi 4.0.30506.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.30506.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.30506.0" Target="Microsoft.Net.Http 2.2.13" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.30506.0" Target="Newtonsoft.Json 5.0.6" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Core 4.0.30506.0" Target="Microsoft.AspNet.WebApi.Client 4.0.30506.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.30506.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.30506.0" Target="Microsoft.AspNet.WebApi.Core 4.0.30506.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.30506.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.30506.0" Target="Microsoft.AspNet.Razor 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Target="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.Bcl 1.1.3" Target="Microsoft.Bcl.Build 1.0.8" Category="Package Dependency" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Ajax 2.0.30506.0" Target="jQuery 2.0.3" Category="Package Dependency" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Validation 2.0.30506.0" Target="jQuery.Validation 1.11.1" Category="Package Dependency" />
+    <Link Source="Microsoft.Net.Http 2.2.13" Target="Microsoft.Bcl 1.1.3" Category="Package Dependency" />
+    <Link Source="Microsoft.Net.Http 2.2.13" Target="Microsoft.Bcl.Build 1.0.8" Category="Package Dependency" />
+    <Link Source="MicrosoftWebMvc 2.0" Target="Mvc2Futures 2.0.50217.0" Category="Package Dependency" />
+    <Link Source="MvcContrib 2.0.95.0" Target="MicrosoftWebMvc 2.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.Razor 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.WebPages 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.Mvc 4.0.30506.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="WebActivatorEx 2.0.2" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.Razor 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.WebPages 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.Mvc 4.0.30506.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="WebActivatorEx 2.0.2" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.Razor 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.WebPages 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="MvcSiteMapProvider.MVC4.Core 4.0.5" Target="Microsoft.AspNet.Mvc 4.0.30506.0" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Interception.DynamicProxy 3.0.0.8" Target="Ninject.Extensions.Interception 3.0.0.8" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Interception.DynamicProxy 3.0.0.8" Target="Castle.Core 3.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Logging.nlog 3.0.1.0" Target="Ninject.Extensions.Logging 3.0.1.0" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Logging.nlog 3.0.1.0" Target="NLog 2.0.1.2" Category="Package Dependency" />
+    <Link Source="WebActivator 1.5.1" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="WebActivatorEx 2.0.2" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="WebGrease 1.5.2" Target="Antlr 3.4.1.9004" Category="Package Dependency" />
+    <Link Source="WebGrease 1.5.2" Target="Newtonsoft.Json 5.0.6" Category="Package Dependency" />
+    <Link Source="WebMatrix.WebData 2.0.20710.0" Target="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="AutoMapper 2.2.1" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="elmah 1.2.2" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Glimpse 1.5.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="jQuery.UI.Combined 1.10.3" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="knockoutjs 2.3.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="LinFu.DynamicProxy.OfficialRelease 1.0.5" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="log4net 2.0.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Microsoft.AspNet.Providers.LocalDB 1.1" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Microsoft.AspNet.Web.Optimization 1.1.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Microsoft.AspNet.WebApi 4.0.30506.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Microsoft.jQuery.Unobtrusive.Ajax 2.0.30506.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Microsoft.jQuery.Unobtrusive.Validation 2.0.30506.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Modernizr 2.6.2" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="MvcContrib 2.0.95.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="MvcSiteMapProvider.MVC4.Core 4.0.5" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Ninject.Extensions.Interception.DynamicProxy 3.0.0.8" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="Ninject.Extensions.Logging.nlog 3.0.1.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="System.Json 4.0.20126.16343" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="WebActivator 1.5.1" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.WebMVC4" Target="WebMatrix.WebData 2.0.20710.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service.Test" Target="Moq 4.0.10827" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service.Test" Target="Portable.Ninject 3.0.7" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service.Test" Target="Ninject.Extensions.Interception 3.0.0.8" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service.Test" Target="NPOI 1.2.5" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service.Test" Target="xunit 1.9.1" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Integration.Test" Target="AutoMapper 2.2.1" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Integration.Test" Target="Portable.Ninject 3.0.7" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Integration.Test" Target="xunit 1.9.1" Category="Installed Package" />
+    <Link Source="NHibernate 3.3.3.4000" Target="Iesi.Collections 3.2.0.4000" Category="Package Dependency" />
+    <Link Source="Cedar.WebPortal.Data" Target="Castle.Core 3.2.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data" Target="LinFu.DynamicProxy.OfficialRelease 1.0.5" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data" Target="log4net 2.0.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data" Target="NHibernate 3.3.3.4000" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data" Target="Portable.Ninject 3.0.7" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data" Target="SQLitex64 1.0.66" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data" Target="xunit 1.9.1" Category="Installed Package" />
+    <Link Source="NHibernate 3.3.3.4000" Target="Iesi.Collections 3.2.0.4000" Category="Package Dependency" />
+    <Link Source="Cedar.WebPortal.Data.Test" Target="NHibernate 3.3.3.4000" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data.Test" Target="NUnit 2.6.2" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data.Test" Target="SQLitex64 1.0.66" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Data.Test" Target="xunit 1.9.1" Category="Installed Package" />
+    <Link Source="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Target="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Interception 3.0.0.8" Target="Ninject 3.0.1.10" Category="Package Dependency" />
+    <Link Source="Ninject.MVC3 3.0.0.6" Target="Ninject 3.0.1.10" Category="Package Dependency" />
+    <Link Source="Ninject.MVC3 3.0.0.6" Target="Ninject.Web.Common 3.0.0.7" Category="Package Dependency" />
+    <Link Source="Ninject.Web.Common 3.0.0.7" Target="Ninject 3.0.1.10" Category="Package Dependency" />
+    <Link Source="Ninject.Web.Common 3.0.0.7" Target="WebActivator 1.5.1" Category="Package Dependency" />
+    <Link Source="WebActivator 1.5.1" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="WebMatrix.Security 2.0.0.0" Target="WebMatrix.WebData 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="WebMatrix.WebData 2.0.20710.0" Target="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="Cedar.WebPortal.Configuration" Target="EntityFramework 5.0.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Configuration" Target="Newtonsoft.Json 5.0.6" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Configuration" Target="Ninject.Extensions.Interception 3.0.0.8" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Configuration" Target="Ninject.MVC3 3.0.0.6" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Configuration" Target="Portable.Ninject 3.0.7" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Configuration" Target="WebMatrix.Security 2.0.0.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Configuration" Target="xunit 1.9.1" Category="Installed Package" />
+    <Link Source="Ninject.Extensions.Interception 3.0.0.8" Target="Ninject 3.0.1.10" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Logging 3.0.1.0" Target="Ninject 3.0.1.10" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Logging.nlog 3.0.1.0" Target="Ninject.Extensions.Logging 3.0.1.0" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Logging.nlog 3.0.1.0" Target="NLog 2.0.1.2" Category="Package Dependency" />
+    <Link Source="Cedar.WebPortal.Logging" Target="Ninject.Extensions.Interception 3.0.0.8" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Logging" Target="Ninject.Extensions.Logging.nlog 3.0.1.0" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service.Common" Target="NPOI 1.2.5" Category="Installed Package" />
+    <Link Source="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Target="Microsoft.AspNet.WebPages.Data 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Ninject.Extensions.Interception 3.0.0.8" Target="Ninject 3.0.1.10" Category="Package Dependency" />
+    <Link Source="WebMatrix.WebData 2.0.20710.0" Target="Microsoft.AspNet.WebPages.WebData 2.0.30506.0" Category="Package Dependency" />
+    <Link Source="Cedar.WebPortal.Service" Target="Ninject.Extensions.Interception 3.0.0.8" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service" Target="NPOI 1.2.5" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service" Target="SQLitex64 1.0.66" Category="Installed Package" />
+    <Link Source="Cedar.WebPortal.Service" Target="WebMatrix.WebData 2.0.20710.0" Category="Installed Package" />
+  </Links>
+  <Categories>
+    <Category Id="Project" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Package Dependency" ValueLabel="True">
+      <Condition Expression="HasCategory('Package Dependency')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>

@@ -10,8 +10,6 @@ namespace Cedar.WebPortal.Data.Test
 //    using System.Data.Entity.Infrastructure;
     using System.Xml;
 
-    using NUnit.Framework;
-
     using Cedar.WebPortal.Domain;
 
     using System.Linq;

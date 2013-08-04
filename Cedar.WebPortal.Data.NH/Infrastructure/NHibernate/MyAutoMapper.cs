@@ -1,26 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using Castle.Components.DictionaryAdapter;
+using System;
+using System.Configuration;
+using System.Linq;
+using System.Reflection;
+using Cedar.WebPortal.Domain;
+using NHibernate;
+using NHibernate.Cfg;
+using NHibernate.Cfg.MappingSchema;
+using NHibernate.Dialect;
+using NHibernate.Mapping.ByCode;
+using NHibernate.Type;
+using Configuration = NHibernate.Cfg.Configuration;
 
 namespace Cedar.WebPortal.Data
 {
-    using System;
-    using System.Configuration;
-    using System.Linq;
-    using System.Reflection;
-    using NHibernate;
-    using NHibernate.Cfg;
-    using NHibernate.Cfg.MappingSchema;
-    using NHibernate.Dialect;
-    using NHibernate.Mapping.ByCode;
-    using NHibernate.Type;
-    using Cedar.WebPortal.Domain;
-    using Configuration = NHibernate.Cfg.Configuration;
-
     /// <summary>
-    /// This is an example automapping configuration. You should create your own that either
-    /// implements IAutomappingConfiguration directly, or inherits from DefaultAutomappingConfiguration.
-    /// Overriding methods in this class will alter how the automapper behaves.
+    ///     This is an example automapping configuration. You should create your own that either
+    ///     implements IAutomappingConfiguration directly, or inherits from DefaultAutomappingConfiguration.
+    ///     Overriding methods in this class will alter how the automapper behaves.
     /// </summary>
     public class MyAutoMapper : ConventionModelMapper
     {
@@ -37,7 +33,7 @@ namespace Cedar.WebPortal.Data
         internal static ISessionFactory BuildSessionFactory()
         {
             var mapper = new MyAutoMapper();
-            Type[] exportedTypes = typeof(Applicant).Assembly.GetExportedTypes();
+            Type[] exportedTypes = typeof (Applicant).Assembly.GetExportedTypes();
 
             mapper.IsProperty(IsProperty);
             mapper.IsEntity(IsEntity);
@@ -65,38 +61,18 @@ namespace Cedar.WebPortal.Data
 
 
             mapper.AddMapping<LocationMapOverride>();
-           mapper.AddMapping<NewsMappingOverride>();
-
-
-
-            //mapper.AddMapping<ApplicantMapOverride>();
+            mapper.AddMapping<NewsMappingOverride>();
 
             HbmMapping map = mapper.CompileMappingFor(exportedTypes);
 
             var configure = new Configuration();
 
-            //#if DEBUG
-            //            configure.DataBaseIntegration(x =>
-            //                {
-            //                    x.Dialect<SQLiteDialect>();
-            //                    x.ConnectionString =
-            //                        ConfigurationManager.ConnectionStrings["SqliteCedarContext"].ToString();
-            //                     x.SchemaAction = SchemaAutoAction.Update;
-            //                });
-            //#else
-            //            configure.DataBaseIntegration(x =>
-            //            {
-            //                x.Dialect<MsSql2008Dialect>();
-            //                x.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CedarContext"].ToString();
-            //                x.SchemaAction = SchemaAutoAction.Create;
-            //            });
-            //#endif
             configure.DataBaseIntegration(x =>
-            {
-                x.Dialect<MsSql2008Dialect>();
-                x.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CedarContext"].ToString();
-                x.SchemaAction = SchemaAutoAction.Create;
-            });
+                {
+                    x.Dialect<MsSql2008Dialect>();
+                    x.ConnectionString = ConfigurationManager.ConnectionStrings["CedarContext"].ToString();
+                    x.SchemaAction = SchemaAutoAction.Update;
+                });
             configure.AddDeserializedMapping(map, "CedarModel");
             return configure.BuildSessionFactory();
         }
@@ -109,8 +85,8 @@ namespace Cedar.WebPortal.Data
         private static bool IsManyToMany(MemberInfo memberInfo, bool b)
         {
             var propertyInfo = memberInfo as PropertyInfo;
-            var propertyInfos = propertyInfo.PropertyType.GetGenericArguments()[0].GetProperties();
-            var value = propertyInfo.DeclaringType.Name;
+            PropertyInfo[] propertyInfos = propertyInfo.PropertyType.GetGenericArguments()[0].GetProperties();
+            string value = propertyInfo.DeclaringType.Name;
             if (IsManyCollection(propertyInfo) && !propertyInfos.Any(o => o.PropertyType.Name.Contains(value)))
             {
                 return true;
@@ -120,7 +96,7 @@ namespace Cedar.WebPortal.Data
 
         private static bool IsManyToOne(MemberInfo memberInfo, bool arg)
         {
-            Type type = ((PropertyInfo)memberInfo).PropertyType;
+            Type type = ((PropertyInfo) memberInfo).PropertyType;
             return type.Namespace == DomainNamespace && !type.IsGenericCollection();
         }
 
@@ -129,7 +105,7 @@ namespace Cedar.WebPortal.Data
             if (IsManyToMany(memberInfo, arg))
                 return false;
 
-            Type propertyType = ((PropertyInfo)memberInfo).PropertyType;
+            Type propertyType = ((PropertyInfo) memberInfo).PropertyType;
             return propertyType.IsGenericCollection() &&
                    propertyType.GetGenericArguments().All(o => o.Namespace == DomainNamespace);
         }
@@ -162,7 +138,8 @@ namespace Cedar.WebPortal.Data
         }
 
         //TODO: it should run but now it's not
-        private static void OnBeforeMapKeyManyToMany(IModelInspector modelInspector, PropertyPath member, IMapKeyManyToManyMapper customizer)
+        private static void OnBeforeMapKeyManyToMany(IModelInspector modelInspector, PropertyPath member,
+                                                     IMapKeyManyToManyMapper customizer)
         {
             customizer.ForeignKey(member.ToString());
             customizer.Column(member.ToString());
@@ -175,15 +152,16 @@ namespace Cedar.WebPortal.Data
         }
 
         //TODO: check whether it's running altogether or not
-        private static void OnBeforeMapComponent(IModelInspector inspector, PropertyPath member, IComponentAttributesMapper customizer)
+        private static void OnBeforeMapComponent(IModelInspector inspector, PropertyPath member,
+                                                 IComponentAttributesMapper customizer)
         {
             member.ToColumnName(member.LocalMember.Name);
         }
 
         //TODO: justify the foreign key naming conventions
-        private static void OnBeforeMapOneToMany(IModelInspector modelinspector, PropertyPath member, IOneToManyMapper customizer)
+        private static void OnBeforeMapOneToMany(IModelInspector modelinspector, PropertyPath member,
+                                                 IOneToManyMapper customizer)
         {
-
         }
 
         //TODO: justify the foreign key naming conventions
@@ -192,18 +170,20 @@ namespace Cedar.WebPortal.Data
             customizer.Column("PK_" + member.LocalMember.DeclaringType.Name);
         }
 
-        private static void OnBeforeMapManyToOne(IModelInspector inspector, PropertyPath member, IManyToOneMapper customizer)
+        private static void OnBeforeMapManyToOne(IModelInspector inspector, PropertyPath member,
+                                                 IManyToOneMapper customizer)
         {
-            var info = (PropertyInfo)member.LocalMember;
+            var info = (PropertyInfo) member.LocalMember;
             customizer.Column(info.Name + "_" + info.PropertyType.Name + "Id");
             customizer.ForeignKey("FK_" + info.DeclaringType.Name + "_" + info.Name);
             customizer.Cascade(Cascade.All);
         }
 
         //TODO: check some fields with large contents like News.Content
-        private static void OnBeforeMapProperty(IModelInspector inspector, PropertyPath propertyPath, IPropertyMapper customizer)
+        private static void OnBeforeMapProperty(IModelInspector inspector, PropertyPath propertyPath,
+                                                IPropertyMapper customizer)
         {
-            var info = (PropertyInfo)propertyPath.LocalMember;
+            var info = (PropertyInfo) propertyPath.LocalMember;
 
             if (propertyPath.LocalMember.DeclaringType != null &&
                 inspector.IsComponent(propertyPath.LocalMember.DeclaringType))
@@ -211,7 +191,7 @@ namespace Cedar.WebPortal.Data
                 customizer.Column(propertyPath.ToString().Replace(".", "_"));
                 return;
             }
-            if (info.PropertyType == typeof(byte[]))
+            if (info.PropertyType == typeof (byte[]))
             {
                 customizer.Type(new BinaryBlobType());
                 customizer.Length(Int32.MaxValue);
@@ -219,54 +199,59 @@ namespace Cedar.WebPortal.Data
             }
             if (info.PropertyType.IsEnum)
             {
-                Type makeGenericType = typeof(EnumStringType<>).MakeGenericType(info.PropertyType);
+                Type makeGenericType = typeof (EnumStringType<>).MakeGenericType(info.PropertyType);
                 object instance = Activator.CreateInstance(makeGenericType);
-                customizer.Type((IType)instance);
+                customizer.Type((IType) instance);
                 customizer.Column(info.Name);
                 return;
             }
-            if (info.PropertyType.IsGenericType && info.PropertyType.GetGenericTypeDefinition() == typeof(Nullable<>)
+            if (info.PropertyType.IsGenericType && info.PropertyType.GetGenericTypeDefinition() == typeof (Nullable<>)
                 && info.PropertyType.GetGenericArguments()[0].IsEnum)
             {
                 Type makeGenericType =
-                    typeof(EnumStringType<>).MakeGenericType(info.PropertyType.GetGenericArguments()[0]);
+                    typeof (EnumStringType<>).MakeGenericType(info.PropertyType.GetGenericArguments()[0]);
                 object parameters = Activator.CreateInstance(makeGenericType);
-                customizer.Type((IType)parameters);
+                customizer.Type((IType) parameters);
                 customizer.Column(info.Name);
             }
         }
 
-        private static void OnAfterMapManyToOne(IModelInspector modelInspector, PropertyPath member, IManyToOneMapper customizer)
+        private static void OnAfterMapManyToOne(IModelInspector modelInspector, PropertyPath member,
+                                                IManyToOneMapper customizer)
         {
             var info = member.LocalMember as PropertyInfo;
             customizer.Column(info.Name + "_" + info.PropertyType.Name + "Id");
         }
 
-        private static void OnAfterMapKeyManyToMany(IModelInspector modelinspector, PropertyPath member, IManyToManyMapper customizer)
+        private static void OnAfterMapKeyManyToMany(IModelInspector modelinspector, PropertyPath member,
+                                                    IManyToManyMapper customizer)
         {
-            var localMember = member.LocalMember;
+            MemberInfo localMember = member.LocalMember;
             var propertyInfo = localMember as PropertyInfo;
 
             customizer.ForeignKey("FK_" + localMember.DeclaringType.Name + "_" + localMember.Name);
             customizer.Column(propertyInfo.PropertyType.GetGenericArguments()[0].Name + "_Id");
         }
 
-        private static void OnAfterMapOneToMany(IModelInspector modelInspector, PropertyPath member, IOneToManyMapper customizer)
+        private static void OnAfterMapOneToMany(IModelInspector modelInspector, PropertyPath member,
+                                                IOneToManyMapper customizer)
         {
-
         }
 
-        public static void ManyToManyConvention(IModelInspector modelInspector, PropertyPath member, IManyToManyMapper map)
+        public static void ManyToManyConvention(IModelInspector modelInspector, PropertyPath member,
+                                                IManyToManyMapper map)
         {
             map.ForeignKey(
                 string.Format("fk_{0}_{1}",
-                       member.LocalMember.Name,
-                       member.GetContainerEntity(modelInspector).Name));
+                              member.LocalMember.Name,
+                              member.GetContainerEntity(modelInspector).Name));
         }
 
-        public static void MapMapKeyManyToMany(IModelInspector modelInspector, PropertyPath member, IMapKeyManyToManyMapper map)
+        public static void MapMapKeyManyToMany(IModelInspector modelInspector, PropertyPath member,
+                                               IMapKeyManyToManyMapper map)
         {
         }
+
         #endregion
     }
 }

@@ -3,8 +3,6 @@
     using System;
 //    using System.Data.Entity.Infrastructure;
 
-    using NUnit.Framework;
-
     using Cedar.WebPortal.Domain;
 
     using System.Linq;

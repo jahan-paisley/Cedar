@@ -63,7 +63,6 @@
             this.Bind<IDepartmentService>().To<DepartmentService>().InRequestScope();
             this.Bind<ICedarContext>().To<NHibernateContext>().InRequestScope();
             this.Bind<IWebSecurityService>().To<WebSecurityService>().InRequestScope();
-
         }
 
         #endregion

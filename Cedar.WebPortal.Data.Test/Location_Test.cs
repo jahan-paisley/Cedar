@@ -11,8 +11,6 @@ namespace Cedar.WebPortal.Data.Test
 
     using Xunit;
 
-    using Assert = NUnit.Framework.Assert;
-
     public class Location_Test
     {
         #region Public Methods
@@ -46,7 +44,7 @@ namespace Cedar.WebPortal.Data.Test
             foreach (var location in locations)
             {
                 var find = factory.CedarContext.Get<Location>(location.LocationId);
-            Assert.IsTrue(find.IsNotNull());
+                Assert.True(find.IsNotNull());
             }
            
         }

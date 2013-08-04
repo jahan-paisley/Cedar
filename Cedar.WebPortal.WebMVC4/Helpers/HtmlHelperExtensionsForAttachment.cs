@@ -2,10 +2,10 @@
 using System.Linq.Expressions;
 using System.Web.Mvc;
 using System.Web.Routing;
-using Microsoft.Web.Mvc;
 using Cedar.WebPortal.Common;
 using Cedar.WebPortal.Domain;
 using Cedar.WebPortal.WebMVC4.Controllers;
+using Microsoft.Web.Mvc;
 
 namespace Cedar.WebPortal.WebMVC4.Helpers
 {
@@ -22,13 +22,16 @@ namespace Cedar.WebPortal.WebMVC4.Helpers
                 RouteValueDictionary routeValueDictionary =
                     htmlHelper.ViewContext.HttpContext.Request.RequestContext.RouteData.Values;
                 if (routeValueDictionary.ContainsValue("Gallery") || routeValueDictionary.ContainsValue("gallery")
-                    || (routeValueDictionary.ContainsValue("ListPaginationGallery") && routeValueDictionary.ContainsValue("Home"))
-                    || (routeValueDictionary.ContainsValue("PictureGallery") && routeValueDictionary.ContainsValue("Home")))
+                    ||
+                    (routeValueDictionary.ContainsValue("ListPaginationGallery") &&
+                     routeValueDictionary.ContainsValue("Home"))
+                    ||
+                    (routeValueDictionary.ContainsValue("PictureGallery") && routeValueDictionary.ContainsValue("Home")))
                 {
                     return
                         htmlHelper.Image(
-                            UrlHelper(htmlHelper).Action("Index", "Attachment", new { Id = attachment.AttachmentId }),
-                            new { heigth = "72px", width = "72px" });
+                            UrlHelper(htmlHelper).Action("Index", "Attachment", new {Id = attachment.AttachmentId}),
+                            new {heigth = "72px", width = "72px"});
                 }
                 return htmlHelper.ActionLink((AttachmentController o) => o.Index(attachment.AttachmentId));
             }
@@ -82,7 +85,7 @@ namespace Cedar.WebPortal.WebMVC4.Helpers
                 {
                     return
                         htmlHelper.Image(
-                            UrlHelper(htmlHelper).Action("Index", "Attachment", new { Id = attachment.AttachmentId }));
+                            UrlHelper(htmlHelper).Action("Index", "Attachment", new {Id = attachment.AttachmentId}));
                     //,new {heigth = "450px", width = "60px"});
                 }
                 return htmlHelper.ActionLink((AttachmentController o) => o.Index(attachment.AttachmentId));
@@ -115,8 +118,9 @@ namespace Cedar.WebPortal.WebMVC4.Helpers
 //            string endPart =string.Format( @"<div class='link'> {0}</div><div class='span'>&nbsp;</div></div></div>"
 //                , htmlHelper.DisplayAttachment(htmlHelper.ViewData.Model, expression));
 //                return MvcHtmlString.Create(firstPart+middlePart+endPart);
-           
+
 //        }
+
         #endregion
 
         #region Methods
@@ -131,8 +135,8 @@ namespace Cedar.WebPortal.WebMVC4.Helpers
                 {
                     return
                         htmlHelper.Image(
-                            UrlHelper(htmlHelper).Action("Index", "Attachment", new { Id = attachment.AttachmentId }),
-                            new { heigth = "80px", width = "60px" });
+                            UrlHelper(htmlHelper).Action("Index", "Attachment", new {Id = attachment.AttachmentId}),
+                            new {heigth = "80px", width = "60px"});
                 }
                 else
                 {

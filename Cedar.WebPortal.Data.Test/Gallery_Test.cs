@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using NUnit.Framework;
 using Cedar.WebPortal.Common;
 using Cedar.WebPortal.Data.Infrastructure;
 using Cedar.WebPortal.Domain;
 using Xunit;
-using Assert = NUnit.Framework.Assert;
 
 namespace Cedar.WebPortal.Data.Test
 {
@@ -18,7 +16,7 @@ namespace Cedar.WebPortal.Data.Test
             return new Attachment
                        {
                            AttachmentId = Guid.NewGuid(),
-                           ContentLength = (new Randomizer()).GetInts(0, 1000, 1)[0],
+                           ContentLength = (new Random()).Next(),
                            ContentType = "image/jpg",
                            Contents = new byte[10],
                            DateAdded = DateTime.Now,
@@ -65,8 +63,8 @@ namespace Cedar.WebPortal.Data.Test
             factory.CedarContext.Commit();
 
             var find = factory.CedarContext.Get<Gallery>(gallery.GalleryId);
-            Assert.IsTrue(find.IsNotNull());
-            Assert.IsTrue(find.Attachments.Count == 3);
+            Assert.True(find.IsNotNull());
+            Assert.True(find.Attachments.Count == 3);
         }
 
         #endregion

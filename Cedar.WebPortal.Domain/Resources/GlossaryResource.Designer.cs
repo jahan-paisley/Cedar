@@ -606,7 +606,7 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registration at rightel .
+        ///   Looks up a localized string similar to Registration .
         /// </summary>
         public static string RegisterMember {
             get {

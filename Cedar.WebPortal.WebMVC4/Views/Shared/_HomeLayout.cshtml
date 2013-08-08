@@ -1,11 +1,9 @@
 ﻿@using Microsoft.Web.Mvc
 @using Cedar.WebPortal.Common
-@using Cedar.WebPortal.WebMVC4.Resources
-@using Cedar.WebPortal.WebMVC4.Controllers
 @using Cedar.WebPortal.WebMVC4.Helpers
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
-<head profile="http://www.rightel.ir">
+<head>
     <meta http-equiv="Content-Language" content="en-us" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
@@ -14,8 +12,6 @@
     <meta name="googlebot" content="index, follow" />
     <meta name="distribution" content="Global" />
     @*<meta name="google-site-verification" content="XADrB9znQx73SHEur6S49jeZzrVWXVuLEJck4t6zAQM" />*@
-	@Html.Css("~/Content/CSS/Public/rightel-global.css")
-	@Html.Css("~/Content/CSS/Home/rightel-home.css")
     <title>
         @if (ViewBag.Title == @Html.ResourceFor("Home"))
         {
@@ -27,37 +23,6 @@
         }
     </title>
     <link href="@Url.Content("~/Content/images/Public/favicon.ico")" rel="shortcut icon" type="image/png"/>
-    @Html.Script("~/Scripts/jquery-latest.min.js", "~/Scripts/jquery-latest.js")
-    @Html.Script("~/Scripts/jquery.unobtrusive-ajax.min.js", "~/Scripts/jquery.unobtrusive-ajax.js")
-    @Html.Script("~/Scripts/jquery.cookie.js")
-    @Html.Script("~/Scripts/jquery-ui-1.8.16.custom.min.js")
-    @Html.Script("~/Scripts/jquery.calendars.js")
-    @Html.Script("~/Scripts/jquery.calendars.plus.js")
-    @Html.Script("~/Scripts/jquery.calendars.picker.js")
-   
-   
-	@Html.Script("~/Scripts/jquery.nivo.slider.pack-2.7.1.js")
-    @Html.Script("~/Scripts/rightel-global.js")
-    @Html.Script("~/Scripts/rightel-home.js")
- 
-    @if (Request.Cookies["lang"] != null && Request.Cookies["lang"].Value == Cultures.English)
-    {
-      @*  @Html.Css("~/Content/CSS/Public/rightel-base.css")
-@Html.Css("~/Content/CSS/Site-Global.css")
-		@Html.Css("~/Content/CSS/main.css")*@
-        @Html.Css("~/Content/CSS/jquery-ui.css")
-        @Html.Script("~/Scripts/jquery.reverseorder.packed.js")
-    }
-    else
-    {
-     @*   @Html.Css("~/Content/CSS/Public/rightel-base.css")
- @Html.Css("~/Content/CSS/Site-fa-IR.css")
-		@Html.Css("~/Content/CSS/main-fa-IR.css")*@
-        @Html.Css("~/Content/CSS/jquery-ui-fa-IR.css")
-        @Html.Script("~/Scripts/jquery.calendars.picker-fa.js")
-        @Html.Script("~/Scripts/jquery.calendars.persian.js")
-    }
-   @* <script src="http://www.google.com/jsapi" type="text/javascript"></script>*@
     <script type="text/javascript">
         //google.load('search', '1', { style: google.loader.themes.BUBBLEGUM });
         function openSearchResult() {

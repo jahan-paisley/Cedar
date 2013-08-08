@@ -2,6 +2,7 @@ namespace Cedar.WebPortal.Data
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Validation;
@@ -118,19 +119,25 @@ namespace Cedar.WebPortal.Data
                 IEnumerable<Type> complexClasses = exportedTypes.Where(o => o.Namespace == ComplexesNamespace);
                 domainClasses.ToList().ForEach(
                     o =>
-                        {
-                            MethodInfo entityMethodInfo =
-                                modelBuilder.GetType().GetMethod("Entity").MakeGenericMethod(o.GetTypeInfo());
-                            entityMethodInfo.Invoke(modelBuilder, null);
-                        });
+                    {
+                        MethodInfo entityMethodInfo =
+                            modelBuilder.GetType().GetMethod("Entity").MakeGenericMethod(o.GetTypeInfo());
+                        entityMethodInfo.Invoke(modelBuilder, null);
+                    });
+
+                modelBuilder.Properties()
+                   .Where(prop => prop.Name.EndsWith("Id") && 
+                       prop.PropertyType == typeof(Guid))
+                   .Configure(config => config.IsKey().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity));
+
                 complexClasses.ToList().ForEach(
                     o =>
-                        {
-                            MethodInfo complexTypeMethodInfo =
-                                modelBuilder.GetType().GetMethod("ComplexType").MakeGenericMethod(o.GetTypeInfo());
-                            complexTypeMethodInfo.Invoke(modelBuilder, null);
-                        });
-//                modelBuilder.Build(new SqlConnection(ConfigurationManager.ConnectionStrings["CedarContext"].ConnectionString));
+                    {
+                        MethodInfo complexTypeMethodInfo =
+                            modelBuilder.GetType().GetMethod("ComplexType").MakeGenericMethod(o.GetTypeInfo());
+                        complexTypeMethodInfo.Invoke(modelBuilder, null);
+                    });
+
             }
             base.OnModelCreating(modelBuilder);
         }

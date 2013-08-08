@@ -5,23 +5,21 @@
 
     using Cedar.WebPortal.Service.Common;
 
+    using System.Linq;
+
     public class HomeController : Controller
     {
         #region Constants and Fields
 
-        private INewsService newsService;
+        private readonly INewsService newsService;
 
         #endregion
 
         #region Constructors and Destructors
 
-        public HomeController(INewsService _newsService)
+        public HomeController(INewsService newsService)
         {
-            if (_newsService == null)
-            {
-                throw new ArgumentNullException("_newsService");
-            }
-            this.newsService = _newsService;
+            this.newsService = newsService;
         }
 
         #endregion
@@ -44,8 +42,7 @@
 
         public ActionResult Index()
         {
-            this.ViewBag.Message = newsService.GetAll();
-
+            this.ViewBag.Message = String.Join(",", newsService.GetAll().Select(o=> o.Title));
             return this.View();
         }
 

@@ -401,14 +401,12 @@
     <Content Include="Scripts\knockout-2.3.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Views\Shared\DisplayTemplates\Menu.html" />
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SiteMapPathHelperModel.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.ascx" />
-    <Content Include="Views\Shared\HomepageTest.html" />
     <Content Include="Views\Shared\HTMLPage1.htm" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

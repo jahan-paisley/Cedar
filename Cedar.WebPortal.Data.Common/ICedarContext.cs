@@ -13,29 +13,19 @@ namespace Cedar.WebPortal.Data.Common
 
         void Delete(object obj);
 
-        void Delete<T>(Guid id);
+        void Delete<T>(object id) where T : class, new();
 
-        void Delete<T>(Func<T, bool> obj);
+        void Delete<T>(Func<T, bool> func) where T : class;
 
-        T Get<T>(object id);
+        T Get<T>(object id) where T : class;
 
-        T Load<T>(object id);
+        IQueryable<T> Query<T>() where T : class;
 
-        object Merge(object obj);
+        void Save<T>(T obj) where T : class;
 
-        void Persist(object obj);
+        void Update<T>(T obj) where T : class;
 
-        IQueryable<T> Query<T>();
-
-        void Refresh(object obj);
-
-        object Save(object obj);
-
-        void SaveOrUpdate(object obj);
-
-        void Update<T>(T obj);
-
-        T GetQuery<T>(string name, Dictionary<string, object> parameters);
+        T GetQuery<T>(string name, Dictionary<string, object> parameters) where T : class;
 
         #endregion
     }

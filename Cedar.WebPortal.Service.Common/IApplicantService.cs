@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 namespace Cedar.WebPortal.Service.Common
 {
     using Cedar.WebPortal.Domain;
+    using Cedar.WebPortal.Domain.Entities;
 
     public interface IApplicantService: IServiceBase<Applicant>
     {

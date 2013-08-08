@@ -7,7 +7,7 @@ using Cedar.WebPortal.Data.Common;
 namespace Cedar.WebPortal.Data.Infrastructure
 {
     public abstract class RepositoryBase<T> : IRepository<T>
-        where T : class
+        where T : class, new()
     {
         #region Constants and Fields
 
@@ -19,12 +19,10 @@ namespace Cedar.WebPortal.Data.Infrastructure
 
         #region Constructors and Destructors
 
-        protected RepositoryBase(IDatabaseFactory databaseFactory)
+        protected RepositoryBase(ICedarContext cedarContext)
         {
-            DatabaseFactory = databaseFactory;
-
+            CedarContext = cedarContext;
             dbset = DataContext.Query<T>();
-            CedarContext = databaseFactory.CedarContext;
         }
 
         #endregion
@@ -33,10 +31,8 @@ namespace Cedar.WebPortal.Data.Infrastructure
 
         protected ICedarContext DataContext
         {
-            get { return CedarContext ?? DatabaseFactory.CedarContext; }
+            get { return CedarContext; }
         }
-
-        private IDatabaseFactory DatabaseFactory { get; set; }
 
         #endregion
 
@@ -81,7 +77,7 @@ namespace Cedar.WebPortal.Data.Infrastructure
 
         public virtual T GetById(Guid id)
         {
-            return DataContext.Load<T>(id);
+            return DataContext.Get<T>(id);
         }
 
         public virtual IQueryable<T> GetMany(Expression<Func<T, bool>> where)

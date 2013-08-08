@@ -1,6 +1,7 @@
 ﻿using System.Linq.Expressions;
 using Cedar.WebPortal.Common;
 using Cedar.WebPortal.Domain;
+using Cedar.WebPortal.Domain.Entities;
 
 namespace Cedar.WebPortal.WebMVC4.Helper
 {

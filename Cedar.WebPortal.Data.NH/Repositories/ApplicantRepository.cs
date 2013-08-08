@@ -1,9 +1,9 @@
-﻿namespace Cedar.WebPortal.Data
+﻿using Cedar.WebPortal.Domain.Entities;
+
+namespace Cedar.WebPortal.Data
 {
     using System;
     using System.Linq;
-
-    using NHibernate.Linq;
 
     using Cedar.WebPortal.Common;
     using Cedar.WebPortal.Data.Common;
@@ -14,8 +14,8 @@
     {
         #region Constructors and Destructors
 
-        public ApplicantRepository(IDatabaseFactory databaseFactory)
-            : base(databaseFactory)
+        public ApplicantRepository(ICedarContext cedarContext)
+            : base(cedarContext)
         {
         }
 
@@ -51,13 +51,13 @@
         protected override void BeforeSave(Applicant applicant)
         {
             //applicant.EducationInfos.ForEach(o => o.Applicant = applicant);
-            applicant.Publications.ForEach(o => o.Applicant = applicant);
-            applicant.Certificates.ForEach(o => o.Applicant = applicant);
-            applicant.HabitationInfos.ForEach(o => o.Applicant = applicant);
-            applicant.LanguageSkills.ForEach(o => o.Applicant = applicant);
-            applicant.Skills.ForEach(o => o.Applicant = applicant);
-            applicant.Relatives.ForEach(o => o.Applicant = applicant);
-            applicant.WorkExperienceInfos.ForEach(o => o.Applicant = applicant);
+//            applicant.Publications.ForEach(o => o.Applicant = applicant);
+//            applicant.Certificates.ForEach(o => o.Applicant = applicant);
+//            applicant.HabitationInfos.ForEach(o => o.Applicant = applicant);
+//            applicant.LanguageSkills.ForEach(o => o.Applicant = applicant);
+//            applicant.Skills.ForEach(o => o.Applicant = applicant);
+//            applicant.Relatives.ForEach(o => o.Applicant = applicant);
+//            applicant.WorkExperienceInfos.ForEach(o => o.Applicant = applicant);
 
             this.CheckIfAFileWasSent(applicant, applicant.Item(o => o.Picture));
             this.CheckIfAFileWasSent(applicant, applicant.Item(o => o.CV));

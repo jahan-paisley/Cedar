@@ -1,3 +1,5 @@
+using Cedar.WebPortal.Domain.Entities;
+
 namespace Cedar.WebPortal.Integration.Test
 {
     using System;
@@ -45,16 +47,7 @@ namespace Cedar.WebPortal.Integration.Test
              
             #endregion
 
-            #region Gallery
-
-            this.CreateMap<Gallery, GalleryViewModel>();
-            this.CreateMap<GalleryViewModel, Gallery>();
-
-            #endregion
-
-
             base.Configure();
-
             Mapper.AssertConfigurationIsValid();
         }
 

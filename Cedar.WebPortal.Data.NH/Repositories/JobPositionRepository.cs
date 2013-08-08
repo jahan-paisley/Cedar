@@ -1,5 +1,6 @@
 ﻿using Cedar.WebPortal.Domain;
 using Cedar.WebPortal.Data.Infrastructure;
+using Cedar.WebPortal.Domain.Entities;
 
 namespace Cedar.WebPortal.Data
 {
@@ -7,8 +8,8 @@ namespace Cedar.WebPortal.Data
 
     public class JobPositionRepository : RepositoryBase<JobPosition>,IJobPositionRepository
     {
-        public JobPositionRepository(IDatabaseFactory databaseFactory)
-            : base(databaseFactory)
+        public JobPositionRepository(ICedarContext cedarContext)
+            : base(cedarContext)
         {
         }
     }

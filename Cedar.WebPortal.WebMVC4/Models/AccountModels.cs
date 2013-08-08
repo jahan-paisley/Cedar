@@ -1,31 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity;
-using System.Globalization;
-using System.Web.Security;
-
-namespace Cedar.WebPortal.WebMVC4.Models
+﻿namespace Cedar.WebPortal.WebMVC4.Models
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity;
+
+    using Cedar.WebPortal.Common;
+    using Cedar.WebPortal.Domain.Entities;
+    using Cedar.WebPortal.Domain.Resources;
+
     public class UsersContext : DbContext
     {
         public UsersContext()
-            : base("CedarConext")
+            : base("CendarContext")
         {
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
-    }
-
-    [Table("UserProfile")]
-    public class UserProfile
-    {
-        [Key]
-        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
-        public int UserId { get; set; }
-        public string UserName { get; set; }
-        public string UserNamev { get; set; }
     }
 
     public class RegisterExternalLoginModel
@@ -33,8 +24,6 @@ namespace Cedar.WebPortal.WebMVC4.Models
         [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
-        [Display(Name = "User nameV")]
-        public string UserNamev { get; set; }
 
         public string ExternalLoginData { get; set; }
     }
@@ -89,9 +78,6 @@ namespace Cedar.WebPortal.WebMVC4.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-
-        [Display(Name = "Roles")]
-        public string[] Roles { get; set; }
     }
 
     public class ExternalLogin

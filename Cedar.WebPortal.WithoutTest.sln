@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.Domain", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.Service", "Cedar.WebPortal.Service\Cedar.WebPortal.Service.csproj", "{BA69BB65-147A-42D8-A6F5-5D1E57E2D783}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B0D4543-35B6-4316-A142-4415496A8955}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.Common", "Cedar.WebPortal.Common\Cedar.WebPortal.Common.csproj", "{CBCF7EA1-DE0B-4175-818A-6B1D9A3681A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.Service.Common", "Cedar.WebPortal.Service.Common\Cedar.WebPortal.Service.Common.csproj", "{20D0EC67-EC87-4083-86DE-686E9A655218}"
@@ -21,44 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.Data.Test",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.Data", "Cedar.WebPortal.Data.NH\Cedar.WebPortal.Data.csproj", "{94CC7EE8-B459-44A3-912B-DD8B2C3030D0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{1E78FE05-BEA4-491A-AD24-A3A7E3839049}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.Integration.Test", "Cedar.WebPortal.Integration.Test\Cedar.WebPortal.Integration.Test.csproj", "{5E3252FF-ED40-4D15-B4FD-F3F9C14E4A39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.Service.Test", "Cedar.WebPortal.Service.Test\Cedar.WebPortal.Service.Test.csproj", "{A36D5007-5ECB-4C29-8B9B-C894D74E8850}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql Server", "Sql Server", "{C4AF94D2-E5F5-4BE6-9D63-E2B017AAB94F}"
-	ProjectSection(SolutionItems) = preProject
-		SqlServer\Attachment.sql = SqlServer\Attachment.sql
-		SqlServer\AttachmentToGallery.sql = SqlServer\AttachmentToGallery.sql
-		SqlServer\Company.sql = SqlServer\Company.sql
-		SqlServer\Database.sql = SqlServer\Database.sql
-		SqlServer\Gallery.sql = SqlServer\Gallery.sql
-		SqlServer\InstallCommon.sql = SqlServer\InstallCommon.sql
-		SqlServer\InstallMembership.sql = SqlServer\InstallMembership.sql
-		Cedar\Scripts\Pre-Deployment\InstallProfile.SQL = Cedar\Scripts\Pre-Deployment\InstallProfile.SQL
-		SqlServer\InstallRoles.sql = SqlServer\InstallRoles.sql
-		SqlServer\Location.sql = SqlServer\Location.sql
-		SqlServer\News.sql = SqlServer\News.sql
-		SqlServer\ProspectAndNumber.sql = SqlServer\ProspectAndNumber.sql
-		SqlServer\Roles.sql = SqlServer\Roles.sql
-		TemplateTenderEmail.htm = TemplateTenderEmail.htm
-		SqlServer\Tender.sql = SqlServer\Tender.sql
-		SqlServer\Ticket.sql = SqlServer\Ticket.sql
-		SqlServer\users.sql = SqlServer\users.sql
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sqlite", "Sqlite", "{70E3F456-7581-427B-9801-B2B313DC21C6}"
-	ProjectSection(SolutionItems) = preProject
-		sqlitedb\Attachment.sql = sqlitedb\Attachment.sql
-		sqlitedb\Location.sql = sqlitedb\Location.sql
-		sqlitedb\News.sql = sqlitedb\News.sql
-		sqlitedb\Roles.sql = sqlitedb\Roles.sql
-		sqlitedb\users.sql = sqlitedb\users.sql
-		sqlitedb\usersCreateTable.sql = sqlitedb\usersCreateTable.sql
-		sqlitedb\UsersInRoles.sql = sqlitedb\UsersInRoles.sql
-		sqlitedb\UsersInRolesCreateTable.sql = sqlitedb\UsersInRolesCreateTable.sql
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cedar.WebPortal.WebMVC4", "Cedar.WebPortal.WebMVC4\Cedar.WebPortal.WebMVC4.csproj", "{BF5F18ED-A454-47AF-B3F5-CCCF44BA57A0}"
 EndProject
@@ -214,11 +177,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{1E78FE05-BEA4-491A-AD24-A3A7E3839049} = {6B0D4543-35B6-4316-A142-4415496A8955}
-		{C4AF94D2-E5F5-4BE6-9D63-E2B017AAB94F} = {1E78FE05-BEA4-491A-AD24-A3A7E3839049}
-		{70E3F456-7581-427B-9801-B2B313DC21C6} = {1E78FE05-BEA4-491A-AD24-A3A7E3839049}
 	EndGlobalSection
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true

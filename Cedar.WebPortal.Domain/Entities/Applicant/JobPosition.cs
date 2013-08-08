@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using Cedar.WebPortal.Domain.Resources;
 
-namespace Cedar.WebPortal.Domain
+namespace Cedar.WebPortal.Domain.Entities
 {
     public class JobPosition
     {

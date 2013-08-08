@@ -1,6 +1,6 @@
-﻿using Cedar.WebPortal.Domain.Component;
+﻿using Cedar.WebPortal.Domain.Enums;
 
-namespace Cedar.WebPortal.Domain
+namespace Cedar.WebPortal.Domain.Entities
 {
     using System;
     using System.ComponentModel.DataAnnotations;

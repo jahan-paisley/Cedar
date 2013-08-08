@@ -17,14 +17,14 @@
             {
                 UseDefaultCredentials = false,
                 DeliveryMethod = SmtpDeliveryMethod.Network,
-                Credentials = new NetworkCredential("no-reply", "27654@rightel.ir"),
-                Host = "mail.rightel.ir",
+                Credentials = new NetworkCredential("no-reply", "27654@xyz.ir"),
+                Host = "mail.xyz.ir",
                 EnableSsl = true,
                 Port = 25,
             };
             MailMessage message = new MailMessage
             {
-                From = new MailAddress("no-reply@rightel.ir"),
+                From = new MailAddress("no-reply@xyz.ir"),
             };
             message.To.Add(new MailAddress("jzinedine@gmail.com"));
             message.Subject = "subject";

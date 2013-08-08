@@ -1,7 +1,7 @@
 ﻿@using Cedar.WebPortal.Domain
 @using Cedar.WebPortal.WebMVC4.Controllers
 @using Cedar.WebPortal.WebMVC4.Helpers
-@model News
+@model Cedar.WebPortal.Domain.Entities.News
 <div style="margin: 10px">
     <div width="200px" id="@Model.NewsId">
         @Html.DisplayAttachment(Model, o => o.Attachment)

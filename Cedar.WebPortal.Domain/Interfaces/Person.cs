@@ -4,7 +4,7 @@
     using System.ComponentModel.DataAnnotations;
 
     using Cedar.WebPortal.Common;
-    using Cedar.WebPortal.Domain.Component;
+    using Enums;
     using Cedar.WebPortal.Domain.Resources;
 
     public abstract class Person

@@ -1,4 +1,5 @@
-﻿@using Microsoft.Web.Mvc
+﻿@using Cedar.WebPortal.Domain.Entities
+@using Microsoft.Web.Mvc
 @using Cedar.WebPortal.Common
 @using Cedar.WebPortal.Domain
 @using Cedar.WebPortal.WebMVC4.Controllers
@@ -6,20 +7,20 @@
 @using Cedar.WebPortal.WebMVC4.ViewModel
 @model NewsViewModel
 @{
-    this.ViewBag.Title = this.Html.ResourceFor("Edit");
+    ViewBag.Title = Html.ResourceFor("Edit");
 }
 <h2>
-    @this.Html.ResourceFor("Edit")</h2>
+    @Html.ResourceFor("Edit")</h2>
 <style>
     .editor-label, .editor-field
     {
         float: none;
     }
 </style>
-@this.Html.Script("~/Scripts/jquery.validate.min.js")
-@this.Html.Script("~/Scripts/jquery.validate.unobtrusive.min.js")
-@this.Html.Script("~/Scripts/ckeditor/ckeditor_basic.js")
-@this.Html.Css("~/Content/CSS/jquery.calendars.picker.css")
+@Html.Script("~/Scripts/jquery.validate.min.js")
+@Html.Script("~/Scripts/jquery.validate.unobtrusive.min.js")
+@Html.Script("~/Scripts/ckeditor/ckeditor_basic.js")
+@Html.Css("~/Content/CSS/jquery.calendars.picker.css")
 @ViewHelper.CalendarHelper()
 <script type="text/javascript">
     $().ready(function () {
@@ -27,58 +28,58 @@
     });
 </script>
 
-@using (this.Html.BeginForm("Edit", "News", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@using (Html.BeginForm("Edit", "News", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    @this.Html.HiddenFor(o => o.NewsId)
-    @this.Html.ValidationSummary(true)
+    @Html.HiddenFor(o => o.NewsId)
+    @Html.ValidationSummary(true)
         <fieldset>
-            <legend>@this.Html.ResourceFor(o => o)</legend>
+            <legend>@Html.ResourceFor(o => o)</legend>
             <div class="editor-label">
-                @this.Html.LabelFor(model => model.Title)
+                @Html.LabelFor(model => model.Title)
             </div>
             <div class="editor-field">
-                @this.Html.EditorFor(model => model.Title)
-                @this.Html.ValidationMessageFor(model => model.Title)
-            </div>
-            <div class="editor-label">
-                @this.Html.LabelFor(model => model.PublishDate)
-            </div>
-            <div class="editor-field">
-                @this.Html.TextBoxFor(model => model.PublishDate, new { @class = "datepicker" })
-                @this.Html.ValidationMessageFor(model => model.PublishDate)
+                @Html.EditorFor(model => model.Title)
+                @Html.ValidationMessageFor(model => model.Title)
             </div>
             <div class="editor-label">
-                @this.Html.LabelFor(model => model.ExpirationDate)
+                @Html.LabelFor(model => model.PublishDate)
             </div>
             <div class="editor-field">
-                @this.Html.TextBoxFor(model => model.ExpirationDate, new { @class = "datepicker" })
-                @this.Html.ValidationMessageFor(model => model.ExpirationDate)
+                @Html.TextBoxFor(model => model.PublishDate, new { @class = "datepicker" })
+                @Html.ValidationMessageFor(model => model.PublishDate)
             </div>
             <div class="editor-label">
-                @this.Html.LabelFor(model => model.Code)
+                @Html.LabelFor(model => model.ExpirationDate)
             </div>
             <div class="editor-field">
-                @this.Html.EditorFor(model => model.Code)
-                @this.Html.ValidationMessageFor(model => model.Code)
+                @Html.TextBoxFor(model => model.ExpirationDate, new { @class = "datepicker" })
+                @Html.ValidationMessageFor(model => model.ExpirationDate)
             </div>
             <div class="editor-label">
-                @this.Html.LabelFor(model => model.Contents)
+                @Html.LabelFor(model => model.Code)
             </div>
             <div class="editor-field">
-                @this.Html.TextAreaFor(model => model.Contents, new { cols = 80, rows = 10 })
-                @this.Html.ValidationMessageFor(model => model.Contents)
+                @Html.EditorFor(model => model.Code)
+                @Html.ValidationMessageFor(model => model.Code)
             </div>
             <div class="editor-label">
-                @this.Html.LabelFor(model => model.Attachment)
+                @Html.LabelFor(model => model.Contents)
             </div>
             <div class="editor-field">
-                @this.Html.DisplayAttachment(((News)this.Model), o => o.Attachment)
+                @Html.TextAreaFor(model => model.Contents, new { cols = 80, rows = 10 })
+                @Html.ValidationMessageFor(model => model.Contents)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Attachment)
             </div>
             <div class="editor-field">
-                @if (((News)this.Model).Attachment.IsNotNull())
+                @Html.DisplayAttachment(Model, o => o.Attachment)
+            </div>
+            <div class="editor-field">
+                @if (Model.Attachment.IsNotNull())
                 {
                     <input type="file" name="Attachment" id="Attachment" />
-                    <input type="hidden" name="AttachmentId" id="AttachmentId" value="@(this.@Model.Attachment.AttachmentId)"/>
+                    <input type="hidden" name="AttachmentId" id="AttachmentId" value="@(@Model.Attachment.AttachmentId)"/>
                 }
                 else
                 {
@@ -86,24 +87,24 @@
                 }
             </div>
             <div class="editor-label">
-                @this.Html.LabelFor(model => model.Published)
+                @Html.LabelFor(model => model.Published)
             </div>
             <div class="editor-field">
-                @this.Html.CheckBoxFor(model => model.Published)
-                @this.Html.ValidationMessageFor(model => model.Contents)
+                @Html.CheckBoxFor(model => model.Published)
+                @Html.ValidationMessageFor(model => model.Contents)
             </div>
             <div class="editor-label">
-                @this.Html.LabelFor(model => model.AppearInHomePage)
+                @Html.LabelFor(model => model.AppearInHomePage)
             </div>
             <div class="editor-field">
-                @this.Html.CheckBoxFor(model => model.AppearInHomePage)
-                @this.Html.ValidationMessageFor(model => model.AppearInHomePage)
+                @Html.CheckBoxFor(model => model.AppearInHomePage)
+                @Html.ValidationMessageFor(model => model.AppearInHomePage)
             </div>
             <p>
-                <input type="submit" value="@this.Html.ResourceFor("Edit")" />
+                <input type="submit" value="@Html.ResourceFor("Edit")" />
             </p>
         </fieldset>
 }
 <div>
-    @this.Html.ActionLink((NewsController o) => o.List())
+    @Html.ActionLink((NewsController o) => o.List())
 </div>

@@ -2,6 +2,7 @@
 using System.Linq;
 using Cedar.WebPortal.Data.Common;
 using Cedar.WebPortal.Domain;
+using Cedar.WebPortal.Domain.Entities;
 using Cedar.WebPortal.Service.Common;
 using Cedar.WebPortal.Service.Infrastructure;
 

@@ -120,11 +120,6 @@
   <data name="Applicant" xml:space="preserve">
     <value>Applicant</value>
   </data>
-  <data name="ApplicantViewModel" xml:space="preserve">
-    <value>Applicant</value>
-  </data>
-
-
   <data name="ChangePasswordModel_OldPassword" xml:space="preserve">
     <value>Old Password</value>
   </data>
@@ -172,30 +167,6 @@
   </data>
   <data name="News_Attachment" xml:space="preserve">
     <value>Image</value>
-  </data>
-  <data name="Message_CaptureDate" xml:space="preserve">
-    <value>Capture Date</value>
-  </data>
-  <data name="Message_Contents" xml:space="preserve">
-    <value>Contents</value>
-  </data>
-  <data name="Message_EMail" xml:space="preserve">
-    <value>EMail</value>
-  </data>
-  <data name="Message_LastName" xml:space="preserve">
-    <value>Last Name</value>
-  </data>
-  <data name="Message_Name" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="Message" xml:space="preserve">
-    <value>Message</value>
-  </data>
-  <data name="Message_AnswerContents" xml:space="preserve">
-    <value>Answer</value>
-  </data>
-  <data name="Message_AnswerDate" xml:space="preserve">
-    <value>Answer Date</value>
   </data>
   <data name="Applicant_AcquaintanceWay" xml:space="preserve">
     <value>AcquaintanceWay</value>
@@ -557,7 +528,7 @@
   <data name="Relative_BirthDate" xml:space="preserve">
     <value>BirthDate</value>
   </data>
-  <data name="Relative_EducationLevel">
+  <data name="Relative_EducationLevel" xml:space="preserve">
     <value>EducationLevel</value>
   </data>
   <data name="Relative_FirstName" xml:space="preserve">
@@ -632,30 +603,6 @@
   <data name="Applicant_EnglishCV" xml:space="preserve">
     <value>English CV File</value>
   </data>
-  <data name="EquipProductInfo_Field" xml:space="preserve">
-    <value>Field</value>
-  </data>
-  <data name="EquipProductInfo_FinancialVolume" xml:space="preserve">
-    <value>Financial Volume</value>
-  </data>
-  <data name="EquipProductInfo_ProductionVolume" xml:space="preserve">
-    <value>Production Volume</value>
-  </data>
-  <data name="EquipProductInfo_ProductStandard" xml:space="preserve">
-    <value>Product Standard</value>
-  </data>
-  <data name="EquipProductInfo_StaffNo" xml:space="preserve">
-    <value>StaffNo</value>
-  </data>
-  <data name="Company_TechnicalDetails" xml:space="preserve">
-    <value>Technical Details</value>
-  </data>
-  <data name="EquipProductInfo_Topic" xml:space="preserve">
-    <value>Topic</value>
-  </data>
-  <data name="Company_ValidApprovals" xml:space="preserve">
-    <value>Valid Approvals</value>
-  </data>
   <data name="SpecializedServiceInfo_ContractsVolume" xml:space="preserve">
     <value>Contracts Volume</value>
   </data>
@@ -682,94 +629,6 @@
   </data>
   <data name="SpecializedServiceInfo_ValidApprovals" xml:space="preserve">
     <value>Valid Approvals</value>
-  </data>
-  <data name="Company_BoardOfDirectors" xml:space="preserve">
-    <value>Board Of Directors</value>
-  </data>
-  <data name="Company_CompanyActivity" xml:space="preserve">
-    <value>Company Activity</value>
-  </data>
-  <data name="Company_ContractStaffNo" xml:space="preserve">
-    <value>Contract Staff No.</value>
-  </data>
-  <data name="Company_EconomicCode" xml:space="preserve">
-    <value>Economic Code</value>
-  </data>
-  <data name="Company_EstablishYear" xml:space="preserve">
-    <value>EstablishYear</value>
-  </data>
-  <data name="Company_FormalStaffNo" xml:space="preserve">
-    <value>Formal Staff No.</value>
-  </data>
-  <data name="Company_ManagingDirector" xml:space="preserve">
-    <value>Managing Director</value>
-  </data>
-  <data name="Company_Name" xml:space="preserve">
-    <value>Name Of Company</value>
-  </data>
-  <data name="Company_IndividualShareHolders" xml:space="preserve">
-    <value>Major Individual ShareHolders</value>
-  </data>
-  <data name="Company_LegalShareHolders" xml:space="preserve">
-    <value>Major Legal ShareHolders</value>
-  </data>
-  <data name="Company_Priority1" xml:space="preserve">
-    <value>1st Priority</value>
-  </data>
-  <data name="Company_Priority2" xml:space="preserve">
-    <value>2nd Priority</value>
-  </data>
-  <data name="Company_Priority3" xml:space="preserve">
-    <value>3rd Priority</value>
-  </data>
-  <data name="Company_OrderedNo1" xml:space="preserve">
-    <value>1-</value>
-  </data>
-  <data name="Company_OrderedNo2" xml:space="preserve">
-    <value>2-</value>
-  </data>
-  <data name="Company_OrderedNo3" xml:space="preserve">
-    <value>3-</value>
-  </data>
-  <data name="Company_ProposedProduct1" xml:space="preserve">
-    <value>First Proposal</value>
-  </data>
-  <data name="Company_ProposedProduct2" xml:space="preserve">
-    <value>Second Proposal</value>
-  </data>
-  <data name="Company_ProposedProduct3" xml:space="preserve">
-    <value>Third Proposal</value>
-  </data>
-  <data name="Company_ProductTools" xml:space="preserve">
-    <value>production line Equipment</value>
-  </data>
-  <data name="Company_EquipProductInfos" xml:space="preserve">
-    <value>Equip ProductInfo</value>
-  </data>
-  <data name="Company_YourProposalDocument" xml:space="preserve">
-    <value>Your Proposal Document</value>
-  </data>
-  <data name="Company_SpecializedServiceInfos" xml:space="preserve">
-    <value>Specialized Service Info</value>
-  </data>
-
-  <data name="Company_ContactPointNameAndFamily" xml:space="preserve">
-    <value>Contact Point Name And Family</value>
-  </data>
-  <data name="Company_ContactPointPost" xml:space="preserve">
-    <value>Contact Point Post</value>
-  </data>
-  <data name="Company_ContactPointTelNo" xml:space="preserve">
-    <value>Contact Point Tel No.</value>
-  </data>
-  <data name="Company_ContactPointCellNo" xml:space="preserve">
-    <value>Contact Point Cell No.</value>
-  </data>
-  <data name="Company_ContactPointMail" xml:space="preserve">
-    <value>Contact Point Mail</value>
-  </data>
-  <data name="Company_FollowupCode" xml:space="preserve">
-    <value>Company FollowUp Code</value>
   </data>
   <data name="JobPosition_Xmlfile" xml:space="preserve">
     <value>JobPosition_Xmlfile</value>
@@ -807,422 +666,126 @@
   <data name="MilitaryServiceStatus_Ongoing" xml:space="preserve">
     <value>Ongoing</value>
   </data>
-  <data name="EducationLevel_None">
+  <data name="EducationLevel_None" xml:space="preserve">
     <value>...</value>
   </data>
-  <data name="EducationLevel_Diploma">
+  <data name="EducationLevel_Diploma" xml:space="preserve">
     <value>Diploma</value>
   </data>
-  <data name="EducationLevel_College">
+  <data name="EducationLevel_College" xml:space="preserve">
     <value>2 Year College</value>
   </data>
-  <data name="EducationLevel_Bachelor">
+  <data name="EducationLevel_Bachelor" xml:space="preserve">
     <value>Bachelor</value>
   </data>
-  <data name="EducationLevel_UnderDiploma">
+  <data name="EducationLevel_UnderDiploma" xml:space="preserve">
     <value>UnderDiploma</value>
   </data>
-  <data name="EducationLevel_Master">
+  <data name="EducationLevel_Master" xml:space="preserve">
     <value>Master</value>
   </data>
-  <data name="EducationLevel_PhD">
+  <data name="EducationLevel_PhD" xml:space="preserve">
     <value>PhD</value>
   </data>
   <data name="Applicant_IAgree" xml:space="preserve">
     <value>I Agree</value>
   </data>
-  <data name="Company_Attachment" xml:space="preserve">
-    <value>Attachment</value>
-  </data>
-  <data name="Distributor_Name">
-    <value>Name</value>
-  </data>
-  <data name="Distributor_Address">
-    <value>Address</value>
-  </data>
-  <data name="Distributor_Email">
-    <value>Email</value>
-  </data>
-  <data name="Distributor_FieldOfActivity">
-    <value>FieldOfActivity</value>
-  </data>
-  <data name="Distributor_Form">
-    <value>Form</value>
-  </data>
-  <data name="Distributor_RegistrationsDoc">
-    <value>RegistrationsDoc</value>
-  </data>
-  <data name="Distributor_LiablesIdentity">
-    <value>LiablesIdentity</value>
-  </data>
-  <data name="Distributor_ExperienceInMonth">
-    <value>ExperienceInMonth</value>
-  </data>
-  <data name="Distributor_Contract">
-    <value>Contract</value>
-  </data>
-  <data name="Distributor_OrganizationChart">
-    <value>OrganizationChart</value>
-  </data>
-  <data name="Distributor_StaffInfos">
-    <value>StaffInfo</value>
-  </data>
-  <data name="Distributor_BestSellingProducts">
-    <value>BestSellingProduct</value>
-  </data>
-  <data name="Distributor_OfficeInfos">
-    <value>OfficeInfo</value>
-  </data>
-  <data name="Distributor_FinancialInfos">
-    <value>FinancialInfo</value>
-  </data>
-  <data name="Distributor_StoreHouseInfos">
-    <value>StoreHouseInfo</value>
-  </data>
-  <data name="Distributor_DistributionNetworkInfos">
-    <value>DistributionNetworkInfo</value>
-  </data>
-  <data name="Distributor_VehicleInfos">
-    <value>VehicleInfo</value>
-  </data>
-  <data name="Distributor_EmployeesInsured">
-    <value>EmployeesInsured</value>
-  </data>
-  <data name="Distributor_ShopsLocalDistributorsNetwork">
-    <value>ShopsLocalDistributorsNetwork</value>
-  </data>
-  <data name="Distributor_AuditedInvoices">
-    <value>AuditedInvoices</value>
-  </data>
-  <data name="Distributor_CashFlowInvoices">
-    <value>CashFlowInvoices</value>
-  </data>
-  <data name="Distributor_AnnualInvoices">
-    <value>AnnualInvoices</value>
-  </data>
-  <data name="Distributor_TaxInvoices">
-    <value>TaxInvoices</value>
-  </data>
-  <data name="Distributor_AvgMonthlySales">
-    <value>AvgMonthlySales</value>
-  </data>
-  <data name="Distributor_AvgAnnualSales">
-    <value>AvgAnnualSales</value>
-  </data>
-  <data name="Distributor_LastSemesterTrunover">
-    <value>LastSemesterTrunover</value>
-  </data>
-  <data name="Distributor_BankInvoices">
-    <value>BankInvoices</value>
-  </data>
-  <data name="Distributor_BankGuarantees">
-    <value>BankGuarantees</value>
-  </data>
-  <data name="Distributor_PropertiesAmount">
-    <value>PropertiesAmount</value>
-  </data>
-  <data name="Distributor_PropertiesDocs">
-    <value>PropertiesDocs</value>
-  </data>
-  <data name="Distributor_OtherOpratorProducts">
-    <value>OtherOpratorProduct</value>
-  </data>
-  <data name="Distributor_OtherOperatorsSellInfos">
-    <value>OtherOperatorsSellInfo</value>
-  </data>
-  <data name="Distributor_ContributionsCommentTo">
-    <value>ContributionsCommentTo</value>
-  </data>
-  <data name="Distributor_ContributionsCommentFrom">
-    <value>ContributionsCommentFrom</value>
-  </data>
-  <data name="Distributor_DistributorOffices">
-    <value>DistributorOffices</value>
-  </data>
-  <data name="Distributor_IAgree">
-    <value>I Agree with the Terms of Use</value>
-  </data>
-
-  <data name="Address_Province">
+  <data name="Address_Province" xml:space="preserve">
     <value>Province</value>
   </data>
-  <data name="Address_City">
+  <data name="Address_City" xml:space="preserve">
     <value>City</value>
   </data>
-  <data name="Address_Ave">
+  <data name="Address_Ave" xml:space="preserve">
     <value>Ave</value>
   </data>
-  <data name="Address_Description">
+  <data name="Address_Description" xml:space="preserve">
     <value>Description</value>
   </data>
-  <data name="Address_BuildingNo">
+  <data name="Address_BuildingNo" xml:space="preserve">
     <value>BuildingNo</value>
   </data>
-  <data name="Address_Tel">
+  <data name="Address_Tel" xml:space="preserve">
     <value>Tel</value>
   </data>
-  <data name="Address_TelCode">
+  <data name="Address_TelCode" xml:space="preserve">
     <value>TelCode</value>
   </data>
-  <data name="Address_Fax">
+  <data name="Address_Fax" xml:space="preserve">
     <value>Fax</value>
   </data>
-  <data name="BestSellingProduct_Type">
-    <value>Type</value>
-  </data>
-  <data name="BestSellingProduct_Manufacturer">
-    <value>Manufacturer</value>
-  </data>
-  <data name="BestSellingProduct_SalesVolumeInLastYear">
-    <value>SalesVolumeInLastYear</value>
-  </data>
-  <data name="DistributionNetworkInfo_Shop">
-    <value>Shop</value>
-  </data>
-  <data name="DistributionNetworkInfo_WholesaleReseller">
-    <value>WholesaleReseller</value>
-  </data>
-  <data name="DistributionNetworkInfo_BankPos">
-    <value>BankPos</value>
-  </data>
-  <data name="DistributionNetworkInfo_Facility">
-    <value>Facility</value>
-  </data>
-  <data name="FinancialInfo_LastQuarterTurnover">
+  <data name="FinancialInfo_LastQuarterTurnover" xml:space="preserve">
     <value>LastQuarterTurnover</value>
   </data>
-  <data name="FinancialInfo_MonthlySales">
+  <data name="FinancialInfo_MonthlySales" xml:space="preserve">
     <value>MonthlySales</value>
   </data>
-  <data name="DistributorOffice_Location">
-    <value>Province</value>
-  </data>
-  <data name="Distributor_FollowupCode">
-    <value>FollowupCode</value>
-  </data>
-  <data name="OfficeInfo_OfficeCount">
-    <value>OfficeCount</value>
-  </data>
-  <data name="OfficeInfo_AreaM2">
-    <value>AreaM2</value>
-  </data>
-  <data name="OfficeInfo_InsuredEmployees">
-    <value>InsuredEmployees</value>
-  </data>
-  <data name="OfficeInfo_UninsuredEmployees">
-    <value>UninsuredEmployees</value>
-  </data>
-  <data name="OtherOperatorsSellInfo_OpratorName">
-    <value>OpratorName</value>
-  </data>
-  <data name="OtherOperatorsSellInfo_Start">
-    <value>Start</value>
-  </data>
-  <data name="OtherOperatorsSellInfo_ProductType">
-    <value>ProductType</value>
-  </data>
-  <data name="OtherOperatorsSellInfo_Rank">
-    <value>Rank</value>
-  </data>
-  <data name="OtherOperatorsSellInfo_Location">
-    <value>Location</value>
-  </data>
-  <data name="OtherOperatorsSellInfo_CountLocation">
-    <value>Number of provinces covered</value>
-  </data>
-  <data name="OtherOperatorsSellInfo_Doc">
-    <value>Doc</value>
-  </data>
-  <data name="StaffInfo_FirstName">
+  <data name="StaffInfo_FirstName" xml:space="preserve">
     <value>FirstName</value>
   </data>
-  <data name="StaffInfo_LastName">
+  <data name="StaffInfo_LastName" xml:space="preserve">
     <value>LastName</value>
   </data>
-  <data name="StaffInfo_Level">
+  <data name="StaffInfo_Level" xml:space="preserve">
     <value>Level</value>
   </data>
-  <data name="StaffInfo_Email">
+  <data name="StaffInfo_Email" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="StaffInfo_MobileNo">
+  <data name="StaffInfo_MobileNo" xml:space="preserve">
     <value>MobileNo</value>
   </data>
-  <data name="StaffInfo_Post">
+  <data name="StaffInfo_Post" xml:space="preserve">
     <value>Post</value>
   </data>
-  <data name="StaffInfo_DecisionMaker">
+  <data name="StaffInfo_DecisionMaker" xml:space="preserve">
     <value>Decision Maker</value>
   </data>
-  <data name="StaffInfo_TelAreaCode">
+  <data name="StaffInfo_TelAreaCode" xml:space="preserve">
     <value>TelAreaCode</value>
   </data>
-  <data name="StaffInfo_TelNo">
+  <data name="StaffInfo_TelNo" xml:space="preserve">
     <value>TelNo</value>
   </data>
-  <data name="StoreHouseInfo_TotalSize">
+  <data name="StoreHouseInfo_TotalSize" xml:space="preserve">
     <value>TotalSize</value>
   </data>
-  <data name="StoreHouseInfo_TotalStaff">
+  <data name="StoreHouseInfo_TotalStaff" xml:space="preserve">
     <value>TotalStaff</value>
   </data>
-  <data name="StoreHouseInfo_ActiveVehicle">
+  <data name="StoreHouseInfo_ActiveVehicle" xml:space="preserve">
     <value>ActiveVehicle</value>
   </data>
-  <data name="VehicleInfo_Type">
+  <data name="VehicleInfo_Type" xml:space="preserve">
     <value>Type</value>
   </data>
-  <data name="VehicleInfo_Count">
+  <data name="VehicleInfo_Count" xml:space="preserve">
     <value>Count</value>
   </data>
-  <data name="CompanyForm_None">
-    <value>...</value>
-  </data>
-  <data name="CompanyForm_Other">
-    <value>Other</value>
-  </data>
-  <data name="CompanyForm_PublicJointStock">
-    <value>Public Joint Stock</value>
-  </data>
-  <data name="CompanyForm_LLP">
-    <value>LLP</value>
-  </data>
-  <data name="CompanyForm_Cooperative">
-    <value>Cooperative</value>
-  </data>
-  <data name="CompanyForm_PrivateJointStock">
-    <value>Private Joint Stock</value>
-  </data>
-  <data name="ProductType_Physical">
-    <value>Postpaid</value>
-  </data>
-  <data name="ProductType_Logical">
-    <value>Prepaid</value>
-  </data>
-  <data name="ProductType_ECharge">
-    <value>ECharge</value>
-  </data>
-  <data name="ProductType_All">
-    <value>Chargecard</value>
-  </data>
-  <data name="Location_Province">
+  <data name="Location_Province" xml:space="preserve">
     <value>Province</value>
   </data>
-  <data name="Equipment_ReadMeFile">
-    <value>Technical Documents</value>
-  </data>
-  <data name="Equipment_Code">
-    <value>Equipment Code</value>
-  </data>
-  <data name="Equipment_Name">
-    <value>Equipment Name</value>
-  </data>
-  <data name="OpratorName_Mci">
-    <value>
-      Mci
-    </value>
-  </data>
-  <data name="OpratorName_Irancell">
-    <value>
-      Irancell
-    </value>
-  </data>
-  <data name="OpratorName_Taliya">
-    <value>
-      Taliya
-    </value>
-  </data>
-  <data name="DistributionType_Retail">
-    <value>
-      Retail
-    </value>
-  </data>
-  <data name="DistributionType_Wholesale">
-    <value>
-      Wholesale
-    </value>
-  </data>
-  <data name="DistributionType_Both">
-    <value>
-      Both
-    </value>
-  </data>
-  <data name="Distributor_DistributionType">
-    <value>
-      Distribution Type
-    </value>
-  </data>
-  <data name="Distributor_Website">
-    <value>
-      Website
-    </value>
-  </data>
-  <data name="Distributor_VendingMachine">
-    <value>
-      Vending Machine
-    </value>
-  </data>
-  <data name="Distributor_MobileSales">
-    <value>
-      Sales via Mobile
-    </value>
-  </data>
-  <data name="Distributor_OtherFacility">
+  <data name="TrainingUnitType_Other" xml:space="preserve">
     <value>
       Other
     </value>
   </data>
-  <data name="MContractType_PartTime">
-    <value>
-      PartTime
-    </value>
-  </data>
-  <data name="ContractType_FullTime">
-    <value>
-      FullTime
-    </value>
-  </data>
-  <data name="ContractType_Project">
-    <value>
-      Project
-    </value>
-  </data>
-  <data name="ContractType_Cunsultance">
-    <value>
-      Cunsultance
-    </value>
-  </data>
-  <data name="ContractType_Other">
-    <value>
-      Other
-    </value>
-  </data>
-  <data name="Distributor_Locations">
-    <value>
-      The provinces and areas to distribute supplies Cedar Products
-    </value>
-  </data>
-  <data name="TrainingUnitType_Other">
-    <value>
-      Other
-    </value>
-  </data>
-  <data name="TrainingUnitType_State">
+  <data name="TrainingUnitType_State" xml:space="preserve">
     <value>
       State
     </value>
   </data>
-  <data name="TrainingUnitType_Free">
+  <data name="TrainingUnitType_Free" xml:space="preserve">
     <value>
       Free
     </value>
   </data>
-  <data name="TrainingUnitType_PayamNoor">
+  <data name="TrainingUnitType_PayamNoor" xml:space="preserve">
     <value>
       PayamNoor
     </value>
   </data>
-  <data name="TrainingUnitType_NonProfit">
+  <data name="TrainingUnitType_NonProfit" xml:space="preserve">
     <value>
       Non Profit
     </value>
@@ -1254,28 +817,28 @@
   <data name="AcquaintanceWay_Other" xml:space="preserve">
     <value>Other</value>
   </data>
-  <data name="FamilyRelation_Father">
+  <data name="FamilyRelation_Father" xml:space="preserve">
     <value>Father</value>
   </data>
-  <data name="FamilyRelation_Mother">
+  <data name="FamilyRelation_Mother" xml:space="preserve">
     <value>Mother</value>
   </data>
-  <data name="FamilyRelation_Brother">
+  <data name="FamilyRelation_Brother" xml:space="preserve">
     <value>Brother</value>
   </data>
-  <data name="FamilyRelation_Sister">
+  <data name="FamilyRelation_Sister" xml:space="preserve">
     <value>Sister</value>
   </data>
-  <data name="FamilyRelation_Child">
+  <data name="FamilyRelation_Child" xml:space="preserve">
     <value>Child</value>
   </data>
-  <data name="FamilyRelation_Couple">
+  <data name="FamilyRelation_Couple" xml:space="preserve">
     <value>Couple</value>
   </data>
-  <data name="Applicant_CronicDisease">
+  <data name="Applicant_CronicDisease" xml:space="preserve">
     <value>Cronic Disease</value>
   </data>
-  <data name="Applicant_CronicDiseaseType">
+  <data name="Applicant_CronicDiseaseType" xml:space="preserve">
     <value>Cronic Disease Type</value>
   </data>
   <data name="Address_Unit" xml:space="preserve">
@@ -1314,134 +877,41 @@
   <data name="Gallery_Attachment" xml:space="preserve">
     <value>Image</value>
   </data>
-  <data name="Prospect_MSISDN">
-    <value>MSISDN registered</value>
-  </data>
-  <data name="Prospect_FirstName">
-    <value>FirstName</value>
-  </data>
-  <data name="Prospect_LastName">
-    <value>LastName</value>
-  </data>
-  <data name="Prospect_FirstNameInEnglish">
-    <value>FirstNameInEnglish</value>
-  </data>
-  <data name="Prospect_LastNameInEnglish">
-    <value>LastNameInEnglish</value>
-  </data>
-  <data name="Prospect_IdentityNo">
-    <value>IdentityNo</value>
-  </data>
-  <data name="Prospect_NationalNo">
-    <value>NationalNo</value>
-  </data>
-  <data name="Prospect_Gender">
-    <value>Gender</value>
-  </data>
-  <data name="Prospect_TelNo">
-    <value>TelNo</value>
-  </data>
-  <data name="Prospect_MobileNo">
-    <value>MobileNo</value>
-  </data>
-  <data name="Prospect_EMail">
-    <value>EMail</value>
-  </data>
-  <data name="Prospect_Address">
-    <value>Address</value>
-  </data>
-  <data name="Prospect_RegistrationDate">
-    <value>RegistrationDate</value>
-  </data>
-  <data name="Prospect_PreferredModeOfCommunication">
-    <value>Preferred mode of communication (Email or Post)</value>
-  </data>
-  <data name="Prospect_PreferredPickPointSimCard">
-    <value>Preferred pick point of the customer for SIM Card</value>
-  </data>
-  <data name="Prospect_FollowupCode">
-    <value>FollowupCode</value>
-  </data>
-  <data name="PreferredModeOfCommunication_Email">
-    <value>Email</value>
-  </data>
-  <data name="PreferredModeOfCommunication_Post">
-    <value>Post</value>
-  </data>
-  <data name="PreferredPickPointSimCard_Karaj">
-    <value>Karaj</value>
-  </data>
-  <data name="PreferredPickPointSimCard_Tehran">
-    <value>Tehran</value>
-  </data>
-  <data name="State_Hold">
-    <value>Number is hold</value>
-  </data>
-  <data name="State_Exist">
-    <value>Number is exist</value>
-  </data>
-  <data name="State_Sold">
-    <value>Number is sold</value>
-  </data>
-  <data name="State_NotExist">
-    <value>Number is not exist</value>
-  </data>
   <data name="News_ExpirationDate" xml:space="preserve">
     <value>Expiration date</value>
   </data>
   <data name="News_Language" xml:space="preserve">
     <value>News Language</value>
   </data>
-  <data name="Prospect_Job">
-    <value>Job</value>
-  </data>
-  <data name="Prospect_Education">
-    <value>Education</value>
-  </data>
-  <data name="Prospect_ServiceType">
-    <value>Service Type</value>
-  </data>
-  <data name="Prospect_PaymentType">
-    <value>Payment Type</value>
-  </data>
-  <data name="PaymentType_Postpaid">
-    <value>Postpaid</value>
-  </data>
-  <data name="PaymentType_Prepaid">
-    <value>Prepaid</value>
-  </data>
-  <data name="ServiceType_Data">
+  <data name="ServiceType_Data" xml:space="preserve">
     <value>Data</value>
   </data>
-  <data name="ServiceType_Smartphone">
+  <data name="ServiceType_Smartphone" xml:space="preserve">
     <value>Smartphone</value>
   </data>
-  <data name="JobCategory_Government">
+  <data name="JobCategory_Government" xml:space="preserve">
     <value>Government</value>
   </data>
-  <data name="JobCategory_Industry">
+  <data name="JobCategory_Industry" xml:space="preserve">
     <value>Industry</value>
   </data>
-  <data name="JobCategory_Training">
+  <data name="JobCategory_Training" xml:space="preserve">
     <value>Training</value>
   </data>
-  <data name="JobCategory_Commercial">
+  <data name="JobCategory_Commercial" xml:space="preserve">
     <value>Commercial</value>
   </data>
-  <data name="JobCategory_Agriculture">
+  <data name="JobCategory_Agriculture" xml:space="preserve">
     <value>Agriculture</value>
   </data>
-  <data name="JobCategory_Service">
+  <data name="JobCategory_Service" xml:space="preserve">
     <value>Service</value>
   </data>
-  <data name="JobCategory_Health">
+  <data name="JobCategory_Health" xml:space="preserve">
     <value>Health</value>
   </data>
-  <data name="JobCategory_Other">
+  <data name="JobCategory_Other" xml:space="preserve">
     <value>Other</value>
-  </data>
-  <data name="Prospect_Attachment">
-    <value>Attachment</value>
   </data>
   <data name="MaritalStatus_None" xml:space="preserve">
     <value>...</value>
@@ -1455,106 +925,33 @@
   <data name="MaritalStatus_Single" xml:space="preserve">
     <value>Single</value>
   </data>
-  <data name="JobPosition_JobCode">
+  <data name="JobPosition_JobCode" xml:space="preserve">
     <value>JobCode</value>
   </data>
-  <data name="JobPosition_JobTitle">
+  <data name="JobPosition_JobTitle" xml:space="preserve">
     <value>JobTitle</value>
   </data>
-  <data name="JobPosition_JobEducation">
+  <data name="JobPosition_JobEducation" xml:space="preserve">
     <value>JobEducation</value>
   </data>
-  <data name="JobPosition_JobSkills">
+  <data name="JobPosition_JobSkills" xml:space="preserve">
     <value>JobSkills</value>
   </data>
-  <data name="JobPosition_Department">
+  <data name="JobPosition_Department" xml:space="preserve">
     <value>Department</value>
   </data>
-
-
-  <data name="Ticket_FirstName">
-    <value>FirstName</value>
-  </data>
-  <data name="Ticket_LastName">
-    <value>LastName</value>
-  </data>
-  <data name="Ticket_MSISDN">
-    <value>MSISDN</value>
-  </data>
-  <data name="Ticket_MobileNo">
-    <value>MobileNo</value>
-  </data>
-  <data name="Ticket_EMail">
-    <value>EMail</value>
-  </data>
-  <data name="Ticket_NationalNo">
-    <value>NationalNo</value>
-  </data>
-  <data name="Ticket_Address">
-    <value>Address</value>
-  </data>
-  <data name="Ticket_TelNo">
-    <value>TelNo</value>
-  </data>
-  <data name="Ticket_FollowupCode">
-    <value>FollowupCode</value>
-  </data>
-  <data name="Ticket_ApplicationDate">
-    <value>ApplicationDate</value>
-  </data>
-  <data name="Ticket_Location">
-    <value>Location</value>
-  </data>
-  <data name="Ticket_City">
-    <value>City</value>
-  </data>
-  <data name="Ticket_IssueType">
-    <value>IssueType</value>
-  </data>
-  <data name="Ticket_SimType">
-    <value>SimType</value>
-  </data>
-  <data name="Ticket_IssueDesc">
-    <value>Address</value>
-  </data>
-  <data name="Ticket" xml:space="preserve">
-    <value>Trouble Ticketing</value>
-  </data>
-  <data name="IssueType_None">
+  <data name="SimType_None" xml:space="preserve">
     <value>---</value>
   </data>
-  <data name="IssueType_SMS">
-    <value>SMS</value>
-  </data>
-  <data name="IssueType_MMS">
-    <value>MMS</value>
-  </data>
-  <data name="IssueType_Internet">
-    <value>Internet</value>
-  </data>
-  <data name="IssueType_VoiceCall">
-    <value>VoiceCall</value>
-  </data>
-  <data name="IssueType_VideoCall">
-    <value>VideoCall</value>
-  </data>
-  <data name="IssueType_VAS">
-    <value>VAS</value>
-  </data>
-
-  <data name="SimType_None">
-    <value>---</value>
-  </data>
-  <data name="SimType_Postpaid">
+  <data name="SimType_Postpaid" xml:space="preserve">
     <value>Postpaid</value>
   </data>
-  <data name="SimType_Prepaid">
+  <data name="SimType_Prepaid" xml:space="preserve">
     <value>Prepaid</value>
   </data>
-  <data name="SimType_Data">
+  <data name="SimType_Data" xml:space="preserve">
     <value>Data</value>
   </data>
-
   <data name="RegisterMember_Answer" xml:space="preserve">
     <value>Security Answer</value>
   </data>
@@ -1573,170 +970,10 @@
   <data name="RegisterMember_Password" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="Company_SA" xml:space="preserve">
-    <value>WI</value>
-  </data>
-  <data name="Company_TI" xml:space="preserve">
-    <value>TI</value>
-  </data>
-  <data name="Company_CW" xml:space="preserve">
-    <value>CW</value>
-  </data>
-  <data name="Company_Favorites" xml:space="preserve">
-    <value>Favorites</value>
-  </data>
-  <data name="Company_Location1" xml:space="preserve">
-    <value>Location1</value>
-  </data>
-  <data name="Company_Location2" xml:space="preserve">
-    <value>Location2</value>
-  </data>
-  <data name="Ticket_IssueStatus">
-    <value>Issue Status</value>
-  </data>
-  <data name="IssueStatus_Followup">
-    <value>Followup</value>
-  </data>
-  <data name="IssueStatus_Invalid">
-    <value>Invalid</value>
-  </data>
-  <data name="IssueStatus_Finish">
-    <value>Finish</value>
-  </data>
-  <data name="Ticket_Desc">
-    <value>Description</value>
-  </data>
   <data name="Profile" xml:space="preserve">
     <value>Profile</value>
   </data>
-  <data name="TenderApplication_Name">
-    <value>Name</value>
-  </data>
-  <data name="TenderApplication_RegistrationNo">
-    <value>RegistrationNo</value>
-  </data>
-  <data name="TenderApplication_EconomicCode">
-    <value>EconomicCode</value>
-  </data>
-  <data name="TenderApplication_Address">
-    <value>Address</value>
-  </data>
-  <data name="TenderApplication_ActivityDomain">
-    <value>ActivityDomain</value>
-  </data>
-  <data name="TenderApplication_RasmiDoc">
-    <value>RasmiDoc</value>
-  </data>
-  <data name="TenderApplication_TaxPayersRegistrationDoc">
-    <value>TaxPayersRegistrationDoc</value>
-  </data>
-  <data name="TenderApplication_SHCIRatingDoc">
-    <value>SHCIRatingDoc</value>
-  </data>
-  <data name="TenderApplication_ISO9001Doc">
-    <value>ISO9001Doc</value>
-  </data>
-  <data name="TenderApplication_FollowupCode" xml:space="preserve">
-    <value>Followup Code</value>
-  </data>
-  <data name="Tender_TenderType">
-    <value>TenderType</value>
-  </data>
-  <data name="Tender_TenderNo">
-    <value>TenderNo</value>
-  </data>
-  <data name="Tender_TenderStep">
-    <value>TenderStep</value>
-  </data>
-  <data name="Tender_TenderText">
-    <value>TenderText</value>
-  </data>
-  <data name="Tender_TenderApplications">
-    <value>TenderApplications</value>
-  </data>
-  <data name="TenderType_Tender">
-    <value>Tender</value>
-  </data>
-  <data name="TenderType_Bid">
-    <value>Bid</value>
-  </data>
-  <data name="TenderType_Call">
-    <value>Call</value>
-  </data>
-  <data name="TenderStep_OneStep">
-    <value>one step</value>
-  </data>
-  <data name="TenderStep_TwoStep">
-    <value>two step</value>
-  </data>
-  <data name="Tender_ExpirationDate">
-    <value>Expiration date</value>
-  </data>
-  <data name="Tender_Active">
-    <value>Active</value>
-  </data>
-  <data name="Tender_Title">
-    <value>Title</value>
-  </data>
-  <data name="Address_Email">
+  <data name="Address_Email" xml:space="preserve">
     <value>Email</value>
-  </data>
-  <data name="CompanyRegistrationNo">
-    <value>Company Registration No</value>
-  </data>
-  <data name="Distributor_FirstDate" xml:space="preserve">
-    <value>First Date</value>
-  </data>
-  <data name="Distributor_LastUpdate" xml:space="preserve">
-    <value>Last Update</value>
-  </data>
-  <data name="ApplicantSalesShop_ApplicantSalesShopType" xml:space="preserve">
-    <value>Type of applicant</value>
-  </data>
-  <data name="ApplicantSalesShopType_Sales" xml:space="preserve">
-    <value>
-     Sales
-    </value>
-  </data>
-  <data name="ApplicantSalesShopType_Shop" xml:space="preserve">
-    <value>
-    Shop
-    </value>
-  </data>
-  <data name="ApplicantSalesShop_Name" >
-    <value>Name</value>
-  </data>
-  <data name="Ownership_Owner" >
-    <value>Owner</value>
-  </data>
-  <data name="Ownership_Leased" >
-    <value>Leased</value>
-  </data>
-  <data name="ApplicantSalesShop_Ownership" >
-    <value>Ownership</value>
-  </data>
-  <data name="ApplicantSalesShop_InstallationPanel" >
-    <value>InstallationPanel</value>
-  </data>
-  <data name="ApplicantSalesShop_PanelArea" >
-    <value>PanelArea</value>
-  </data>
-  <data name="ApplicantSalesShop_ShopArea" >
-    <value>ShopArea</value>
-  </data>
-  <data name="InstallationPanel_Permitted" >
-    <value>Permitted</value>
-  </data>
-  <data name="InstallationPanel_NotFeasible" >
-    <value>NotFeasible</value>
-  </data>
-  <data name="ApplicantSalesShop_LicenseType" >
-    <value>LicenseType</value>
-  </data>
-  <data name="ApplicantSalesShop_LicenseDate" >
-    <value>ApplicantSalesShop_LicenseDate</value>
-  </data>
-  <data name="ApplicantSalesShop_OfficeNo" >
-    <value>OfficeNo</value>
   </data>
 </root>

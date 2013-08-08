@@ -106,7 +106,7 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Notice.
+        ///   Looks up a localized string similar to Notice .
         /// </summary>
         public static string Applicant_Dialog_Message {
             get {
@@ -300,7 +300,7 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright © 2011 Tamin Telecom. All rights reserved.
+        ///   Looks up a localized string similar to Copyright © 2011 XYZ. All rights reserved.
         /// </summary>
         public static string CopyRight {
             get {
@@ -345,193 +345,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      Upload file link related with this section there is exist on the next page.
-        ///    .
-        /// </summary>
-        public static string Distribution_AttachmentMessage {
-            get {
-                return ResourceManager.GetString("Distribution_AttachmentMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Best Sales Volume In Last Year.
-        /// </summary>
-        public static string Distribution_BestSellerQuestuion {
-            get {
-                return ResourceManager.GetString("Distribution_BestSellerQuestuion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///			&lt;p&gt;Terms of Use&lt;/p&gt;
-        ///			&lt;ul&gt;
-        ///				&lt;li&gt;Item 1&lt;/li&gt;
-        ///			&lt;/ul&gt;
-        ///			.
-        /// </summary>
-        public static string Distribution_Confirmation {
-            get {
-                return ResourceManager.GetString("Distribution_Confirmation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Download Me....
-        /// </summary>
-        public static string Distribution_ContentLinkDownloadExcel {
-            get {
-                return ResourceManager.GetString("Distribution_ContentLinkDownloadExcel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      Please download the file , fill it  and attached it on next page
-        ///    .
-        /// </summary>
-        public static string Distribution_DownloadExcel {
-            get {
-                return ResourceManager.GetString("Distribution_DownloadExcel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Distribution Facility.
-        /// </summary>
-        public static string Distribution_Facility {
-            get {
-                return ResourceManager.GetString("Distribution_Facility", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please complete the following information on the accuracy and integrity..
-        /// </summary>
-        public static string Distribution_FirstMessage {
-            get {
-                return ResourceManager.GetString("Distribution_FirstMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      Distributors registration
-        ///    .
-        /// </summary>
-        public static string Distribution_RegisterTitle {
-            get {
-                return ResourceManager.GetString("Distribution_RegisterTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      A. Job Applicant Profile
-        ///    .
-        /// </summary>
-        public static string Distribution_SectionA {
-            get {
-                return ResourceManager.GetString("Distribution_SectionA", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      B. Corporate Profile
-        ///    .
-        /// </summary>
-        public static string Distribution_SectionB {
-            get {
-                return ResourceManager.GetString("Distribution_SectionB", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      C. Job Details
-        ///    .
-        /// </summary>
-        public static string Distribution_SectionC {
-            get {
-                return ResourceManager.GetString("Distribution_SectionC", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      D. Financial
-        ///    .
-        /// </summary>
-        public static string Distribution_SectionD {
-            get {
-                return ResourceManager.GetString("Distribution_SectionD", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      E. Complete list of local distributors and retail distribution network
-        ///    .
-        /// </summary>
-        public static string Distribution_SectionE {
-            get {
-                return ResourceManager.GetString("Distribution_SectionE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      F. Contributions Comment
-        ///    .
-        /// </summary>
-        public static string Distribution_SectionF {
-            get {
-                return ResourceManager.GetString("Distribution_SectionF", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      G. Applicant confirmation of this form
-        ///    .
-        /// </summary>
-        public static string Distribution_SectionG {
-            get {
-                return ResourceManager.GetString("Distribution_SectionG", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Notice.
-        /// </summary>
-        public static string Distributor_Dialog_Message {
-            get {
-                return ResourceManager.GetString("Distributor_Dialog_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please Note Your Followup Code .
-        /// </summary>
-        public static string Distributor_FollowUp_Message {
-            get {
-                return ResourceManager.GetString("Distributor_FollowUp_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your registeration is done.
-        /// </summary>
-        public static string Distributor_Success_Message {
-            get {
-                return ResourceManager.GetString("Distributor_Success_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Edit.
         /// </summary>
         public static string Edit {
@@ -546,42 +359,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         public static string EnterUsernamePasswordMessage {
             get {
                 return ResourceManager.GetString("EnterUsernamePasswordMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Equipment Code.
-        /// </summary>
-        public static string Equipment_Code {
-            get {
-                return ResourceManager.GetString("Equipment_Code", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Equipment Name.
-        /// </summary>
-        public static string Equipment_Name {
-            get {
-                return ResourceManager.GetString("Equipment_Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Technical Documents.
-        /// </summary>
-        public static string Equipment_ReadMeFile {
-            get {
-                return ResourceManager.GetString("Equipment_ReadMeFile", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Major Customers.
-        /// </summary>
-        public static string EquipProductInfo_Customers {
-            get {
-                return ResourceManager.GetString("EquipProductInfo_Customers", resourceCulture);
             }
         }
         
@@ -618,15 +395,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FAQ.
-        /// </summary>
-        public static string FAQ {
-            get {
-                return ResourceManager.GetString("FAQ", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to File Attachments.
         /// </summary>
         public static string FileAttach {
@@ -650,92 +418,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         public static string Home {
             get {
                 return ResourceManager.GetString("Home", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to About Us.
-        /// </summary>
-        public static string Home_AboutUs {
-            get {
-                return ResourceManager.GetString("Home_AboutUs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Contact Us.
-        /// </summary>
-        public static string Home_ContactUs {
-            get {
-                return ResourceManager.GetString("Home_ContactUs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to FAQ.
-        /// </summary>
-        public static string Home_FAQ {
-            get {
-                return ResourceManager.GetString("Home_FAQ", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Picture Gallery.
-        /// </summary>
-        public static string Home_PictureGallery {
-            get {
-                return ResourceManager.GetString("Home_PictureGallery", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to    
-        ///			&lt;p&gt;
-        ///		Click in the image and see that 
-        ///		&lt;/p&gt;
-        ///		
-        ///		.
-        /// </summary>
-        public static string Home_PictureGallery_Message {
-            get {
-                return ResourceManager.GetString("Home_PictureGallery_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Product.
-        /// </summary>
-        public static string Home_Products {
-            get {
-                return ResourceManager.GetString("Home_Products", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tender.
-        /// </summary>
-        public static string Home_Tender {
-            get {
-                return ResourceManager.GetString("Home_Tender", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 3G.
-        /// </summary>
-        public static string Home_VAS {
-            get {
-                return ResourceManager.GetString("Home_VAS", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please hold ctrl an click on the text.
-        /// </summary>
-        public static string HowToAddListBoxMessage {
-            get {
-                return ResourceManager.GetString("HowToAddListBoxMessage", resourceCulture);
             }
         }
         
@@ -915,26 +597,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;p&gt;Location of system message&lt;/p&gt; .
-        /// </summary>
-        public static string Prospect_FirstMessage {
-            get {
-                return ResourceManager.GetString("Prospect_FirstMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      Prospect preregistration
-        ///    .
-        /// </summary>
-        public static string Prospect_RegisterTitle {
-            get {
-                return ResourceManager.GetString("Prospect_RegisterTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Register.
         /// </summary>
         public static string Register {
@@ -998,15 +660,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search Option.
-        /// </summary>
-        public static string Search_Option {
-            get {
-                return ResourceManager.GetString("Search-Option", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to 
         ///      Search for job position
         ///    .
@@ -1050,78 +703,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         public static string Tehran {
             get {
                 return ResourceManager.GetString("Tehran", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;div&gt;
-        ///&lt;ul &gt;
-        ///&lt;li&gt;
-        ///   Tender Message
-        ///&lt;/li&gt;
-        ///&lt;/ul&gt;
-        ///&lt;/div&gt;
-        ///	 .
-        /// </summary>
-        public static string Tender_Message {
-            get {
-                return ResourceManager.GetString("Tender_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tender Application.
-        /// </summary>
-        public static string TenderApplication {
-            get {
-                return ResourceManager.GetString("TenderApplication", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to  
-        ///    &lt;html&gt;
-        ///&lt;head&gt;
-        ///&lt;/head&gt;
-        ///&lt;body dir=&quot;rtl&quot; style=&quot;font-family: Tahoma;color:black; font-size: x-small&quot; bgcolor=&quot;white&quot; text=&quot;#000000&quot;&gt;
-        ///    &lt;div&gt;
-        ///        &lt;p dir=&quot;RTL&quot; style=&quot;text-align: right; direction: rtl;&quot;&gt;
-        ///            &lt;b&gt;&lt;span style=&quot;font-size: 16.0pt; font-family: &apos;B Lotus&apos;;&quot;&gt;ثبت تقاضای
-        ///                مناقصه شماره {0}&lt;/span&gt; &lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-size: 16.0pt;&quot;
-        ///                    lang=&quot;AR-SA&quot;&gt;&lt;/span&gt;&lt;/b&gt;
-        ///        &lt;/p&gt;
-        ///        &lt;p dir=&quot;RTL&quot; style=&quot;text-align: right; direction: rtl; unicod [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string TenderApplication_Body {
-            get {
-                return ResourceManager.GetString("TenderApplication_Body", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ثبت تقاضای مناقصه.
-        /// </summary>
-        public static string TenderApplication_Subject {
-            get {
-                return ResourceManager.GetString("TenderApplication_Subject", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Attention.
-        /// </summary>
-        public static string Ticket_Dialog_Message {
-            get {
-                return ResourceManager.GetString("Ticket_Dialog_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Done.
-        /// </summary>
-        public static string Ticket_Success_Message {
-            get {
-                return ResourceManager.GetString("Ticket_Success_Message", resourceCulture);
             }
         }
         

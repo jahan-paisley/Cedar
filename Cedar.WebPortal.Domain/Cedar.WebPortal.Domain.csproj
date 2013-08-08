@@ -17,7 +17,6 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -108,9 +107,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Applicant\Applicant.cs" />
-    <Compile Include="Entities\Department.cs" />
-    <Compile Include="Entities\Gallery\Gallery.cs" />
-    <Compile Include="Entities\User\UserRightel.cs" />
+    <Compile Include="Entities\Applicant\Department.cs" />
+    <Compile Include="Entities\UserProfile.cs" />
     <Compile Include="Interfaces\Company.cs" />
     <Compile Include="Interfaces\Person.cs" />
     <Compile Include="Resources\GlossaryResource.Designer.cs">
@@ -124,13 +122,11 @@
       <DependentUpon>Application.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Applicant\Certificate.cs" />
-    <Compile Include="Entities\FileType.cs" />
     <Compile Include="Entities\Applicant\JobPosition.cs" />
     <Compile Include="Entities\Applicant\EducationInfo.cs" />
     <Compile Include="Entities\Enums.cs" />
     <Compile Include="Entities\Applicant\HabitationInfo.cs" />
     <Compile Include="Entities\Applicant\LanguageSkill.cs" />
-    <Compile Include="Entities\Message\Message.cs" />
     <Compile Include="Entities\Applicant\MilitaryServiceInfo.cs" />
     <Compile Include="Entities\News\News.cs" />
     <Compile Include="Entities\Attachment.cs" />
@@ -139,7 +135,6 @@
     <Compile Include="Entities\Applicant\Skill.cs" />
     <Compile Include="Entities\Applicant\SocialSecurityInfo.cs" />
     <Compile Include="Entities\Location.cs" />
-    <Compile Include="Entities\User\User.cs" />
     <Compile Include="Entities\Applicant\WorkExperienceInfo.cs" />
     <Compile Include="Interfaces\IAddress.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

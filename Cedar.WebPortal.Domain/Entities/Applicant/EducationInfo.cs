@@ -1,9 +1,9 @@
-﻿namespace Cedar.WebPortal.Domain
+﻿namespace Cedar.WebPortal.Domain.Entities
 {
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    using Cedar.WebPortal.Domain.Component;
+    using Enums;
     using Cedar.WebPortal.Domain.Resources;
 
     public class EducationInfo

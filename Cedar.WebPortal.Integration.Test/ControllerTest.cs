@@ -1,7 +1,9 @@
-﻿namespace Cedar.WebPortal.Integration.Test
+﻿using Cedar.WebPortal.Domain.Entities;
+
+namespace Cedar.WebPortal.Integration.Test
 {
     using Cedar.WebPortal.Domain;
-    using Cedar.WebPortal.Domain.Component;
+    using Domain.Enums;
 
     public class ControllerTest
     {

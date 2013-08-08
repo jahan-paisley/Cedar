@@ -2,8 +2,8 @@
 {
     using System;
 
-    public interface IDatabaseFactory : IDisposable
-    {
-        ICedarContext CedarContext { get; }
-    }
+//    public interface IDatabaseFactory : IDisposable
+//    {
+//        ICedarContext CedarContext { get; }
+//    }
 }

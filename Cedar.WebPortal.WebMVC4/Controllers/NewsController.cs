@@ -1,18 +1,14 @@
-﻿using System.Web.UI;
-using MvcContrib.Pagination;
-using Cedar.WebPortal.Common;
-using Cedar.WebPortal.Domain.Component;
-
-namespace Cedar.WebPortal.WebMVC4.Controllers
+﻿namespace Cedar.WebPortal.WebMVC4.Controllers
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Web.Mvc;
 
     using AutoMapper;
 
-    using Cedar.WebPortal.Domain;
-    using Cedar.WebPortal.Service;
+    using Cedar.WebPortal.Domain.Entities;
+    using Cedar.WebPortal.Domain.Enums;
     using Cedar.WebPortal.Service.Common;
     using Cedar.WebPortal.WebMVC4.ViewModel;
 
@@ -35,21 +31,14 @@ namespace Cedar.WebPortal.WebMVC4.Controllers
 
         #region Public Methods
 
-        public PartialViewResult NewsList()
-        {
-            return PartialView("NewsList", new News());
-        }
-
         [HttpGet]
-        [Authorize(Roles = "Administrator")]
         public ActionResult Confirm()
         {
-            IEnumerable<News> news = this.newsService.GetUnpublishedNews().AsPagination(1, 10);
-            return View("ListPagination",news);
+            IEnumerable<News> news = this.newsService.GetUnpublishedNews().Take(10);
+            return View("List", news);
         }
 
         [HttpGet]
-        [Authorize(Roles = "Administrator,Publisher")]
         public ActionResult Create()
         {
             var news = new NewsViewModel();
@@ -58,7 +47,6 @@ namespace Cedar.WebPortal.WebMVC4.Controllers
 
         [HttpPost]
         [ValidateInput(false)]
-        [Authorize(Roles = "Administrator,Publisher")]
         public ActionResult Create(NewsViewModel newsViewModel)
         {
             if (!this.ModelState.IsValid)
@@ -68,13 +56,10 @@ namespace Cedar.WebPortal.WebMVC4.Controllers
             News news = null;
 
             news = Mapper.Map(newsViewModel, news);
-            news.Language = Language.Fa;
-            //            news.CreatorUser = new User { Username = this.User.Identity.Name };
             this.newsService.Add(news);
-            return this.RedirectToAction("ListPagination");
+            return this.RedirectToAction("List");
         }
 
-        [Authorize(Roles = "Administrator")]
         public void Delete(Guid id)
         {
             this.newsService.Delete(o => o.NewsId == id);
@@ -89,24 +74,19 @@ namespace Cedar.WebPortal.WebMVC4.Controllers
 
         [HttpPost]
         [ValidateInput(false)]
-        [Authorize(Roles = "Administrator, Publisher")]
         public ActionResult Edit(NewsViewModel newsViewModel)
         {
             if (!this.ModelState.IsValid)
             {
                 return View(newsViewModel);
             }
-
             News news = null;
             news = Mapper.Map(newsViewModel, news);
-            news.Language = Language.Fa;
-            news.CreatorUser = new User { Username = this.User.Identity.Name };
             this.newsService.Save(news);
-            return this.RedirectToAction("ListPagination");
+            return this.RedirectToAction("List");
         }
 
         [HttpGet]
-        [Authorize(Roles = "Administrator, Publisher")]
         public ActionResult Edit(Guid id)
         {
             News news = this.newsService.GetPublishedNews(id);
@@ -123,32 +103,19 @@ namespace Cedar.WebPortal.WebMVC4.Controllers
 
         public ActionResult List()
         {
-            if (this.User.IsInRole("Administrator"))
-            {
-                IEnumerable<News> news = this.newsService.GetAll().AsPagination(1, 10);
-                return View("List", news);
-            }
-            else
-            {
-                IEnumerable<News> news = this.newsService.GetPublishedNews().AsPagination(1, 10);
-                return View("List", news);
-            }
+            IEnumerable<News> news = this.newsService.GetAll().Take(10);
+            return View("List", news);
         }
 
         public ActionResult ListPagination(int? page)
         {
-            if (this.User.IsInRole("Administrator"))
-            {
-                IEnumerable<News> news = this.newsService.GetAll().AsPagination(page ?? 1, 10);
-                return View(news);
-            }
-            else
-            {
-                IEnumerable<News> news = this.newsService.GetPublishedNews().AsPagination(page ?? 1, 10);
-                ;
-                return View(news);
-            }
+            IEnumerable<News> news = this.newsService.GetAll().Skip(!page.HasValue ? 0 : page.Value * 10).Take(10);
+            return View(news);
+        }
 
+        public PartialViewResult NewsList()
+        {
+            return this.PartialView("NewsList", new News());
         }
 
         #endregion

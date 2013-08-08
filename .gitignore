@@ -32,3 +32,4 @@ _ReSharper*/
 *.vssscc
 $tf*/
 .DS_Store
+*.ldf

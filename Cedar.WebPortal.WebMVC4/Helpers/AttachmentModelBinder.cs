@@ -9,6 +9,7 @@ namespace Cedar.WebPortal.WebMVC4.Helpers
 
     using Cedar.WebPortal.Common;
     using Cedar.WebPortal.Domain;
+    using Cedar.WebPortal.Domain.Entities;
 
     public class AttachmentModelBinder : IModelBinder
     {

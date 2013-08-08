@@ -1,4 +1,6 @@
-﻿namespace Cedar.WebPortal.WebMVC4.Helpers
+﻿using Cedar.WebPortal.Domain.Entities;
+
+namespace Cedar.WebPortal.WebMVC4.Helpers
 {
     using System.Collections.Generic;
     using System.Linq;

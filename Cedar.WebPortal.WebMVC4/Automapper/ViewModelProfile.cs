@@ -4,7 +4,7 @@ namespace Cedar.WebPortal.WebMVC4.Helpers
 
     using AutoMapper;
 
-    using Cedar.WebPortal.Domain;
+    using Cedar.WebPortal.Domain.Entities;
     using Cedar.WebPortal.WebMVC4.ViewModel;
 
     public class ViewModelProfile : Profile
@@ -25,19 +25,10 @@ namespace Cedar.WebPortal.WebMVC4.Helpers
 
             #region News
 
-            this.CreateMap<News, NewsViewModel>();
-            this.CreateMap<NewsViewModel, News>();
-             
-            #endregion
-
-            #region Gallery
-
-            this.CreateMap<Gallery, GalleryViewModel>();
-            this.CreateMap<GalleryViewModel, Gallery>();
+            this.CreateMap<News, NewsViewModel>().IgnoreAllNonExisting();
+            this.CreateMap<NewsViewModel, News>().IgnoreAllNonExisting();
 
             #endregion
-
-
 
             base.Configure();
 

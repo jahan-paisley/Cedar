@@ -1,4 +1,6 @@
-﻿namespace Cedar.WebPortal.Data
+﻿using Cedar.WebPortal.Domain.Entities;
+
+namespace Cedar.WebPortal.Data
 {
     using System;
 
@@ -11,8 +13,8 @@
     {
         #region Constructors and Destructors
 
-        public NewsRepository(IDatabaseFactory databaseFactory)
-            : base(databaseFactory)
+        public NewsRepository(ICedarContext cedarContext)
+            : base(cedarContext)
         {
         }
 

@@ -1,4 +1,6 @@
-﻿namespace Cedar.WebPortal.Service
+﻿using Cedar.WebPortal.Domain.Entities;
+
+namespace Cedar.WebPortal.Service
 {
     using System;
     using System.Collections.Generic;

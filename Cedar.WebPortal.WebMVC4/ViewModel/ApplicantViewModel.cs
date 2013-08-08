@@ -4,6 +4,7 @@ using System.Web.UI.WebControls;
 using Cedar.WebPortal.Domain;
 using Cedar.WebPortal.Domain.Resources;
 using Cedar.WebPortal.WebMVC4.Helpers;
+using Cedar.WebPortal.Domain.Entities;
 
 namespace Cedar.WebPortal.WebMVC4.ViewModel
 {

@@ -1,4 +1,7 @@
-﻿namespace Cedar.WebPortal.Data
+﻿using Cedar.WebPortal.Domain.Enums;
+using Cedar.WebPortal.Domain.Entities;
+
+namespace Cedar.WebPortal.Data
 {
     using System;
     using System.Linq;
@@ -11,8 +14,8 @@
     {
         #region Constructors and Destructors
 
-        public AttachmentRepository(IDatabaseFactory databaseFactory)
-            : base(databaseFactory)
+        public AttachmentRepository(ICedarContext cedarContext)
+            : base(cedarContext)
         {
         }
 

@@ -15,6 +15,7 @@ namespace Cedar.WebPortal.Service
     using Cedar.WebPortal.Service.Infrastructure;
 
     using Attachment = System.Net.Mail.Attachment;
+    using Cedar.WebPortal.Domain.Entities;
 
     public class ApplicantService : ServiceBase<Applicant, IApplicantRepository>, IApplicantService
     {
@@ -58,8 +59,8 @@ namespace Cedar.WebPortal.Service
             }
 
             var mailMessage = new MailMessage();
-            mailMessage.To.Add(applicant.EMail); /*TODO: someone from HR*/
-            mailMessage.From = new MailAddress("no-reply@rightel.ir");
+            mailMessage.To.Add(applicant.EMail); 
+            mailMessage.From = new MailAddress("no-reply@xyz.ir");
             mailMessage.Body = body;
             mailMessage.Subject = "Confirmation Mail";
             mailMessage.IsBodyHtml = true;

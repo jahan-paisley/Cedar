@@ -1,4 +1,4 @@
-﻿namespace Cedar.WebPortal.Domain.Component
+﻿namespace Cedar.WebPortal.Domain.Enums
 {
     using System;
     using System.ComponentModel.DataAnnotations;

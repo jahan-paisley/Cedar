@@ -1,9 +1,7 @@
 namespace Cedar.WebPortal.Integration.Test
 {
     using AutoMapper;
-
-
-
+    
     public class AutoMapperConfiguration
     {
         #region Public Methods

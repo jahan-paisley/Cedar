@@ -1,4 +1,6 @@
-﻿namespace Cedar.WebPortal.Service
+﻿using Cedar.WebPortal.Domain.Entities;
+
+namespace Cedar.WebPortal.Service
 {
     using System;
     using System.Collections.Generic;
@@ -45,13 +47,16 @@
 
         public IEnumerable<News> GetNewsForHomePage()
         {
-            var news = this.GetMany(o => o.Published && o.AppearInHomePage && (o.ExpirationDate == null || o.ExpirationDate >= DateTime.Now)).OrderByDescending(o => o.CaptureDate);
+            var news =
+                this.GetMany(
+                    o =>
+                    o.Published && o.AppearInHomePage && (o.ExpirationDate == null || o.ExpirationDate >= DateTime.Now));//.OrderByDescending(o => o.CaptureDate);
             return news;
         }
 
         public override IEnumerable<News> GetAll()
         {
-            var news = base.GetAll().OrderByDescending(o => o.CaptureDate);
+            var news = base.GetAll().OrderByDescending(o => o.CreatedAt);
             return news;
         }
 

@@ -25,7 +25,7 @@ namespace Cedar.WebPortal.Configuration
 
             // Comment the line above and uncomment these lines to use the IWebSecurityService abstraction
             var webSecurityService = DependencyResolver.Current.GetService<IWebSecurityService>();
-            webSecurityService.InitializeDatabaseConnection(connectionStringName: "Default", userTableName: "Users", userIdColumn: "ID", userNameColumn: "Username", autoCreateTables: true);
+            webSecurityService.InitializeDatabaseConnection(connectionStringName: "CedarContext", userTableName: "Users", userIdColumn: "ID", userNameColumn: "Username", autoCreateTables: true);
         }
 
         public static void Start()

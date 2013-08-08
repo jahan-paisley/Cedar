@@ -1,4 +1,4 @@
-﻿namespace Cedar.WebPortal.Domain.Component
+﻿namespace Cedar.WebPortal.Domain.Enums
 {
     public enum Gender
     {
@@ -180,21 +180,21 @@
     }
     public enum IssueType
     {
-        None=0,
-        SMS=401,
-        MMS=402,
-        Internet=403,
-        VoiceCall=404,
-        VideoCall=405,
+        None = 0,
+        SMS = 401,
+        MMS = 402,
+        Internet = 403,
+        VoiceCall = 404,
+        VideoCall = 405,
         VAS = 406,
         RBT = 407,
         MBanking = 408,
         EPayment = 409,
         Roaming = 410,
-        GoldenList=411,
-        MissedCallAlert=412,
-        OnlineMobileRecharging=413,
-        PylonAntenna=427
+        GoldenList = 411,
+        MissedCallAlert = 412,
+        OnlineMobileRecharging = 413,
+        PylonAntenna = 427
     }
     public enum SimType
     {
@@ -222,19 +222,28 @@
         OneStep,
         TwoStep
     }
-}
-public enum ApplicantSalesShopType
-{
-    Sales,
-    Shop
-}
-public enum Ownership
-{
-    Owner,
-    Leased
-}
-public enum InstallationPanel
-{
-    Permitted,
-    NotFeasible
+
+    public enum ApplicantSalesShopType
+    {
+        Sales,
+        Shop
+    }
+    public enum Ownership
+    {
+        Owner,
+        Leased
+    }
+    public enum InstallationPanel
+    {
+        Permitted,
+        NotFeasible
+    }
+
+    public enum FileType
+    {
+        None,
+        Picture,
+        Document,
+        CV
+    }
 }

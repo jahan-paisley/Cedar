@@ -39,8 +39,8 @@ namespace Cedar.WebPortal.Service.Infrastructure
                              {
                                  UseDefaultCredentials = false,
                                  DeliveryMethod = SmtpDeliveryMethod.Network,
-                                 Credentials = new NetworkCredential("no-reply", "27654@rightel.ir"),
-                                 Host = "mail.rightel.ir",
+                                 Credentials = new NetworkCredential("no-reply", "27654@xyz.ir"),
+                                 Host = "mail.xyz.ir",
                                  EnableSsl = true,
                                  Port = 25,
                              };

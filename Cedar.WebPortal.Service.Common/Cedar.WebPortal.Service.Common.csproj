@@ -115,14 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDepartmentService.cs" />
-    <Compile Include="IGalleryService.cs" />
     <Compile Include="IApplicantService.cs" />
     <Compile Include="IAttachmentService.cs" />
     <Compile Include="IEMailService.cs" />
     <Compile Include="IFormsAuthenticationService.cs" />
     <Compile Include="IJobPositionService.cs" />
     <Compile Include="ILocationService.cs" />
-    <Compile Include="IMessageService.cs" />
     <Compile Include="INewsService.cs" />
     <Compile Include="IServiceBase.cs" />
     <Compile Include="IWebSecurityService.cs" />

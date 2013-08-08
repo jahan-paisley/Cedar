@@ -1,3 +1,5 @@
+using Cedar.WebPortal.Domain.Entities;
+
 namespace Cedar.WebPortal.Data
 {
     using Cedar.WebPortal.Data.Common;
@@ -6,8 +8,7 @@ namespace Cedar.WebPortal.Data
 
     public class LocationRepository : RepositoryBase<Location>, ILocationRepository
     {
-        public LocationRepository(IDatabaseFactory databaseFactory)
-            : base(databaseFactory)
+        public LocationRepository(ICedarContext cedarContext) : base(cedarContext)
         {
         }
     }

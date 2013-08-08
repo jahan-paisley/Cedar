@@ -57,15 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IUserRightelRepository.cs" />
     <Compile Include="IDepartmentRepository.cs" />
-    <Compile Include="IGalleryRepository.cs" />
     <Compile Include="IApplicantRepository.cs" />
     <Compile Include="IAttachmentRepository.cs" />
     <Compile Include="IDatabaseFactory.cs" />
     <Compile Include="IJobPositionRepository.cs" />
     <Compile Include="ILocationRepository.cs" />
-    <Compile Include="IMessageRepository.cs" />
     <Compile Include="INewsRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="ICedarContext.cs" />

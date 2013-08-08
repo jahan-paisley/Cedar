@@ -100,20 +100,16 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="LinFu.DynamicProxy, Version=1.0.4.16035, Culture=neutral, PublicKeyToken=62a6874124340d6e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\LinFu.DynamicProxy.OfficialRelease.1.0.5\lib\net\LinFu.DynamicProxy.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="NHibernate">
-      <HintPath>..\packages\NHibernate.3.3.3.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -124,33 +120,22 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139">
-      <HintPath>..\packages\SQLitex64.1.0.66\lib\32\System.Data.SQLite.DLL</HintPath>
-    </Reference>
     <Reference Include="xunit">
       <HintPath>..\packages\xunit.1.9.1\lib\net20\xunit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\NHibernate\Convention.cs" />
+    <Compile Include="Infrastructure\EF\MyDbModelBuilder.cs" />
     <Compile Include="Infrastructure\EF\CustomDatabaseInitializer.cs" />
-    <Compile Include="Infrastructure\NHibernate\AutoMappingConfiguration.cs" />
-    <Compile Include="Infrastructure\NHibernate\ManyToManyConventions.cs" />
-    <Compile Include="Infrastructure\NHibernate\MyAutoMapper.cs" />
-    <Compile Include="Infrastructure\NHibernate\NHDatabaseFactory.cs" />
+    <Compile Include="Infrastructure\EF\CedarContext.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
-    <Compile Include="Infrastructure\NHibernate\NonAutoMappings.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Interfaces\UnitOfWork.cs" />
-    <Compile Include="Infrastructure\NHibernate\NHibernateContext.cs" />
     <Compile Include="Repositories\ApplicantRepository.cs" />
     <Compile Include="Repositories\AttachmentRepository.cs" />
-    <Compile Include="Repositories\UserRightelRepository.cs" />
     <Compile Include="Repositories\DepartmentRepository.cs" />
-    <Compile Include="Repositories\GalleryRepository.cs" />
     <Compile Include="Repositories\JobPositionRepository.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
-    <Compile Include="Repositories\MessageRepository.cs" />
     <Compile Include="Repositories\NewsRepository.cs" />
     <Compile Include="CedarContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -4,19 +4,18 @@
 
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly IDatabaseFactory databaseFactory;
+        private readonly ICedarContext cedarContext;
 
-        public UnitOfWork(IDatabaseFactory databaseFactory)
+        public UnitOfWork(ICedarContext cedarContext)
         {
-            this.databaseFactory = databaseFactory;
+            this.cedarContext = cedarContext;
         }
-
-
+        
         #region IUnitOfWork Members
 
         public void Commit()
         {
-            databaseFactory.CedarContext.Commit();
+            cedarContext.Commit();
         }
 
         #endregion

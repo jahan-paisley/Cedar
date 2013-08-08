@@ -4,8 +4,9 @@
     using System.ComponentModel.DataAnnotations;
 
     using Cedar.WebPortal.Common;
-    using Cedar.WebPortal.Domain.Component;
+    using Enums;
     using Cedar.WebPortal.Domain.Resources;
+    using Cedar.WebPortal.Domain.Entities;
 
     public abstract class Company
     {

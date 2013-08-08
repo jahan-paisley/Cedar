@@ -1,4 +1,4 @@
-﻿@model IEnumerable<News>
+﻿@model IEnumerable<Cedar.WebPortal.Domain.Entities.News>
 @using Elmah.ContentSyndication
 @using Microsoft.Web.Mvc
 @using MvcContrib.Pagination
@@ -18,7 +18,7 @@
     @foreach (var item in Model)
     {
         <div width="200px" id="divNewsList">
-            @Html.Attachment(item, o => o.Attachment)
+            @*            @Html.Attachment(item, o => o.Attachment)*@
             <div style="vertical-align: text-top; min-height: 100px; padding-@Html.RightIfPersian(): 60px">
                 <strong>
                     @item.Title
@@ -30,12 +30,12 @@
                     @Html.Raw(item.Contents)
                     &nbsp;... &nbsp;
                 </div>
-                @Html.ActionLink(Html.ResourceFor("Details"), "Details", "News", new {id = @item.NewsId}, new {})
+                @Html.ActionLink(Html.ResourceFor("Details"), "Details", "News", new { id = @item.NewsId }, new { })
                 @if (@User.IsInRole("Administrator"))
                 {
                     @Html.ActionLink((NewsController o) => o.Edit(@item.NewsId))
                     @Html.Raw(" ")
-                    @Ajax.ActionLink(@Html.ResourceFor("Delete"), "Delete", "News", new {id = @item.NewsId},
+                    @Ajax.ActionLink(@Html.ResourceFor("Delete"), "Delete", "News", new { id = @item.NewsId },
                                            new AjaxOptions
                                                {
                                                    Confirm = "Delete News?",
@@ -47,17 +47,4 @@
             <hr />
         </div>
     }
-                 </div>
-  @*  @Html.Pager((IPagination) Model).First("first").Next("Next");
-    @{ 
-        
-        Html.Grid(Model).Columns(column =>
-                                     {
-                                         column.For(x => x.Title);
-                                         column.For(x => x.Contents);
-                                         column.For(x => Html.DisplayAttachment(x,o => o.Attachment)).Named(Html.ResourceFor(typeof(EntityResource), "News_Attachment"));
-                                         column.For(x => x.PublishDate);
-                                     }).Render();
-       
-}
-*@
+</div>

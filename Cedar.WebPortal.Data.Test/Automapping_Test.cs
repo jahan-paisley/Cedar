@@ -1,6 +1,5 @@
 ﻿using Cedar.WebPortal.Domain;
 using Xunit;
-using NHibernate.Linq;
 using System.Linq;
 
 namespace Cedar.WebPortal.Data.Test

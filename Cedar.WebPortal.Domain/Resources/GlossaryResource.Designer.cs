@@ -115,91 +115,11 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sending a EnglishCV is required.
-        /// </summary>
-        public static string Applicant_EnglishCV {
-            get {
-                return ResourceManager.GetString("Applicant_EnglishCV", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///			&lt;p&gt;
-        ///			In order to run the 3rd Telecom Operator, 
-        ///			We need eligble persons based on this priorities:
-        ///			&lt;ul&gt;
-        ///			Qualification :
-        ///			&lt;li&gt;
-        ///			1. Men with military obligation service pass 
-        ///				 or Exempt Card(not medical )
-        ///			&lt;/li&gt;&lt;li&gt;
-        ///			2. Mental and Phydical Health
-        ///			&lt;/li&gt;&lt;li&gt;
-        ///			3- No Criminal Record
-        ///			&lt;/li&gt;
-        ///			&lt;/p&gt;
-        ///			.
-        /// </summary>
-        public static string Applicant_IntroMessage {
-            get {
-                return ResourceManager.GetString("Applicant_IntroMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Part 1.
-        /// </summary>
-        public static string Applicant_Part1 {
-            get {
-                return ResourceManager.GetString("Applicant_Part1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Part 2.
-        /// </summary>
-        public static string Applicant_Part2 {
-            get {
-                return ResourceManager.GetString("Applicant_Part2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Part 3.
-        /// </summary>
-        public static string Applicant_Part3 {
-            get {
-                return ResourceManager.GetString("Applicant_Part3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Part 4.
-        /// </summary>
-        public static string Applicant_Part4 {
-            get {
-                return ResourceManager.GetString("Applicant_Part4", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Your registeration is done.
         /// </summary>
         public static string Applicant_Success_Message {
             get {
                 return ResourceManager.GetString("Applicant_Success_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///    SectionB
-        ///    .
-        /// </summary>
-        public static string ApplicantSalesShop_SectionB {
-            get {
-                return ResourceManager.GetString("ApplicantSalesShop_SectionB", resourceCulture);
             }
         }
         
@@ -224,78 +144,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         public static string Cedar {
             get {
                 return ResourceManager.GetString("Cedar", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tamin Telecom News.
-        /// </summary>
-        public static string CedarNews {
-            get {
-                return ResourceManager.GetString("CedarNews", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Company Details.
-        /// </summary>
-        public static string Company {
-            get {
-                return ResourceManager.GetString("Company", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Company Contact Point Details.
-        /// </summary>
-        public static string Company_ContactPointHeaderDesc {
-            get {
-                return ResourceManager.GetString("Company_ContactPointHeaderDesc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Current and Relevant Projects.
-        /// </summary>
-        public static string Company_CurrentProjects {
-            get {
-                return ResourceManager.GetString("Company_CurrentProjects", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to You may upload the Documents Related to Equipment Production Section From Here.
-        /// </summary>
-        public static string Company_FileUploadDescription {
-            get {
-                return ResourceManager.GetString("Company_FileUploadDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Products List.
-        /// </summary>
-        public static string Company_ProductList {
-            get {
-                return ResourceManager.GetString("Company_ProductList", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ProPosal For Producting New Products.
-        /// </summary>
-        public static string Company_ProposalForProduct {
-            get {
-                return ResourceManager.GetString("Company_ProposalForProduct", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Company Area.
-        /// </summary>
-        public static string CompanyArea {
-            get {
-                return ResourceManager.GetString("CompanyArea", resourceCulture);
             }
         }
         
@@ -422,37 +270,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IAgree.
-        /// </summary>
-        public static string IAgree {
-            get {
-                return ResourceManager.GetString("IAgree", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Introduction.
-        /// </summary>
-        public static string Intro {
-            get {
-                return ResourceManager.GetString("Intro", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      &lt;strong &gt;3G Mobile&lt;/strong&gt;&lt;p&gt;
-        ///        &lt;br /&gt;
-        ///       3G or 3rd generation mobile telecommunications is a generation of standards for mobile phones and mobile telecommunication services fulfilling the International Mobile Telecommunications-2000 (IMT-2000) specifications by the International Telecommunication Union.
-        ///      &lt;/p&gt; .
-        /// </summary>
-        public static string Intro_3G {
-            get {
-                return ResourceManager.GetString("Intro_3G", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Last.
         /// </summary>
         public static string Last {
@@ -543,7 +360,7 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No:.
+        ///   Looks up a localized string similar to News No:.
         /// </summary>
         public static string News_No {
             get {
@@ -566,15 +383,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         public static string Next {
             get {
                 return ResourceManager.GetString("Next", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to He does not select any job position.
-        /// </summary>
-        public static string NoJobPosition {
-            get {
-                return ResourceManager.GetString("NoJobPosition", resourceCulture);
             }
         }
         
@@ -660,31 +468,11 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      Search for job position
-        ///    .
-        /// </summary>
-        public static string SearchJobPosition {
-            get {
-                return ResourceManager.GetString("SearchJobPosition", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Select.
         /// </summary>
         public static string Select {
             get {
                 return ResourceManager.GetString("Select", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ....
-        /// </summary>
-        public static string SelectOne {
-            get {
-                return ResourceManager.GetString("SelectOne", resourceCulture);
             }
         }
         

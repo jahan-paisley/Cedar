@@ -99,36 +99,6 @@
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
   
-  <data name="Home_PictureGallery" xml:space="preserve">
-		<value>گالری عکس</value>
-	</data>
-  <data name="Home_ListPaginationGallery" xml:space="preserve">
-		<value>گالری عکس</value>
-	</data>
-  <data name="Home_AboutUs" xml:space="preserve">
-		<value>درباره ما</value>
-	</data>
-  <data name="Applicant_Create" xml:space="preserve">
-		<value>دعوت به همکاری</value>
-	</data>
-  <data name="Applicant_Opportunity" xml:space="preserve">
-		<value>فرصت های شغلی</value>
-	</data>
-  <data name="Home_Tender" xml:space="preserve">
-		<value>مناقصات</value>
-	</data>
-  <data name="Home_FAQ" xml:space="preserve">
-		<value>سوالات متداول</value>
-	</data>
-  <data name="Home_VAS" xml:space="preserve">
-		<value>3G</value>
-	</data>
-  <data name="Home_ContactUs" xml:space="preserve">
-		<value>تماس با ما</value>
-	</data>
-	<data name="Message_Create" xml:space="preserve">
-		<value>ارتباط با ما</value>
-	</data>
 	<data name="News_Create">
 		<value>ایجاد خبر</value>
 	</data>
@@ -136,23 +106,11 @@
 	<data name="News_Confirm">
 		<value>تایید خبر</value>
 	</data>
-	<data name="News_List">
+	<data name="News_Index">
 		<value>نمایش تمام خبرها</value>
-	</data>
-	<data name="Applicant_List">
-		<value>نمایش همه تقاضاهای کار</value>
 	</data>
 	<data name="Account_Register">
 		<value>ایجاد کاربر</value>
-	</data>
-	<data name="Message_List">
-		<value>نمایش پیغام ها</value>
-	</data>
-	<data name="Company_List">
-		<value>شرکتهاي متقاضي</value>
-	</data>
-	<data name="Company_Create" xml:space="preserve">
-		<value>ارتباط با صنعت</value>
 	</data>
 	<data name="News_Edit">
 		<value>ویرایش</value>
@@ -160,78 +118,13 @@
 	<data name="Attachment_GetContents">
 		<value>مشاهده</value>
 	</data>
-	<data name="ApplicantSalesShop_AsyncUpload">
-		<value>بارگذاری فایل های ضمیمه</value>
-	</data>
-	<data name="ApplicantSalesShop_Success">
-		<value>ثبت</value>
-	</data>
-	<data name="Company_Success">
-		<value>ثبت</value>
-	</data>
-	<data name="TenderApplication_Success">
-		<value>ثبت</value>
-	</data>
 	<data name="Account_LogOn">
 		<value>ورود</value>
-	</data>
-	<data name="ApplicantSalesShop_Create">
-		<value>ثبت نام توزیع کنندگان</value>
-	</data>
-  <data name="ApplicantSalesShop_ListAdmin">
-    <value>لیست توزیع کنندگان</value>
-  </data>
-	<data name="Company_Intro">
-		<value>ارتباط با صنعت</value>
-	</data>
-	<data name="Company_AsyncUpload">
-		<value>بارگذاری فایل های ضمیمه</value>
-	</data>
-	<data name="Company_ProductList">
-		<value>ليست تجهيزات</value>
 	</data>
 	<data name="Attachment_Index">
 		<value>برای رویت فایل بارگذاری شده اینجا را کلیک کنید</value>
 	</data>
-  <data name="Gallery_Create">
-    <value>ایجاد گالری</value>
-  </data>
-  <data name="Gallery_Edit">
-    <value>ویرایش</value>
-  </data>
-  <data name="Gallery_Confirm">
-    <value>تایید گالری</value>
-  </data>
-  <data name="Gallery_List">
-    <value>نمایش تمام گالری ها</value>
-  </data>
   <data name="Error" xml:space="preserve">
 		<value>بروز خطا در این لحظه</value>
 	</data>
-  <data name="Prospect_RegisterTitle">
-    <value>پیش ثبت نام شماره</value>
-  </data>
-  <data name="Prospect_Information">
-    <value>فرم ثبت مشخصات</value>
-  </data>  <data name="Prospect_Create">
-    <value>ثبت</value>
-  </data>
-    <data name="Prospect_Search">
-    <value>جستجو</value>
-  </data>
-  <data name="Prospect_Hold">
-    <value>رزرو</value>
-  </data>
-  <data name="Prospect_PreCreate">
-    <value>نحوه پیش ثبت نام</value>
-  </data>
-  <data name="Captcha_Refresh">
-    <value>تصویر جدید</value>
-  </data>
-  <data name="Captcha_InputSymbol">
-    <value>لطفا حروف تصوير را در کادر زير وارد نماييد</value>
-  </data>
-<data name="CreateAndReady">
-    <value>اعلام آمادگی</value>
-  </data>
 </root>

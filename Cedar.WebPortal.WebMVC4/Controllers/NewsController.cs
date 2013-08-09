@@ -8,7 +8,6 @@
     using AutoMapper;
 
     using Cedar.WebPortal.Domain.Entities;
-    using Cedar.WebPortal.Domain.Enums;
     using Cedar.WebPortal.Service.Common;
     using Cedar.WebPortal.WebMVC4.ViewModel;
 
@@ -57,7 +56,7 @@
 
             news = Mapper.Map(newsViewModel, news);
             this.newsService.Add(news);
-            return this.RedirectToAction("List");
+            return this.RedirectToAction("Index");
         }
 
         public void Delete(Guid id)
@@ -83,7 +82,7 @@
             News news = null;
             news = Mapper.Map(newsViewModel, news);
             this.newsService.Save(news);
-            return this.RedirectToAction("List");
+            return this.RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -98,24 +97,8 @@
         [HttpGet]
         public ActionResult Index()
         {
-            return this.List();
-        }
-
-        public ActionResult List()
-        {
             IEnumerable<News> news = this.newsService.GetAll().Take(10);
             return View("List", news);
-        }
-
-        public ActionResult ListPagination(int? page)
-        {
-            IEnumerable<News> news = this.newsService.GetAll().Skip(!page.HasValue ? 0 : page.Value * 10).Take(10);
-            return View(news);
-        }
-
-        public PartialViewResult NewsList()
-        {
-            return this.PartialView("NewsList", new News());
         }
 
         #endregion

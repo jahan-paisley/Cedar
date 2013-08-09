@@ -28,9 +28,7 @@ namespace Cedar.WebPortal.Service.Infrastructure
                        !RegexUtilities.IsValidEmail(message.To[0].Address));
 
             if (b || b1)
-            {
                 return;
-            }
 
             //It so happen that the DEV certificates are invalid. Let the server callback when a certificate comes in
             ServicePointManager.ServerCertificateValidationCallback =

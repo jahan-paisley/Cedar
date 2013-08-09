@@ -104,136 +104,25 @@
 	<data name="News_Confirm">
 		<value>News Confirm</value>
 	</data>
-	<data name="News_List">
+	<data name="News_Index">
 		<value>News List</value>
 	</data>
 	<data name="News_Edit">
 		<value>News Edit</value>
 	</data>
-	<data name="Applicant_List">
-		<value>Applicant List</value>
-	</data>
 	<data name="Account_Register">
 		<value>Account Register</value>
-	</data>
-	<data name="Message_List">
-		<value>Message List</value>
-	</data>
-	<data name="Company_List">
-		<value>Company List</value>
-	</data>
-	<data name="JobPosition_List">
-		<value>Job Position List</value>
-	</data>
-	<data name="Company_Create" xml:space="preserve">
-		<value>Industrial Affair</value>
-	</data>
-	<data name="Message_Create" xml:space="preserve">
-		<value>Contact Us</value>
-	</data>
-	<data name="Home_AboutUs" xml:space="preserve">
-		<value>About Us</value>
-	</data>
-	<data name="Applicant_Create" xml:space="preserve">
-		<value>Join Us</value>
-	</data>
-	<data name="Home_Tender" xml:space="preserve">
-		<value>Tender</value>
-	</data>
-	<data name="Home_FAQ" xml:space="preserve">
-		<value>FAQ</value>
-	</data>
-	<data name="Home_VAS" xml:space="preserve">
-		<value>3G</value>
-	</data>
-	<data name="Home_ContactUs" xml:space="preserve">
-		<value>Contact Us</value>
 	</data>
 	<data name="Attachment_GetContents">
 		<value>Attachment View</value>
 	</data>
-	<data name="ApplicantSalesShop_AsyncUpload">
-		<value>Upload Attachments</value>
-	</data>
-	<data name="Company_AsyncUpload">
-		<value>Upload Attachments</value>
-	</data>
-	<data name="ApplicantSalesShop_Success">
-		<value>Last Step</value>
-	</data>
-  <data name="ApplicantSalesShop_ListAdmin">
-    <value>List of ApplicantSalesShops</value>
-  </data>
-	<data name="ApplicantSalesShop_Create">
-		<value>ApplicantSalesShops Registeration</value>
-	</data>
 	<data name="Account_LogOn">
 		<value>Log On</value>
-	</data>
-	<data name="Company_Intro">
-		<value>Industrial Affair</value>
-	</data>
-	<data name="Company_Success">
-		<value>Last Step</value>
-	</data>
-	<data name="Company_ProductList">
-		<value>Products List</value>
 	</data>
 	<data name="Attachment_Index">
 		<value>Attachment</value>
 	</data>
-  <data name="Home_PictureGallery" xml:space="preserve">
-		<value>PictureGallery</value>
-	</data>
-  <data name="Gallery_Create">
-    <value>Gallery News</value>
-  </data>
-  <data name="Gallery_Confirm">
-    <value>Gallery Confirm</value>
-  </data>
-  <data name="Gallery_List">
-    <value>Gallery List</value>
-  </data>
-  <data name="Gallery_Edit">
-    <value>Gallery Edit</value>
-  </data>
   <data name="Error" xml:space="preserve">
 		<value>The Page Cannot Be Displayed</value>
 	</data>
-  <data name="Prospect_RegisterTitle">
-    <value>Pre Registration</value>
-  </data>
-  <data name="Prospect_Information">
-    <value>Customer information</value>
-  </data>
-  <data name="Prospect_Create">
-    <value>Reserve</value>
-  </data>
-  <data name="Prospect_Search">
-    <value>Search</value>
-  </data>
-  <data name="Prospect_Hold">
-    <value>Hold</value>
-  </data>
-  <data name="Captcha_Refresh">
-    <value>Refresh</value>
-  </data>
-  <data name="Captcha_InputSymbol">
-    <value>Input symbols</value>
-  </data>
-  <data name="Prospect_PreCreate">
-    <value>About preregistration</value>
-  </data>
-  <data name="Home_ListPaginationGallery" xml:space="preserve">
-		<value>Gallery</value>
-	</data>
-  <data name="Applicant_Opportunity" xml:space="preserve">
-		<value>Job opportunity</value>
-	</data>
-  <data name="TenderApplication_Success">
-    <value>Next Step</value>
-  </data>
-  <data name="CreateAndReady">
-    <value>Ready</value>
-  </data>
 </root>

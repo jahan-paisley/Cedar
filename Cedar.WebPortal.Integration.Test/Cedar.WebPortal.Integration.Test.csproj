@@ -39,7 +39,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\output\</OutputPath>
+    <OutputPath>..\Cedar.WebPortal.WebMVC4\bin</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -100,7 +100,7 @@
     <Compile Include="TenderApplicationController_Test.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Cedar.WebPortal.Web\NLog.config">
+    <None Include="..\Cedar.WebPortal.WebMVC4\NLog.config">
       <Link>NLog.config</Link>
     </None>
     <None Include="App.config">
@@ -120,10 +120,6 @@
     <ProjectReference Include="..\Cedar.WebPortal.Data.Common\Cedar.WebPortal.Data.Common.csproj">
       <Project>{932F153B-7886-4508-8682-8BDC0469B932}</Project>
       <Name>Cedar.WebPortal.Data.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Cedar.WebPortal.Data.NH\Cedar.WebPortal.Data.csproj">
-      <Project>{94CC7EE8-B459-44A3-912B-DD8B2C3030D0}</Project>
-      <Name>Cedar.WebPortal.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cedar.WebPortal.Data.Test\Cedar.WebPortal.Data.Test.csproj">
       <Project>{F567E560-2B66-4A08-81F6-B7736BBA2E8B}</Project>

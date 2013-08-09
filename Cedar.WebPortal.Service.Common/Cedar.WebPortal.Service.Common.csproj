@@ -24,7 +24,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\output\</OutputPath>
+    <OutputPath>..\Cedar.WebPortal.WebMVC4\bin</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -130,6 +130,10 @@
     <ProjectReference Include="..\Cedar.WebPortal.Domain\Cedar.WebPortal.Domain.csproj">
       <Project>{48F672E8-4513-4F7E-A296-C0CCC87F9AA1}</Project>
       <Name>Cedar.WebPortal.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cedar.WebPortal.Logging\Cedar.WebPortal.Logging.csproj">
+      <Project>{1F6E3645-D3C6-450B-B0E7-BD85E1C16E54}</Project>
+      <Name>Cedar.WebPortal.Logging</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

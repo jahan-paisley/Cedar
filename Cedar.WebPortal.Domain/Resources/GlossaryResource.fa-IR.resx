@@ -198,38 +198,6 @@
   <data name="Save" xml:space="preserve">
     <value>ذخیره</value>
   </data>
-  <data name="Applicant_Success_Message" xml:space="preserve">
-    <value>ثبت نام شما با موفقیت انجام شد</value>
-  </data>
-  <data name="Applicant_EnglishCV" xml:space="preserve">
-    <value>فرستادن رزومه انگلیسی اجباری است</value>
-  </data>
-  <data name="Applicant_Dialog_Message" xml:space="preserve">
-    <value>توجه</value>
-  </data>
-  <data name="Applicant_IntroMessage" xml:space="preserve">
-    <value>
-&lt;p style="font: 12px Tahoma;text-align: justify;"&gt;
-شركت کمپانی نام در راستاي تكميل تيم تخصصي خود 
-از متقاضيان استخدام با روحيه انجام كارگروهي،
-آشنا با مجموعه نرم افزارهاي Office،مسلط به زبان انگليسي
-و داراي ويژگي هاي عمومي ذيل دعوت به همكاري مي نمايد.
-&lt;ul&gt;
-&lt;lh&gt;ويژگي هاي عمومي&lt;/lh&gt;
-&lt;li&gt;
-		امكان همكاري بصورت تمام وقت
-  &lt;li&gt;&lt;/li&gt;
-		داراي حداقل مدرك كارشناسي رشته هاي مهندسي برق، مخابرات،
-			فن آوري اطلاعات، صنايع، گرايش هاي مديريت
-      &lt;li&gt;&lt;/li&gt;
-		حداقل سه سال سابقه كار مرتبط (ترجيحاً تله كام)
-  &lt;li&gt;&lt;/li&gt;
-		داراي كارت پايان خدمت و يا معافيت دائم براي آقايان
-			جزئيات زمينه هاي همكاري بزودي اعلام خواهد شد.
-      &lt;/li&gt;&lt;/ul&gt;
-&lt;/p&gt;
-			</value>
-  </data>
   <data name="News_No" xml:space="preserve">
     <value>شماره:</value>
   </data>
@@ -241,18 +209,6 @@
   </data>
   <data name="FileAttach" xml:space="preserve">
     <value>فایل های ضمیمه</value>
-  </data>
-  <data name="Applicant_Part1" xml:space="preserve">
-    <value>بخش اول</value>
-  </data>
-  <data name="Applicant_Part2" xml:space="preserve">
-    <value>بخش دوم</value>
-  </data>
-  <data name="Applicant_Part3" xml:space="preserve">
-    <value>بخش سوم</value>
-  </data>
-  <data name="Applicant_Part4" xml:space="preserve">
-    <value>بخش چهارم</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>عملیات</value>
@@ -279,7 +235,7 @@
     <value>قبلي:</value>
   </data>
   <data name="CopyRight" xml:space="preserve">
-    <value>کلیه حقـوق این وب سایت متعلق به شرکت کمپانی نام میباشد.</value>
+    <value>کلیه حقـوق این وب سایت متعلق به شرکت کمپانی XYZ میباشد.</value>
   </data>
   <data name="AttachmentUploadMessage" xml:space="preserve">
     <value>  
@@ -333,16 +289,6 @@
   </data>
   <data name="More" xml:space="preserve">
     <value>بیشتر...</value>
-  </data>
-  <data name="SearchJobPosition" xml:space="preserve">
-    <value>
-        انتخاب شغل
-      </value>
-  </data>
-  <data name="NoJobPosition" xml:space="preserve">
-    <value>
-        شغلی انتخاب نکرده
-      </value>
   </data>
   <data name="Search-Option" xml:space="preserve">
     <value>انتخاب فیلد مورد نظر برای جستجو</value>

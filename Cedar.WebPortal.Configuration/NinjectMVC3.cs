@@ -1,6 +1,8 @@
 ﻿namespace Cedar.WebPortal.Configuration
 {
     using System;
+    using System.Collections.Generic;
+    using System.Reflection;
     using System.Web;
 
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
@@ -48,7 +50,8 @@
         /// <returns>The created kernel.</returns>
         private static IKernel CreateKernel()
         {
-            var kernel = new StandardKernel(new INinjectModule[] { new BindModule() });
+            var kernel = new StandardKernel();
+            kernel.Load(new []{new BindModule()});
             kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
             kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 

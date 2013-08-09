@@ -33,3 +33,5 @@ _ReSharper*/
 $tf*/
 .DS_Store
 *.ldf
+*.mdf
+/Cedar.WebPortal.WebMVC4/App_Data/*

@@ -1,8 +1,5 @@
 ﻿namespace Cedar.WebPortal.Configuration
 {
-    using System.Web.Mvc;
-    using System.Web.Security;
-
     using Ninject.Extensions.Interception.Infrastructure.Language;
     using Ninject.Modules;
     using Ninject.Web.Common;
@@ -14,8 +11,6 @@
     using Cedar.WebPortal.Service;
     using Cedar.WebPortal.Service.Common;
     using Cedar.WebPortal.Service.Infrastructure;
-
-    using WebMatrix.WebData;
 
     public class BindModule : NinjectModule
     {

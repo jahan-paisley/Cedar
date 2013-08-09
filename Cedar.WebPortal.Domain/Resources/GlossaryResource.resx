@@ -123,9 +123,6 @@
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
   </data>
-  <data name="Intro" xml:space="preserve">
-    <value>Introduction</value>
-  </data>
   <data name="Cedar" xml:space="preserve">
     <value>Cedar</value>
   </data>
@@ -143,9 +140,6 @@
   </data>
   <data name="LogOff" xml:space="preserve">
     <value>Log Off</value>
-  </data>
-  <data name="CedarNews" xml:space="preserve">
-    <value>Tamin Telecom News</value>
   </data>
   <data name="Create" xml:space="preserve">
     <value>Create</value>
@@ -198,48 +192,6 @@
   <data name="Applicant_Dialog_Message" xml:space="preserve">
     <value>Notice </value>
   </data>
-  <data name="Company_ContactPointHeaderDesc" xml:space="preserve">
-    <value>Company Contact Point Details</value>
-  </data>
-  <data name="Company_FileUploadDescription" xml:space="preserve">
-    <value>You may upload the Documents Related to Equipment Production Section From Here</value>
-  </data>
-  <data name="Company" xml:space="preserve">
-    <value>Company Details</value>
-  </data>
-  <data name="Company_ProposalForProduct" xml:space="preserve">
-    <value>ProPosal For Producting New Products</value>
-  </data>
-  <data name="Company_CurrentProjects" xml:space="preserve">
-    <value>Current and Relevant Projects</value>
-  </data>
-  <data name="SelectOne" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="Company_ProductList" xml:space="preserve">
-    <value>Products List</value>
-  </data>
-  <data name="Applicant_IntroMessage" xml:space="preserve">
-    <value>
-			&lt;p&gt;
-			In order to run the 3rd Telecom Operator, 
-			We need eligble persons based on this priorities:
-			&lt;ul&gt;
-			Qualification :
-			&lt;li&gt;
-			1. Men with military obligation service pass 
-				 or Exempt Card(not medical )
-			&lt;/li&gt;&lt;li&gt;
-			2. Mental and Phydical Health
-			&lt;/li&gt;&lt;li&gt;
-			3- No Criminal Record
-			&lt;/li&gt;
-			&lt;/p&gt;
-			</value>
-  </data>
-  <data name="News_No" xml:space="preserve">
-    <value>No:</value>
-  </data>
   <data name="News_Next" xml:space="preserve">
     <value>Next:</value>
   </data>
@@ -251,18 +203,6 @@
   </data>
   <data name="CreateAndNextStep" xml:space="preserve">
     <value>Next Step</value>
-  </data>
-  <data name="Applicant_Part1" xml:space="preserve">
-    <value>Part 1</value>
-  </data>
-  <data name="Applicant_Part2" xml:space="preserve">
-    <value>Part 2</value>
-  </data>
-  <data name="Applicant_Part3" xml:space="preserve">
-    <value>Part 3</value>
-  </data>
-  <data name="Applicant_Part4" xml:space="preserve">
-    <value>Part 4</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Actions</value>
@@ -329,38 +269,17 @@ Continue
 &lt;/div&gt;
    </value>
   </data>
-  <data name="Applicant_EnglishCV" xml:space="preserve">
-    <value>Sending a EnglishCV is required</value>
-  </data>
   <data name="Message_Success" xml:space="preserve">
     <value>The operation was successful</value>
-  </data>
-  <data name="CompanyArea" xml:space="preserve">
-    <value>Company Area</value>
   </data>
   <data name="More" xml:space="preserve">
     <value>More...</value>
   </data>
-  <data name="Intro_3G" xml:space="preserve">
-    <value>
-      &lt;strong &gt;3G Mobile&lt;/strong&gt;&lt;p&gt;
-        &lt;br /&gt;
-       3G or 3rd generation mobile telecommunications is a generation of standards for mobile phones and mobile telecommunication services fulfilling the International Mobile Telecommunications-2000 (IMT-2000) specifications by the International Telecommunication Union.
-      &lt;/p&gt; </value>
-  </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
   </data>
-  <data name="SearchJobPosition" xml:space="preserve">
-    <value>
-      Search for job position
-    </value>
-  </data>
   <data name="Select" xml:space="preserve">
     <value>Select</value>
-  </data>
-  <data name="NoJobPosition" xml:space="preserve">
-    <value>He does not select any job position</value>
   </data>
   <data name="PageSize" xml:space="preserve">
     <value>Page Size</value>
@@ -374,12 +293,7 @@ Continue
   <data name="Tehran" xml:space="preserve">
     <value>Tehran</value>
   </data>
-  <data name="IAgree" xml:space="preserve">
-    <value>IAgree</value>
-  </data>
-  <data name="ApplicantSalesShop_SectionB" xml:space="preserve">
-    <value>
-    SectionB
-    </value>
+  <data name="News_No" xml:space="preserve">
+    <value>News No:</value>
   </data>
 </root>

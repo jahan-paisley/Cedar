@@ -9,12 +9,13 @@ namespace Cedar.WebPortal.Service.Infrastructure
     using Cedar.WebPortal.Logging;
     using Cedar.WebPortal.Service.Common;
 
-    public abstract class ServiceBase<TEntity, ITEntityRepository> : IServiceBase<TEntity> where TEntity : class, new() 
-                                                                                           where ITEntityRepository : IRepository<TEntity>
+    [LogMyCalls]
+    public abstract class ServiceBase<TEntity, TIRepository> : IServiceBase<TEntity> where TEntity : class, new() 
+                                                                                           where TIRepository : IRepository<TEntity>
     {
         #region Constructors and Destructors
 
-        protected ServiceBase(ITEntityRepository repository, IUnitOfWork unitOfWork)
+        protected ServiceBase(TIRepository repository, IUnitOfWork unitOfWork)
         {
             this.UnitOfWork = unitOfWork;
             this.Repository = repository;
@@ -24,7 +25,7 @@ namespace Cedar.WebPortal.Service.Infrastructure
 
         #region Properties
 
-        public virtual ITEntityRepository Repository { get; set; }
+        public virtual TIRepository Repository { get; set; }
 
         public virtual IUnitOfWork UnitOfWork { get; set; }
 

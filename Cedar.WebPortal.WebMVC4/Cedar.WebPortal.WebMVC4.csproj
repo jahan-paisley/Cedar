@@ -83,14 +83,6 @@
     <Reference Include="Glimpse.Mvc4">
       <HintPath>..\packages\Glimpse.Mvc4.1.3.2\lib\net40\Glimpse.Mvc4.dll</HintPath>
     </Reference>
-    <Reference Include="LinFu.DynamicProxy, Version=1.0.4.16035, Culture=neutral, PublicKeyToken=62a6874124340d6e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Ninject.Extensions.Interception.Linfu.3.0.0.8\lib\net35\LinFu.DynamicProxy.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.Edm, Version=5.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -121,25 +113,6 @@
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject.Extensions.Interception, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Ninject.Extensions.Interception.3.0.0.8\lib\net45-full\Ninject.Extensions.Interception.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject.Extensions.Interception.LinFu">
-      <HintPath>..\packages\Ninject.Extensions.Interception.Linfu.3.0.0.8\lib\net35\Ninject.Extensions.Interception.LinFu.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject.Extensions.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Ninject.Extensions.Logging.3.0.1.0\lib\net45-full\Ninject.Extensions.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject.Extensions.Logging.NLog, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Ninject.Extensions.Logging.nlog.3.0.1.0\lib\net45-full\Ninject.Extensions.Logging.NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -259,32 +232,31 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\AttachmentModelBinder.cs" />
+    <Compile Include="Helpers\ModelBinders\AttachmentModelBinder.cs" />
     <Compile Include="Helpers\ControllerHelper.cs" />
     <Compile Include="Helpers\DatePickerHelper.cs" />
-    <Compile Include="Helpers\DateTimeModelBinder.cs" />
-    <Compile Include="Helpers\DropdownListBinder.cs" />
-    <Compile Include="Helpers\Enums.cs" />
+    <Compile Include="Helpers\ModelBinders\DateTimeModelBinder.cs" />
+    <Compile Include="Helpers\ModelBinders\DropdownListBinder.cs" />
+    <Compile Include="Helpers\Linq\StringEnum.cs" />
     <Compile Include="Helpers\ExceptionUtility.cs" />
     <Compile Include="Helpers\HandleErrorWithELMAHAttribute .cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionForCheckbox.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionForDropDownList.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionForEditorForDateTime.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionForLable.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionForLink.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionForLocalization.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionForResources.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionForTextBoxFor.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensions.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionsForAttachment.cs" />
-    <Compile Include="Helpers\HtmlHelperExtensionsForFile.cs" />
-    <Compile Include="Helpers\HtmlHelperExtentionForCheckBoxList.cs" />
-    <Compile Include="Helpers\LinqExtensions.cs" />
-    <Compile Include="Helpers\LocationCollectionBinder.cs" />
-    <Compile Include="Helpers\ProfileModelBinder.cs" />
-    <Compile Include="Helpers\StringEnum.cs" />
-    <Compile Include="Helpers\UserModelBinder.cs" />
-    <Compile Include="Helpers\WhereOperation.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionForCheckbox.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionForDropDownList.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionForEditorForDateTime.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionForLable.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionForLink.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionForLocalization.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionForResources.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionForTextBoxFor.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensions.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionsForAttachment.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtensionsForFile.cs" />
+    <Compile Include="Helpers\HtmlHelpers\HtmlHelperExtentionForCheckBoxList.cs" />
+    <Compile Include="Helpers\Linq\LinqExtensions.cs" />
+    <Compile Include="Helpers\ModelBinders\LocationCollectionBinder.cs" />
+    <Compile Include="Helpers\ModelBinders\ProfileModelBinder.cs" />
+    <Compile Include="Helpers\ModelBinders\UserModelBinder.cs" />
+    <Compile Include="Helpers\Linq\WhereOperation.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Modules\CookieLocalizationModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -377,7 +349,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Mvc.sitemap" />
-    <Content Include="App_Data\cedar.sqlite" />
     <Content Include="App_Code\ViewHelper.cshtml" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
@@ -461,8 +432,6 @@
     <Content Include="Views\News\Details.cshtml" />
     <Content Include="Views\News\Edit.cshtml" />
     <Content Include="Views\News\List.cshtml" />
-    <Content Include="Views\News\ListPagination.cshtml" />
-    <Content Include="Views\News\NewsList.cshtml" />
     <Content Include="Views\ProvinceCity\Index.cshtml" />
     <Content Include="Views\Shared\_HomeLayout.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
@@ -473,9 +442,6 @@
     <Content Include="Views\Shared\EditorTemplates\Location.cshtml" />
     <Content Include="Views\Shared\LatestNews.cshtml" />
     <Content Include="Views\Shared\NewsTitleList.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
@@ -504,17 +470,20 @@
     <EmbeddedResource Include="Resources\CommandResource.fa-IR.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CommandResource.fa-IR.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>Cedar.WebPortal.Web.Resources</CustomToolNamespace>
+      <CustomToolNamespace>Cedar.WebPortal.WebMVC4.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\CommandResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CommandResource.designer.cs</LastGenOutput>
-      <CustomToolNamespace>Cedar.WebPortal.Web.Resources</CustomToolNamespace>
+      <CustomToolNamespace>Cedar.WebPortal.WebMVC4.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

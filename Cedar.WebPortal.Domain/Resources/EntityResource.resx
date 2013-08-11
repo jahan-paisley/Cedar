@@ -141,7 +141,7 @@
   <data name="News" xml:space="preserve">
     <value>News</value>
   </data>
-  <data name="News_CaptureDate" xml:space="preserve">
+  <data name="News_CreatedAt" xml:space="preserve">
     <value>Capture Date</value>
   </data>
   <data name="News_Title" xml:space="preserve">

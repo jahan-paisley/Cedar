@@ -1,4 +1,4 @@
-﻿@using Cedar.WebPortal.Domain
+﻿@using Cedar.WebPortal.Domain.Entities
 @model IEnumerable<News>
 @foreach (News item in Model.OrderBy(o => o.PublishDate).Take(5))
 {

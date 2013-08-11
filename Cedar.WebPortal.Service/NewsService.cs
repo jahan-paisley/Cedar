@@ -1,14 +1,11 @@
-﻿using Cedar.WebPortal.Domain.Entities;
-
-namespace Cedar.WebPortal.Service
+﻿namespace Cedar.WebPortal.Service
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    using Cedar.WebPortal.Data;
     using Cedar.WebPortal.Data.Common;
-    using Cedar.WebPortal.Domain;
+    using Cedar.WebPortal.Domain.Entities;
     using Cedar.WebPortal.Service.Common;
     using Cedar.WebPortal.Service.Infrastructure;
 
@@ -27,36 +24,43 @@ namespace Cedar.WebPortal.Service
 
         #region INewsService
 
-        public News GetPublishedNews(Guid id)
+        public IEnumerable<News> GetNewsForHomePage()
         {
-            var news = this.GetById(id);
+            IQueryable<News> news =
+                this.GetMany(
+                    o =>
+                        o.Published && o.AppearInHomePage &&
+                        (o.ExpirationDate == null || o.ExpirationDate >= DateTime.Now));
+                //.OrderByDescending(o => o.CaptureDate);
+            return news;
+        }
+
+        public virtual News GetPublishedNews(Guid id)
+        {
+            News news = this.GetById(id);
             return news;
         }
 
         public IEnumerable<News> GetPublishedNews()
         {
-            var news = this.GetMany(o => o.Published && (o.ExpirationDate==null || o.ExpirationDate >= DateTime.Now));
+            IQueryable<News> news =
+                this.GetMany(o => o.Published && (o.ExpirationDate == null || o.ExpirationDate >= DateTime.Now));
             return news;
         }
 
         public IEnumerable<News> GetUnpublishedNews()
         {
-            var news = this.GetMany(o => !o.Published);
+            IQueryable<News> news = this.GetMany(o => !o.Published);
             return news;
         }
 
-        public IEnumerable<News> GetNewsForHomePage()
-        {
-            var news =
-                this.GetMany(
-                    o =>
-                    o.Published && o.AppearInHomePage && (o.ExpirationDate == null || o.ExpirationDate >= DateTime.Now));//.OrderByDescending(o => o.CaptureDate);
-            return news;
-        }
+        #endregion
+
+        #region IServiceBase<News>
 
         public override IEnumerable<News> GetAll()
         {
-            var news = base.GetAll().OrderByDescending(o => o.CreatedAt);
+            IOrderedEnumerable<News> news = base.GetAll().OrderByDescending(o => o.CreatedAt);
             return news;
         }
 

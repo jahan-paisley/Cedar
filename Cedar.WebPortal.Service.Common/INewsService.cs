@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
 
-    using Cedar.WebPortal.Domain;
     using Cedar.WebPortal.Domain.Entities;
 
     public interface INewsService : IServiceBase<News>

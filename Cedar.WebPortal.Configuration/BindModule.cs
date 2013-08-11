@@ -19,7 +19,6 @@
         public override void Load()
         {
             this.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
-            this.Bind(typeof(ServiceBase<,>)).ToSelf().InRequestScope().Intercept().With<LoggingInterceptor>();
             this.Bind<IFormsAuthenticationService>().To<FormsAuthenticationService>();
             #region Membership Providers
 //#if DEBUG

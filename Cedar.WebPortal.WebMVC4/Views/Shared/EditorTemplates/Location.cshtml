@@ -1,5 +1,5 @@
 ﻿@using System.Web.Mvc.Html
-@model Cedar.WebPortal.Domain.Location
+@model Cedar.WebPortal.Domain.Entities.Location
 <div>
     @Html.LabelFor(model => model.Province)
     @Html.DropDownListFor(model => model.LocationId, (IEnumerable<SelectListItem>)this.ViewBag.ValueProvinces)

@@ -27,7 +27,7 @@ namespace Cedar.WebPortal.Domain.Entities
         [Display(ResourceType = typeof(EntityResource), Name = "News_Attachment")]
         public virtual Attachment Attachment { get; set; }
 
-        [Display(ResourceType = typeof(EntityResource), Name = "News_CaptureDate")]
+        [Display(ResourceType = typeof(EntityResource), Name = "News_CreatedAt")]
         public virtual DateTime? CreatedAt { get; set; }
 
         [Display(ResourceType = typeof(EntityResource), Name = "News_Code")]

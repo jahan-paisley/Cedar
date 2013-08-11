@@ -10,6 +10,15 @@
 
     public class NewsViewModel
     {
+        #region Constructors and Destructors
+
+        public NewsViewModel()
+        {
+            this.CreatedAt = DateTime.Now;
+        }
+
+        #endregion
+
         #region Properties
 
         [Display(ResourceType = typeof(EntityResource), Name = "News_AppearInHomePage")]
@@ -18,15 +27,15 @@
         [Display(ResourceType = typeof(EntityResource), Name = "News_Attachment")]
         public Attachment Attachment { get; set; }
 
-        [Display(ResourceType = typeof(EntityResource), Name = "News_CaptureDate")]
-        public DateTime CaptureDate { get; set; }
-
         [Display(ResourceType = typeof(EntityResource), Name = "News_Code")]
         public long Code { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
         [Display(ResourceType = typeof(EntityResource), Name = "News_Contents")]
         public string Contents { get; set; }
+
+        [Display(ResourceType = typeof(EntityResource), Name = "News_CreatedAt")]
+        public DateTime CreatedAt { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
         [RegularExpression(PersianCalendarUtility.PersianDateRegex,

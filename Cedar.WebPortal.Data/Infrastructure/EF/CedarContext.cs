@@ -5,6 +5,7 @@ namespace Cedar.WebPortal.Data
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Migrations;
     using System.Data.Entity.Validation;
     using System.Diagnostics;
     using System.Linq;
@@ -12,6 +13,7 @@ namespace Cedar.WebPortal.Data
 
     using Cedar.WebPortal.Common;
     using Cedar.WebPortal.Data.Common;
+    using Cedar.WebPortal.Data.Migrations;
 
     public class CedarContext : DbContext, ICedarContext
     {
@@ -139,6 +141,7 @@ namespace Cedar.WebPortal.Data
                     });
 
             }
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<CedarContext, Configuration>());
             base.OnModelCreating(modelBuilder);
         }
 

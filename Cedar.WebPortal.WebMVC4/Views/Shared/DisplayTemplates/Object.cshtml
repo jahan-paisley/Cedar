@@ -1,6 +1,4 @@
-﻿@using Cedar.WebPortal.Domain
-@using Cedar.WebPortal.WebMVC4.ViewModel
-@using Cedar.WebPortal.WebMVC4.Helpers
+﻿@using Cedar.WebPortal.WebMVC4.Helpers
 @using Cedar.WebPortal.Domain.Resources
 @using Cedar.WebPortal.Common
 @functions {
@@ -38,9 +36,9 @@
                         htmlString += string.Format("<div class='display-field'>{0}</div></div>", this.Html.ResourceFor(prop.Model.ToString()));
                     }
                     else if (prop.Model is Enum)
-                         {
-                             string resourceFor = ResourceFor((Enum)(prop.Model));
-                             htmlString += string.Format("<div class='display-field'>{0}</div></div>", resourceFor);
+                    {
+                        string resourceFor = ResourceFor((Enum)(prop.Model));
+                        htmlString += string.Format("<div class='display-field'>{0}</div></div>", resourceFor);
                     }
                     else if (prop.Model is DateTime)
                     {
@@ -63,10 +61,10 @@
 }
 else if (ViewData.TemplateInfo.TemplateDepth > 1)
 {
-    if (ViewData.ModelMetadata.Model is Cedar.WebPortal.Domain.Location)
+    if (ViewData.ModelMetadata.Model is Cedar.WebPortal.Domain.Entities.Location)
     {
         
-    @Html.Raw(((Cedar.WebPortal.Domain.Location)(ViewData.ModelMetadata.Model)).Province)
+    @Html.Raw(((Cedar.WebPortal.Domain.Entities.Location)(ViewData.ModelMetadata.Model)).Province)
         
     }
 @*  else

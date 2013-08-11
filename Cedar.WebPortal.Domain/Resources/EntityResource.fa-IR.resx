@@ -180,7 +180,7 @@
   <data name="News" xml:space="preserve">
     <value>اخبار</value>
   </data>
-  <data name="News_CaptureDate" xml:space="preserve">
+  <data name="News_CreatedAt" xml:space="preserve">
     <value>تاریخ ثبت</value>
   </data>
   <data name="News_Image" xml:space="preserve">

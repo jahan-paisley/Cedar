@@ -1,6 +1,5 @@
 ﻿
-@using Cedar.WebPortal.Domain
-@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.Domain.Entities
 @model IEnumerable<News>
 @foreach (News item in Model.OrderByDescending(o=>o.PublishDate))
 {

@@ -15,17 +15,17 @@
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
         [StringLength(25)]
-        [Display(ResourceType = typeof(EntityResource), Name = "Ticket_FirstName")]
+        [Display(ResourceType = typeof(EntityResource), Name = "Applicant_FirstName")]
         public virtual string FirstName { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
         [StringLength(25)]
-        [Display(ResourceType = typeof(EntityResource), Name = "Ticket_LastName")]
+        [Display(ResourceType = typeof(EntityResource), Name = "Applicant_LastName")]
         public virtual string LastName { get; set; }
 
         [IsNationalNo(ErrorMessageResourceType = typeof(Common.Resources.ValidationResource),
             ErrorMessageResourceName = "isnationalno")]
-        [Display(ResourceType = typeof(EntityResource), Name = "Ticket_NationalNo")]
+        [Display(ResourceType = typeof(EntityResource), Name = "Applicant_NationalNo")]
         public virtual long NationalNo { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]

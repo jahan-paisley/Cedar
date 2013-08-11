@@ -1843,15 +1843,6 @@ namespace Cedar.WebPortal.Domain.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Capture Date.
-        /// </summary>
-        public static string News_CaptureDate {
-            get {
-                return ResourceManager.GetString("News_CaptureDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Code.
         /// </summary>
         public static string News_Code {
@@ -1866,6 +1857,15 @@ namespace Cedar.WebPortal.Domain.Resources {
         public static string News_Contents {
             get {
                 return ResourceManager.GetString("News_Contents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Capture Date.
+        /// </summary>
+        public static string News_CreatedAt {
+            get {
+                return ResourceManager.GetString("News_CreatedAt", resourceCulture);
             }
         }
         

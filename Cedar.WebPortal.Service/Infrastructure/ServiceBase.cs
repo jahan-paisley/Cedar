@@ -9,7 +9,6 @@ namespace Cedar.WebPortal.Service.Infrastructure
     using Cedar.WebPortal.Logging;
     using Cedar.WebPortal.Service.Common;
 
-    [LogMyCalls]
     public abstract class ServiceBase<TEntity, TIRepository> : IServiceBase<TEntity> where TEntity : class, new() 
                                                                                            where TIRepository : IRepository<TEntity>
     {

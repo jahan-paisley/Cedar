@@ -109,7 +109,6 @@
     <Compile Include="Entities\Applicant\Applicant.cs" />
     <Compile Include="Entities\Applicant\Department.cs" />
     <Compile Include="Entities\UserProfile.cs" />
-    <Compile Include="Interfaces\Company.cs" />
     <Compile Include="Interfaces\Person.cs" />
     <Compile Include="Resources\GlossaryResource.Designer.cs">
       <AutoGen>True</AutoGen>

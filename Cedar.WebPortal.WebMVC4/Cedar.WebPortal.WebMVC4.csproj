@@ -438,7 +438,6 @@
     <Content Include="Views\Shared\_Print.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\JobPosition.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Object.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Address.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Location.cshtml" />
     <Content Include="Views\Shared\LatestNews.cshtml" />
     <Content Include="Views\Shared\NewsTitleList.cshtml" />
@@ -484,6 +483,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="logs\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,14 +1,17 @@
 This is a project that I've crafted through wiring best open source frameworks to be a Starter Kit for Enterprise Web Applications for Production or Learning purposes.
 
  I will try to keep it up to date and improve it incerementally.
- 
-TODOS:
-  *   A design flaw in Data Access Layer regarding the transaction handling through Ninject Interceptors.
-  *   NHibernate Loquacious Automapping Conventions is not complete
+   
+  
+#### How to Build and Run
 
-WISHLIST:
-  *   Domain Model Objects get ugly due to lots of validation attributes.
-  *   Integrating WCF Services in service layer so that POCO services can be proxified to WCF services
-  *   Making web project plugable
-  
-  
+You need Visual Studio 2012 with the *Nuget Package Manager* extension.   
+Packages are not included, but *Nuget Package Restore* features has been enabled, thus *MSBuild* will download all packages.   
+
+For creating the database, create an empty database through [*Sql Server Object Explorer*](http://msdn.microsoft.com/en-us/library/hh272693.aspx).
+On the first run, database will be generated.
+
+#### Main Packages Included
+ * Niject \(Logging, Interception, Linfu for dynamix proxy, NLog2 for logging\)
+ * EF 6 Beta 1
+

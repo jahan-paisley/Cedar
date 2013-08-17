@@ -19,7 +19,7 @@
             string incomingValue = null;
             var httpCookie = html.ViewContext.RequestContext.HttpContext.Request.Cookies["lang"];
             if (metadata.Model is DateTime && (httpCookie.IsNull() || httpCookie.Value == Cultures.Persian))
-                incomingValue = PersianCalendarUtility.ConvertToPersian(((DateTime)metadata.Model).ToShortDateString());
+                incomingValue = PersianCalendarHelper.ConvertToPersian(((DateTime)metadata.Model).ToShortDateString());
             if (string.IsNullOrEmpty(incomingValue))
                 return html.TextBox(propname, null, new { @class = "datepicker TextField" });
 

@@ -7,53 +7,43 @@ using WebMatrix.WebData;
 
 namespace Cedar.WebPortal.Configuration
 {
-    public static class SimpleMembershipMvc4
+    public static class SimpleMembershipMVC4
     {
-        public static readonly string EnableSimpleMembershipKey = "enableSimpleMembership";
+        private const string EnableSimpleMembershipKey = "enableSimpleMembership";
 
-        public static bool SimpleMembershipEnabled
+        private static bool SimpleMembershipEnabled
         {
             get { return IsSimpleMembershipEnabled(); }
         }
 
         public static void Initialize()
         {
-            // Modify the settings below as appropriate for your application
-//            WebSecurity.InitializeDatabaseConnection(connectionStringName: "CedarContext", userTableName: "Users",
-//                                                     userIdColumn: "ID", userNameColumn: "Username",
-//                                                     autoCreateTables: true);
-
-            // Comment the line above and uncomment these lines to use the IWebSecurityService abstraction
             var webSecurityService = DependencyResolver.Current.GetService<IWebSecurityService>();
-            webSecurityService.InitializeDatabaseConnection(connectionStringName: "CedarContext", userTableName: "Users", userIdColumn: "ID", userNameColumn: "Username", autoCreateTables: true);
+            webSecurityService.InitializeDatabaseConnection("CedarContext", "Users", "ID", "Username", true);
         }
 
         public static void Start()
         {
             if (SimpleMembershipEnabled)
             {
-                MembershipProvider provider = Membership.Providers["AspNetSqlMembershipProvider"];
-                if (provider != null)
+                MembershipProvider membershipProvider = Membership.Providers["AspNetSqlMembershipProvider"];
+                if (membershipProvider != null)
                 {
-                    MembershipProvider currentDefault = provider;
-                    SimpleMembershipProvider provider2 =
-                        CreateDefaultSimpleMembershipProvider("AspNetSqlMembershipProvider", currentDefault);
+                    var simpleMembershipProvider =
+                        CreateDefaultSimpleMembershipProvider("AspNetSqlMembershipProvider", membershipProvider);
                     Membership.Providers.Remove("AspNetSqlMembershipProvider");
-                    Membership.Providers.Add(provider2);
+                    Membership.Providers.Add(simpleMembershipProvider);
                 }
                 Roles.Enabled = true;
-                RoleProvider provider3 = Roles.Providers["AspNetSqlRoleProvider"];
-                if (provider3 != null)
+                var roleProvider = Roles.Providers["AspNetSqlRoleProvider"];
+                if (roleProvider != null)
                 {
-                    RoleProvider provider6 = provider3;
-                    SimpleRoleProvider provider4 = CreateDefaultSimpleRoleProvider("AspNetSqlRoleProvider", provider6);
+                    var simpleRoleProvider = CreateDefaultSimpleRoleProvider("AspNetSqlRoleProvider", roleProvider);
                     Roles.Providers.Remove("AspNetSqlRoleProvider");
-                    Roles.Providers.Add(provider4);
+                    Roles.Providers.Add(simpleRoleProvider);
                 }
             }
         }
-
-        #region : Private Methods :
 
         private static bool IsSimpleMembershipEnabled()
         {
@@ -84,7 +74,5 @@ namespace Cedar.WebPortal.Configuration
             provider.Initialize(name, config);
             return provider;
         }
-
-        #endregion
     }
 }

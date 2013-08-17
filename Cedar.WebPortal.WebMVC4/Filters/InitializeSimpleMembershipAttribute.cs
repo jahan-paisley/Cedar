@@ -38,7 +38,7 @@ namespace Cedar.WebPortal.WebMVC4.Filters
                         }
                     }
 
-                    WebSecurity.InitializeDatabaseConnection("CedarContext", "UserProfile", "Id", "UserName", autoCreateTables: true);
+                    WebSecurity.InitializeDatabaseConnection("CedarContext", "UserProfile", "Id", "UserName", true);
                 }
                 catch (Exception ex)
                 {

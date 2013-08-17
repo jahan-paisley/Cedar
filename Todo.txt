@@ -1,0 +1,5 @@
+Exception handling & Logging
+Master Details Sample
+UI Controls(Grid, Menu, ...)/Control Toolkit
+Description for each project
+Charts in Reports

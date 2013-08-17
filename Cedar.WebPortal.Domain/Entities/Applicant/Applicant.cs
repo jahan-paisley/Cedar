@@ -81,17 +81,17 @@ namespace Cedar.WebPortal.Domain.Entities
         public virtual float Weight { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
-        [RegularExpression(CellPhone.CellNo, ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "mobile")]
+        [RegularExpression(RegexConsts.CellNo, ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "mobile")]
         [Display(ResourceType = typeof(EntityResource), Name = "Applicant_MobileNo")]
         public virtual string MobileNo { get; set; }
 
-        [RegularExpression(CellPhone.TelNoWithTelCode, ErrorMessageResourceType = typeof(ValidationResource),
+        [RegularExpression(RegexConsts.TelNoWithTelCode, ErrorMessageResourceType = typeof(ValidationResource),
           ErrorMessageResourceName = "telandcode")]
         [Display(ResourceType = typeof(EntityResource), Name = "Applicant_HomeTelNo")]
         public virtual string HomeTelNo { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
-        [RegularExpression(CellPhone.TelNoWithTelCode, ErrorMessageResourceType = typeof(ValidationResource),
+        [RegularExpression(RegexConsts.TelNoWithTelCode, ErrorMessageResourceType = typeof(ValidationResource),
           ErrorMessageResourceName = "telandcode")]
         [Display(ResourceType = typeof(EntityResource), Name = "Applicant_EmeregencyTelNo")]
         public virtual string EmeregencyTelNo { get; set; }
@@ -101,7 +101,7 @@ namespace Cedar.WebPortal.Domain.Entities
         [Display(ResourceType = typeof(EntityResource), Name = "Applicant_EMail")]
         public virtual string EMail { get; set; }
 
-        [IsNationalNo(ErrorMessageResourceType = typeof(Common.Resources.ValidationResource), ErrorMessageResourceName = "isnationalno")]
+        [NationalNo(ErrorMessageResourceType = typeof(Common.Resources.ValidationResource), ErrorMessageResourceName = "nationalno")]
         [Display(ResourceType = typeof(EntityResource), Name = "Applicant_NationalNo")]
         public virtual long NationalNo { get; set; }
 
@@ -168,7 +168,7 @@ namespace Cedar.WebPortal.Domain.Entities
         public virtual string RelativeInCompany { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
-        [RegularExpression(CellPhone.Digits, ErrorMessageResourceType = typeof(ValidationResource),
+        [RegularExpression(RegexConsts.Digits, ErrorMessageResourceType = typeof(ValidationResource),
            ErrorMessageResourceName = "digits")]
         [Display(ResourceType = typeof(EntityResource), Name = "Applicant_TelNo")]
         public virtual string TelNo { get; set; }

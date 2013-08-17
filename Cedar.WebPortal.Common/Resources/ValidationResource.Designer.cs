@@ -82,23 +82,23 @@ namespace Cedar.WebPortal.Common.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to 
-        ///      The national number is wrong
-        ///    .
-        /// </summary>
-        public static string isnationalno {
-            get {
-                return ResourceManager.GetString("isnationalno", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
         ///      The {0} List must have at least one item
         ///    .
         /// </summary>
         public static string minlist {
             get {
                 return ResourceManager.GetString("minlist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///      The national number is wrong
+        ///    .
+        /// </summary>
+        public static string nationalno {
+            get {
+                return ResourceManager.GetString("nationalno", resourceCulture);
             }
         }
     }

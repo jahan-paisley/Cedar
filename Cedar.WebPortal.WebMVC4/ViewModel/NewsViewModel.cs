@@ -38,7 +38,7 @@
         public DateTime CreatedAt { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
-        [RegularExpression(PersianCalendarUtility.PersianDateRegex,
+        [RegularExpression(PersianCalendarHelper.PersianDateRegex,
             ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "date")]
         [Display(ResourceType = typeof(EntityResource), Name = "News_ExpirationDate")]
         public string ExpirationDate { get; set; }
@@ -50,7 +50,7 @@
         public Guid NewsId { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
-        [RegularExpression(PersianCalendarUtility.PersianDateRegex,
+        [RegularExpression(PersianCalendarHelper.PersianDateRegex,
             ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "date")]
         [Display(ResourceType = typeof(EntityResource), Name = "News_PublishDate")]
         public string PublishDate { get; set; }

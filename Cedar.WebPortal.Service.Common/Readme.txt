@@ -1,0 +1,1 @@
+﻿Service.Common: Just like Data.Common, it contains the serivce interfaces which Web project depend on them.

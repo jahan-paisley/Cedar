@@ -53,7 +53,7 @@ namespace Cedar.WebPortal.Service
 
         public void SendMail(Applicant applicant, string body)
         {
-            if (string.IsNullOrEmpty(applicant.EMail) || !RegexUtilities.IsValidEmail(applicant.EMail))
+            if (string.IsNullOrEmpty(applicant.EMail) || !RegexUtility.IsValidEmail(applicant.EMail))
             {
                 return;
             }

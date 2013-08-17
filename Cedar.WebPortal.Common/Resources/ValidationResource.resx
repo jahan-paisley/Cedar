@@ -120,7 +120,7 @@
   <data name="checkboxrequired" xml:space="preserve">
     <value>*</value>
   </data>
-  <data name="isnationalno">
+  <data name="nationalno">
     <value>
       The national number is wrong
     </value>

@@ -75,19 +75,18 @@
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CellNo.cs" />
-    <Compile Include="QueryExtention.cs" />
-    <Compile Include="Cultures.cs" />
-    <Compile Include="CollectionMinLenghAttribute.cs" />
-    <Compile Include="ObjectHelper.cs" />
-    <Compile Include="IdentityNumber.cs" />
-    <Compile Include="EnumHelper.cs" />
-    <Compile Include="EmailAddress.cs" />
-    <Compile Include="IsNationalNo.cs" />
-    <Compile Include="ObjectExtensions.cs" />
-    <Compile Include="PersianCalendarUtility.cs" />
+    <Compile Include="Constants\RegexConsts.cs" />
+    <Compile Include="Helper\QueryExtention.cs" />
+    <Compile Include="Constants\Cultures.cs" />
+    <Compile Include="Validation\CollectionMinLenghAttribute.cs" />
+    <Compile Include="Helper\ObjectHelper.cs" />
+    <Compile Include="Helper\EnumHelper.cs" />
+    <Compile Include="Validation\EmailAddress.cs" />
+    <Compile Include="Validation\NationalNo.cs" />
+    <Compile Include="Helper\ObjectExtensions.cs" />
+    <Compile Include="Helper\PersianCalendarHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegexUtilities.cs" />
+    <Compile Include="Validation\RegexUtility.cs" />
     <Compile Include="Resources\ValidationResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -125,6 +124,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -22,14 +22,14 @@
     {
     <script type="text/javascript">
         (function ($) {
-            $.validator.addMethod('isnationalno1', function (value, element, params) {
+            $.validator.addMethod('nationalno1', function (value, element, params) {
                 return IsNationalCode(value);
             }, '');
         } (jQuery));
         (function ($) {
-            $.validator.unobtrusive.adapters.add('isnationalno', function (options) {
-                options.rules['isnationalno1'] = true;
-                options.messages['isnationalno1'] = options.message;
+            $.validator.unobtrusive.adapters.add('nationalno', function (options) {
+                options.rules['nationalno1'] = true;
+                options.messages['nationalno1'] = options.message;
             });
         } (jQuery));
     </script>
@@ -249,7 +249,7 @@
 }
 @helper ConverDateToPeisianDate(DateTime dateTime)
     {
-        var faDate = PersianCalendarUtility.ConvertToPersian(dateTime.Date);
+        var faDate = PersianCalendarHelper.ConvertToPersian(dateTime.Date);
     @faDate
     
 }

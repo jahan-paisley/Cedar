@@ -23,8 +23,8 @@
         [Display(ResourceType = typeof(EntityResource), Name = "Applicant_LastName")]
         public virtual string LastName { get; set; }
 
-        [IsNationalNo(ErrorMessageResourceType = typeof(Common.Resources.ValidationResource),
-            ErrorMessageResourceName = "isnationalno")]
+        [NationalNo(ErrorMessageResourceType = typeof(Common.Resources.ValidationResource),
+            ErrorMessageResourceName = "nationalno")]
         [Display(ResourceType = typeof(EntityResource), Name = "Applicant_NationalNo")]
         public virtual long NationalNo { get; set; }
 

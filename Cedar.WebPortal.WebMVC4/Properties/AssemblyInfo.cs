@@ -35,6 +35,6 @@ using Cedar.WebPortal.Configuration;
 // by using the '*' as shown below:
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NinjectMVC3), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(NinjectMVC3), "Stop")]
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(SimpleMembershipMvc4), "Initialize")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NinjectMVC4), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(NinjectMVC4), "Stop")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(SimpleMembershipMVC4), "Initialize")]

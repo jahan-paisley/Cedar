@@ -115,11 +115,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GlossaryResource.resx</DependentUpon>
     </Compile>
-    <Compile Include="TextTemplate\Application.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Application.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entities\Applicant\Certificate.cs" />
     <Compile Include="Entities\Applicant\JobPosition.cs" />
     <Compile Include="Entities\Applicant\EducationInfo.cs" />
@@ -151,11 +146,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ValidationResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="TextTemplate\ApplicationAttr.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ApplicationAttr.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -214,7 +204,9 @@
       <Name>Cedar.WebPortal.Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

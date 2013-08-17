@@ -13,7 +13,7 @@ namespace Cedar.WebPortal.WebMVC4.Helpers
 
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
-            return  PersianCalendarUtility.ConvertToGeorgian(controllerContext.HttpContext.Request.Form[bindingContext.ModelName]);
+            return  PersianCalendarHelper.ConvertToGeorgian(controllerContext.HttpContext.Request.Form[bindingContext.ModelName]);
         }
 
         #endregion

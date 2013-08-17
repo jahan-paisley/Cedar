@@ -1,18 +1,16 @@
-﻿@model IEnumerable<Cedar.WebPortal.Domain.Entities.News>
-@using Microsoft.Web.Mvc
+﻿@using Cedar.WebPortal.Domain.Entities
 @using Cedar.WebPortal.WebMVC4.Controllers
 @using Cedar.WebPortal.WebMVC4.Helpers
-@Html.Css("~/Content/CSS/grid.css")
+@using Microsoft.Web.Mvc
+@model IEnumerable<News>
 @{
     ViewBag.Title = "List";
 }
-
 <div style="margin: 10px">
-    @foreach (var item in Model)
+    @foreach (News item in this.Model)
     {
         <div width="200px" id="divNewsList">
-            @*            @Html.Attachment(item, o => o.Attachment)*@
-            <div style="vertical-align: text-top; min-height: 100px; padding-@Html.RightIfPersian(): 60px">
+            <div style="min-height: 100px; vertical-align: text-top; padding-right: 60px">
                 <strong>
                     @item.Title
                 </strong>
@@ -23,18 +21,13 @@
                     @Html.Raw(item.Contents)
                     &nbsp;... &nbsp;
                 </div>
-                @Html.ActionLink(Html.ResourceFor("Details"), "Details", "News", new { id = @item.NewsId }, new { })
-                @if (@User.IsInRole("Administrator"))
+                @Ajax.ActionLink(Html.ResourceFor("Details"), "Details", "News",
+                            new RouteValueDictionary { { "Id", @item.NewsId } }, new AjaxOptions())
+                @if (this.User.IsInRole("Administrator"))
                 {
-                    @Html.ActionLink((NewsController o) => o.Edit(@item.NewsId))
+                    @Html.ActionLink((NewsController o) => o.Edit(item.NewsId))
                     @Html.Raw(" ")
-                    @Ajax.ActionLink(@Html.ResourceFor("Delete"), "Delete", "News", new { id = @item.NewsId },
-                                           new AjaxOptions
-                                               {
-                                                   Confirm = "Delete News?",
-                                                   HttpMethod = "Post",
-                                                   UpdateTargetId = "divNewsList"
-                                               })
+                    @Ajax.ActionLink(this.Html.ResourceFor("Delete"), "Delete", "News", new { id = @item.NewsId }, new AjaxOptions { Confirm = "Delete News?", HttpMethod = "Post", UpdateTargetId = "divNewsList" })
                 }
             </div>
             <hr />

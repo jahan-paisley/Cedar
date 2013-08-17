@@ -35,20 +35,20 @@
         [Display(ResourceType = typeof(EntityResource), Name = "UserProfile_LastName")]
         public virtual string LastName { get; set; }
 
-        [RegularExpression(CellPhone.CellNo, ErrorMessageResourceType = typeof(ValidationResource),
+        [RegularExpression(RegexConsts.CellNo, ErrorMessageResourceType = typeof(ValidationResource),
             ErrorMessageResourceName = "mobile")]
         [Display(ResourceType = typeof(EntityResource), Name = "UserProfile_MobileNo")]
         public virtual string MobileNo { get; set; }
 
-        [IsNationalNo(ErrorMessageResourceType = typeof(Common.Resources.ValidationResource),
-            ErrorMessageResourceName = "isnationalno")]
+        [NationalNo(ErrorMessageResourceType = typeof(Common.Resources.ValidationResource),
+            ErrorMessageResourceName = "nationalno")]
         [Display(ResourceType = typeof(EntityResource), Name = "UserProfile_NationalNo")]
         public virtual long NationalNo { get; set; }
 
         [Display(ResourceType = typeof(EntityResource), Name = "UserProfile_City")]
         public virtual string Province { get; set; }
 
-        [RegularExpression(CellPhone.Digits, ErrorMessageResourceType = typeof(ValidationResource),
+        [RegularExpression(RegexConsts.Digits, ErrorMessageResourceType = typeof(ValidationResource),
             ErrorMessageResourceName = "digits")]
         [Display(ResourceType = typeof(EntityResource), Name = "UserProfile_TelNo")]
         public virtual string TelNo { get; set; }

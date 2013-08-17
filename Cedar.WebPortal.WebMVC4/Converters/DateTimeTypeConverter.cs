@@ -27,7 +27,7 @@
 
         string ITypeConverter<DateTime?, string>.Convert(ResolutionContext context)
         {
-            return PersianCalendarUtility.ConvertToPersian(context.SourceValue);
+            return PersianCalendarHelper.ConvertToPersian(context.SourceValue);
         }
 
         #endregion
@@ -36,7 +36,7 @@
 
         DateTime? ITypeConverter<string, DateTime?>.Convert(ResolutionContext context)
         {
-            return PersianCalendarUtility.ConvertToGeorgian(context.SourceValue);
+            return PersianCalendarHelper.ConvertToGeorgian(context.SourceValue);
         }
 
         #endregion

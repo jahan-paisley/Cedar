@@ -258,7 +258,6 @@
     <Compile Include="Helpers\ModelBinders\UserModelBinder.cs" />
     <Compile Include="Helpers\Linq\WhereOperation.cs" />
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Modules\CookieLocalizationModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\CommandResource.designer.cs">
       <DependentUpon>CommandResource.resx</DependentUpon>
@@ -354,6 +353,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="Readme.txt" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
@@ -366,11 +366,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-2.1.0.debug.js" />
-    <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
-    <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.ascx" />
@@ -484,6 +481,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="logs\" />
+    <Folder Include="Modules\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

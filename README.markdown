@@ -11,7 +11,7 @@ Packages are not included, but *Nuget Package Restore* features has been enabled
 For creating the database, create an empty database through [*Sql Server Object Explorer*](http://msdn.microsoft.com/en-us/library/hh272693.aspx).
 On the first run, database will be generated.
 
-#### Main Packages Included
+#### Main Packages
  * Niject \(Logging, Interception, Linfu for dynamix proxy, NLog2 for logging\)
  * EF 6 Beta 1
 

@@ -6,7 +6,7 @@
 <#@ import namespace="System.Text.RegularExpressions" #>
 
 
-<# var lines = File.ReadAllLines("D:\\Workspace\\CedarMain\\Cedar.WebPortal.Main\\Cedar.WebPortal.Domain\\Entities\\TenderApplication\\Tender.cs");
+<# var lines = File.ReadAllLines("Cedar.WebPortal.Domain\\Entities\\Applicant\\Applicant.cs");
 	foreach(var line in lines)
 	{
 		if(Regex.IsMatch(line , @"Display")){

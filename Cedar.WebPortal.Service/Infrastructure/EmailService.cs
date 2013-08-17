@@ -23,9 +23,9 @@ namespace Cedar.WebPortal.Service.Infrastructure
         public void Send(MailMessage message)
         {
             bool b = (message.From.IsNull() || message.From.Address.IsNull() ||
-                      !RegexUtilities.IsValidEmail(message.From.Address));
+                      !RegexUtility.IsValidEmail(message.From.Address));
             bool b1 = (message.To.IsNull() || message.To.Count == 0 || message.To[0].Address.IsNull() ||
-                       !RegexUtilities.IsValidEmail(message.To[0].Address));
+                       !RegexUtility.IsValidEmail(message.To[0].Address));
 
             if (b || b1)
                 return;

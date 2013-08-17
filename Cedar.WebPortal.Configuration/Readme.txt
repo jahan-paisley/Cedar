@@ -1,0 +1,1 @@
+﻿Configuration: Contains Ninject Dependency Injection Modules which defines bindings and Interceptors.

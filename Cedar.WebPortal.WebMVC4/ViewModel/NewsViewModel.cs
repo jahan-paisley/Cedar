@@ -14,7 +14,7 @@
 
         public NewsViewModel()
         {
-            this.CreatedAt = DateTime.Now;
+            this.CreatedAt = PersianCalendarHelper.ConvertToPersian(DateTime.Now);
         }
 
         #endregion
@@ -35,7 +35,7 @@
         public string Contents { get; set; }
 
         [Display(ResourceType = typeof(EntityResource), Name = "News_CreatedAt")]
-        public DateTime CreatedAt { get; set; }
+        public string CreatedAt { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ValidationResource), ErrorMessageResourceName = "required")]
         [RegularExpression(PersianCalendarHelper.PersianDateRegex,

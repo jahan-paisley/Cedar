@@ -1,0 +1,27 @@
+﻿@using Cedar.WebPortal.WebMVC4.Helpers
+@using Cedar.WebPortal.WebMVC4.ViewModel
+@using Microsoft.Web.Mvc
+@using Cedar.WebPortal.Common
+@model NewsViewModel
+<div>
+    <div>
+        @if (Model.Attachment.IsNotNull())
+        { 
+            @Html.Image(Url.Action("Index", "Attachment", new { Id = Model.Attachment.AttachmentId.ToString() }))
+        }
+        else
+        {
+            @Html.DisplayAttachment(item => item.Attachment)
+        }
+        <div>
+            @Html.Raw(Model.Contents)
+        </div>
+        <div>
+            Created at: @Html.Raw(Model.CreatedAt)
+        </div>
+        <div>
+            Code: @Html.Raw(Model.Code.ToString())
+        </div>
+
+    </div>
+</div>

@@ -438,6 +438,7 @@
     <Content Include="Views\Shared\EditorTemplates\Location.cshtml" />
     <Content Include="Views\Shared\LatestNews.cshtml" />
     <Content Include="Views\Shared\NewsTitleList.cshtml" />
+    <Content Include="Views\News\_AjaxDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">

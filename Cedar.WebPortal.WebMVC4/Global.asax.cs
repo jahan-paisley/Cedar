@@ -13,8 +13,6 @@
     using Cedar.WebPortal.Domain.Entities;
     using Cedar.WebPortal.WebMVC4.Helpers;
 
-    using Microsoft.Web.Mvc.Resources;
-
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 

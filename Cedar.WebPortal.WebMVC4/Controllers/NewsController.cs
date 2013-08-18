@@ -97,10 +97,23 @@
         [HttpGet]
         public ActionResult Index()
         {
+            return this.RedirectToActionPermanent("List");
+        }
+
+        [HttpGet]
+        public ActionResult List()
+        {
             IEnumerable<News> news = this.newsService.GetAll().Take(10);
             return View("List", news);
         }
 
         #endregion
+        [HttpGet]
+        public ActionResult AjaxDetails(Guid id)
+        {
+            NewsViewModel newsViewModel = null;
+            newsViewModel = Mapper.Map(this.newsService.GetPublishedNews(id), newsViewModel);
+            return this.PartialView("_AjaxDetails", newsViewModel);
+        }
     }
 }

@@ -21,8 +21,13 @@
                     @Html.Raw(item.Contents)
                     &nbsp;... &nbsp;
                 </div>
-                @Ajax.ActionLink(Html.ResourceFor("Details"), "Details", "News",
-                            new RouteValueDictionary { { "Id", @item.NewsId } }, new AjaxOptions())
+                @Ajax.ActionLink(Html.ResourceFor("Details"), "AjaxDetails", "News", new { Id = @item.NewsId },
+                    new AjaxOptions
+                    {
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "Details",
+                        HttpMethod = "Get"
+                    })
                 @if (this.User.IsInRole("Administrator"))
                 {
                     @Html.ActionLink((NewsController o) => o.Edit(item.NewsId))
@@ -31,6 +36,10 @@
                 }
             </div>
             <hr />
+
         </div>
     }
+    <div id="Details">
+    </div>
+    <hr />
 </div>
